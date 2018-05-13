@@ -1,0 +1,839 @@
+
+.new_book_container
+	width: 1200px
+	margin: 0 auto
+	padding: 50px 0
+	display: flex
+	align-items: center
+	&>div
+		width: 50%
+	hr
+		width: 40px
+		border-color: $main
+		margin-bottom: 30px
+
+.h1_container_thanks
+	width: 1200px
+	margin: 0 auto
+	margin-top: 30px
+	h1
+		font-family: "MyriadProBold"
+
+
+.new_book_image_container
+	img
+		width: 100%
+
+.new_book_form
+	label
+		display: none
+	form
+		max-width: 290px
+	button
+		width: 100%
+		padding: 18px 0 !important
+		line-height: 0
+		font-size: 16px !important
+
+.new_book_category
+	background: $main
+	padding: 5px 12px
+	color: #fff
+	display: inline-block
+	margin-bottom: 30px
+
+.new_book_title
+	font-size: 76px
+	font-family: "MyriadProBold"
+	text-transform: uppercase
+	color: $main
+	line-height: 76px
+
+.new_book_text
+	margin-bottom: 30px
+	font-size: 16px
+
+.new_book_description
+	font-size: 30px
+	margin-bottom: 10px
+	font-family: "MyriadProBold"
+	text-transform: uppercase
+	color: $main
+
+
+
+.author_main_blog
+	width: 700px
+	margin: 0px auto
+	margin-top: 30px
+	margin-bottom: 50px
+
+.blog_head_overlay
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background: rgba(0,0,0,0.4)
+
+.main_hr_blog
+	width: 50px
+	margin: 0 auto
+
+.post_main_title
+	text-align: center
+	text-transform: uppercase
+	color: #fff
+
+.blog_share_title
+	font-size: 16px
+
+.link_blog
+	a
+		color: $main
+
+.footer_main_blog
+	width: 1200px
+	margin: 0 auto
+
+.call_to_action_tcu
+	margin-top: 40px
+	background: url('/images/tcu_back.jpg') no-repeat center center
+	background-size: cover
+	color: #fff
+	padding: 34px 20px
+	&:after
+		content: ''
+		display: table
+		clear: both
+
+.call_to_action_tp
+	background: url('/images/blog/tp/cta_tp_01.jpg') no-repeat center center
+	background-size: cover
+
+.call_to_action_tcu_title
+	font-family: "MyriadProBold"
+	font-size: 54px !important
+	text-align: center !important
+	text-transform: uppercase
+	margin-bottom: 0 !important
+	line-height: 70px
+
+.call_to_action_tcu_sec_title
+	text-transform: uppercase
+	font-family: "MyriadProSemiBold"
+	text-align: center !important
+	font-size: 20px !important
+	margin-bottom: 20px !important
+
+.call_to_action_tcu_block
+	float: left
+	width: 50%
+	text-align: center
+
+.call_to_action_tcu_btn
+	color: $main
+	display: inline-block
+	position: relative
+	font-size: 16px
+	text-transform: uppercase
+	padding: 10px 40px
+	background: #fff
+	box-shadow: 0px 0px 0px 2px #fff
+	border: 2px solid $main
+	&:hover
+		text-decoration: none
+
+
+.blog-post-author
+	&__container
+		display: flex
+		justify-content: space-between
+		+r(768)
+			flex-direction: column
+			align-items: center
+	&__box
+		display: flex
+		+r(768)
+			width: 100%
+			display: flex
+			justify-content: space-between
+	&__date
+	&__avatar
+		height: 100px
+		width: 100px
+		background-size: cover
+		border-radius: 100%
+		border: 5px solid #fff
+		position: absolute
+		bottom: -50px
+		left: 0
+		right: 0
+		margin: 0 auto
+	&__category
+	&__user
+		align-self: flex-end
+		+r(768)
+			align-self: center
+			padding-bottom: 50px
+	&__text
+		color: #fff
+		font-family: $ror
+		font-size: 15px
+		line-height: 25px
+		padding: 20px
+		display: block
+		+r(768)
+			padding: 10px
+		a
+			@extend .link
+			color: #FFF !important
+			+h
+				color: #eee !important
+
+.blog-post
+	width: 100%
+	overflow: hidden
+	&__head
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		position: relative
+		background-size: cover
+		background-image: url('/images/blog_back.jpg')
+		background-attachment: fixed
+		background-position: center center
+		background-repeat: no-repeat
+		justify-content: space-between
+		z-index: 8
+		margin-bottom: 130px
+		.breadcrumbs
+			padding: 20px
+			display: flex
+			flex-wrap: wrap
+			+r(768)
+				padding: 10px
+			&__current
+				color: $grayi !important
+				white-space: nowrap !important
+				overflow: hidden !important
+				text-overflow: ellipsis !important
+				max-width: 220px !important
+				width: 100% !important
+				display: block
+				font-family: $rol
+			a
+				color: #FFF !important
+				font-family: $rom
+			span
+				color: #FFF
+				font-family: $rom
+	&__head-container
+		max-width: 1200px
+		margin: 0 auto
+		width: 100%
+		min-height: 400px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+	&__head-info
+		min-width: 315px
+		max-width: 40%
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		+r(480)
+			min-width: 100%
+			width: 100%
+	&__head-title
+		padding: 40px 20px
+		color: #fff
+		font-family: $rub
+		font-size: 30px
+		line-height: 30px
+		text-align: center
+		max-width: 1000px
+		margin: 0 auto
+		+r(768)
+			font-size: 24px
+		+r(480)
+			font-size: 20px
+	&__thumbnail
+		margin-left: 20px
+		width: 100%
+		overflow: hidden
+		object-fit: cover
+		max-height: 305px
+		max-width: 370px
+		+r(480)
+			margin: 20px 0
+			max-width: 100%
+		img
+			height: 100%
+			width: 100%
+			object-fit: cover
+			display: block
+	&__content
+		width: 100%
+		max-width: 1200px
+		margin: 0 auto
+		padding: 0 20px
+		font-family: $rob
+		font-size: 17px
+		img
+			object-fit: cover
+			&[align="left"]
+				margin: 10px 25px 10px 0 !important
+			&[align="right"]
+				margin: 10px 0 10px 25px !important
+		hr
+			width: 50px
+			border-color: $main
+			margin: 30px auto
+		p
+			// text-indent: 45px
+			text-align: justify
+			font-size: 18px
+			margin-bottom: 15px
+		ul
+			padding-left: 30px
+			font-size: 16px
+			padding: 0
+			list-style-type: disc
+			margin-left: 30px
+			margin-bottom: 15px
+		h2
+			font-size: 20px !important
+			margin-bottom: 20px !important
+		ol
+			padding-left: 30px
+			font-size: 16px
+			list-style-type: decimal
+			list-style-position: outside
+			margin-left: 0
+		li
+			padding-left: 10px
+			p
+				text-indent: 0px
+		iframe
+			// width: 100%
+			margin: 20px auto
+		+r(480)
+			padding: 0 10px
+	&__rectangle
+		display: flex
+		background-color: rgba(146, 29, 46, 0.2)
+		padding-left: 0 !important
+		+r(800)
+			flex-wrap: wrap
+	&__rectangle-item
+		font-size: 15px
+		font-weight: 700
+		padding: 20px 17px 20px 17px
+		justify-content: center
+		width: 25%
+		position: relative
+		overflow: hidden
+		border-right: 1px solid #eee
+		+r(800)
+			width: 50%
+			border-bottom: 1px solid #eee
+		+r(480)
+			width: 100%
+			border-right: none
+			border-bottom: 1px solid #eee
+		&:nth-child(1)
+			background-image: url(../images/ty-page/ty-page_icon1.svg)
+			background-repeat: no-repeat
+			background-position: 50% 17px
+		&:nth-child(2)
+			background-image: url(../images/ty-page/ty-page_icon2.svg)
+			background-repeat: no-repeat
+			background-position: 50% 17px
+			+r(800)
+				border-right: none
+		&:nth-child(3)
+			background-image: url(../images/ty-page/ty-page_icon3.svg)
+			background-repeat: no-repeat
+			background-position: 50% 17px
+		&:nth-child(4)
+			background-image: url(../images/ty-page/ty-page_icon4.svg)
+			background-repeat: no-repeat
+			background-position: 50% 17px
+			border-right: none
+	&__rectangle-text
+		color: #000
+		font-size: 18px
+		font-weight: 700
+		line-height: 30px
+		margin-top: 55px
+		margin-bottom: 0
+		text-align: center !important
+	&__quote
+		padding: 0 100px
+		background-color: rgba(146, 29, 46, 0.2)
+		position: relative
+		font-weight: 700
+		text-indent: 0px
+		+r(720)
+			padding: 0 75px
+		+r(480)
+			padding: 30px 20px
+		&:before
+			content: ',,'
+			position: absolute
+			left: 15px
+			top: -15px
+			transform: rotate(180deg)
+			letter-spacing: -4px
+			color: white
+			font-size: 120px
+			font-weight: 700
+			font-family: 'Times New Roman'
+			+r(480)
+				font-size: 81px
+		&:after
+			content: ',,'
+			position: absolute
+			right: 15px
+			bottom: -15px
+			letter-spacing: -4px
+			color: white
+			font-size: 120px
+			font-weight: 700
+			font-family: 'Times New Roman'
+			+r(480)
+				font-size: 81px
+	&__quote-text
+		font-size: 20px
+		font-weight: 700
+		line-height: 40px
+		+r(480)
+			padding: 45px 0 !important
+	&__stage-container
+		display: flex
+		justify-content: space-between
+		+r(720)
+			flex-wrap: wrap
+	&__stage
+		width: 48%
+		background-color: rgba(146, 29, 46, 0.2)
+		padding: 20px 30px 40px 30px
+		+r(720)
+			width: 100%
+			margin-bottom: 20px
+		ul
+			padding-left: 0
+		li
+			list-style-type: disc
+			list-style-position: inside
+			padding-left: 0
+	&__stage-title
+		list-style: none !important
+		font-weight: 700
+		font-weight: bold
+		margin-left: 0
+		margin-bottom: 30px
+		text-indent: 0px !important
+		text-align: center
+	&__conclusion
+		background-color: rgba(146, 29, 46, 0.2)
+		padding: 20px
+		margin-bottom: 20px
+	&__footer
+		background-image: url(../images/ty-page/footer-image.jpg), linear-gradient(180deg, #933f52 0%, #a86470 100%) !important
+		background-repeat: no-repeat
+		background-position: bottom right
+		background-size: contain
+		width: 100%
+		text-align: center
+		padding: 45px 60px
+		display: block
+		+r(480)
+			padding: 10px !important
+	&__footer-button
+		background-color: $main-accent
+		border: none
+		border-radius: 3px
+		padding: 4px 20px
+		margin: auto
+		font-size: 18px
+		text-decoration: none
+		max-width: 250px
+		width: 100%
+		color: #FFF
+	&__footer-text
+		color: #fff
+		font-size: 18px
+		font-weight: 700
+		line-height: 30px
+		text-align: center
+		margin-bottom: 60px
+		+r(480)
+			font-size: 16px
+			line-height: 26px
+			text-align: center !important
+	.href_action_blog
+		background-image: url(../images/ty-page/footer-image.jpg), linear-gradient(180deg, #933f52 0%, #a86470 100%) !important
+
+
+// src
+// ="http://placehold.it/780x322"
+
+
+//transfer pricing
+
+.italic_p
+	font-family: "MyriadProSemiBoldItalic"
+
+.cool_block
+	border: 1px solid $main
+	padding: 20px
+	position: relative
+	font-family: "MyriadProSemiBoldItalic"
+	.lef_span
+		position: absolute
+		top: 0
+		left: 0
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			width: 2px
+			height: 30px
+			left: 0
+			top: 0
+			background: $main
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			width: 30px
+			height: 2px
+			left: 0
+			top: 0
+			background: $main
+	.rig_span
+		position: absolute
+		bottom: 0
+		right: 0
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			width: 2px
+			height: 30px
+			bottom: 0
+			right: 0
+			background: $main
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			width: 30px
+			right: 0
+			bottom: 0
+			height: 2px
+			background: $main
+
+
+.col_tcu_container
+	margin-bottom: 15px
+	display: flex
+	div
+		width: 50%
+
+.col_tcu_left
+	border-right: 1px solid $main
+	padding-right: 20px
+
+.col_tcu_right
+	padding-left: 20px
+
+.count_tcu
+	display: inline-block
+	background: $main
+	padding: 6px
+	text-align: center
+	color: #fff
+	width: 30px
+	height: 30px
+	border-radius: 50%
+	margin-right: 10px
+
+
+.blog_text_inside
+	// max-width: 1080px
+	max-width: 100%
+	margin: auto
+	img
+		object-fit: cover
+		// margin: 5px
+		// &[float="left"]
+		// 	margin: 10px 25px 10px 0
+		// &[float="right"]
+		// 	margin: 10px 0 10px 25px
+		max-width: 100%
+		height: auto
+	iframe
+		display: block
+	h2
+		color: #333
+		font-size: 30px
+		margin-top: 20px
+		margin-bottom: 30px
+		font-family: "MyriadProBold"
+		+r(480)
+			font-size: 22px
+	a:not(.auto-link)
+		white-space: nowrap
+		color: $main
+		&:hover
+			color: $maind
+	p
+		text-align: justify
+		font-size: 16px
+	ul ol
+		list-style: inherit
+		padding-left: 40px
+		font-size: 16px
+
+
+
+.list_news_wrapper
+	display: flex
+	justify-content: space-around
+	flex-wrap: wrap
+	padding-bottom: 120px
+	+r(1000)
+		flex-wrap: wrap
+
+.post_container_slider_inside
+	position: relative
+	padding: 5% 6%
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	align-items: center
+	min-height: 300px
+	background-color: $maina
+
+.post_slider_img
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	min-height: 200px
+	width: 100%
+	z-index: -1
+	+coverdiv
+
+.news_item, .shortcode_news
+	padding: 0 15px
+	display: flex
+	flex-direction: column
+	width: 100%
+
+
+.news_view
+	.filter_container
+		padding: 90px 20px
+		max-width: 1200px
+		margin: 0 auto
+		display: flex
+		+r(480)
+			flex-wrap: wrap
+			align-items: center
+
+		.filter_inside
+			min-width: 200px
+			padding-left: 30px
+			position: relative
+			display: flex
+			align-items: center
+			a
+				display: block
+				color: $main-accent
+				text-align: left
+				padding: 3px 5px
+				&:hover, &:focus
+					text-decoration: none
+				+h
+					&:after
+						background-color: $main
+
+				&:after
+					content: ""
+					position: absolute
+					height: 15px
+					width: 15px
+					border-radius: 100%
+					border: 1px solid $main
+					left: 0
+					top: 0
+					bottom: 0
+					margin: auto 0
+			&.current_filter
+				a
+					color: $main
+					&:after
+						content: ""
+						position: absolute
+						height: 15px
+						width: 15px
+						border-radius: 100%
+						border: 1px solid $main
+						background-color: $main
+						left: 0
+						top: 0
+						bottom: 0
+						margin: auto 0
+
+.post_slider_title
+	color: #fff
+	font-family: $rob
+	font-size: 24px
+	text-align: center
+	height: 68px
+	overflow: hidden
+
+.post
+	position: relative
+	width: 50%
+	padding: 0 20px
+	+r(1000)
+		width: 90%
+		margin-bottom: 30px
+		&:last-child
+			margin-bottom: 0
+	+r(768)
+		width: 100%
+		padding: 0
+
+.posts_container
+	max-width: 1200px
+	margin: 0 auto
+
+.blog-background
+	position: relative
+	color: #FFF
+	padding: 50px 20px
+	margin: 40px 0
+	img
+		+coverdiv
+		z-index: -1
+	p
+		color: #FFF
+
+.blog-cta
+	position: relative
+	min-height: 280px
+	display: flex
+	justify-content: space-around
+	align-items: center
+	width: 100%
+	margin-top: 60px
+	margin-bottom: 30px
+	padding: 20px
+	+r(768)
+		flex-direction: column
+		min-height: 200px
+	&__image
+		z-index: -1
+		width: 100%
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		height: 100% !important
+		object-fit: contain
+		display: flex
+		flex-grow: 1
+
+	&__text
+		font-family: $rob
+		font-size: 32px
+		color: #FFF
+		+r(768)
+			text-align: center
+	&__link
+		font-family: $rob
+		color: #000 !important
+		padding: 15px 40px
+		background-color: #FFF
+		+tr
+		+h
+			cursor: pointer
+			background-color: $main
+			color: #FFF !important
+			text-decoration: none
+		+r(768)
+			margin-top: 40px
+
+//there is some progress bar that show when scroll blog post BEGIN
+.blog_menu_widget
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.2)
+  z-index: 100
+  padding: 6px 0
+  background: #fff
+  transform: translateY(-50px)
+  transition: all .2s ease
+
+.blog_menu_widget_container
+  display: flex
+  justify-content: space-between
+  max-width: 1200px
+  margin: 0 auto
+  padding: 0 10px
+  align-items: center
+
+.link_blog_container
+  .link_blog
+    display: inline-block
+    vertical-align: middle
+    margin-right: 15px
+    font-size: 18px
+    &:last-child
+      margin-right: 0
+  .active
+    font-weight: bold
+
+.widget_menu
+  border: none
+  outline: none !important
+  height: 30px
+  line-height: 30px
+  font-size: 14px
+  padding: 0 20px
+  border-radius: 0
+  box-shadow: none
+  color: #fff
+  transition: background-color .3s ease
+  background-color: $main
+  margin-right: 10px
+  &:last-child
+    margin-right: 0px
+  &:hover
+    background-color: $maind
+
+.blog_menu_widget_open
+  transform: translateY(0px)
+
+.progress_bar
+  width: 0%
+  float: left
+  height: 100%
+  z-index: 99
+  max-width: 100%
+  background-color: $main
+
+.progress_bar_container
+  position: absolute
+  bottom: -4px
+  width: 100%
+  height: 4px
+//there is some progress bar that show when scroll blog post BEGIN

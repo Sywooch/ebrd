@@ -1,0 +1,66 @@
+.main_page_blog_slider_container, .partners
+	.slick-dots
+		display: flex
+		justify-content: center
+		margin: 20px auto
+		li
+			background-color: transparent
+			width: 12px
+			height: 12px
+			background-color: $maina
+			margin: 0 4px
+			border-radius: 100%
+			+tr
+			+h
+				background-color: $main
+				cursor: pointer
+			button
+				font-size: 0
+		.slick-active
+			background-color: $main
+			width: 12px
+			height: 12px
+			+tr
+			+h
+				background-color: $maind
+
+.slider_controls_widget, .partners
+	display: flex
+	align-items: center
+	justify-content: flex-end
+	padding-right: 10px
+	.prew_arrow
+		border: 1px solid $main
+		padding: 10px
+		width: 45px
+		cursor: pointer
+		transition: all .3s ease
+		height: 50px
+		margin-right: 10px
+		svg
+			width: 100%
+			height: 100%
+			transition: all .3s ease
+			fill: $main
+			display: block
+		&:hover
+			background: $main
+			svg
+				fill: #fff
+	.next_arrow
+		border: 1px solid $main
+		padding: 10px
+		width: 45px
+		transition: all .3s ease
+		cursor: pointer
+		height: 50px
+		svg
+			width: 100%
+			height: 100%
+			transition: all .3s ease
+			display: block
+			fill: $main
+		&:hover
+			background: $main
+			svg
+				fill: #fff

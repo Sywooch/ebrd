@@ -1,0 +1,283 @@
+.stakeholders
+	max-width: 1240px
+	padding: 0 20px
+	margin: 0 auto
+	&__container
+		display: flex
+		flex-wrap: wrap
+		margin-bottom: 140px
+		+r(768)
+			align-items: center
+			justify-content: space-around
+	.pagination
+		width: 100%
+
+
+
+.stakeholders-search
+	margin: 70px 0
+	&__container
+		display: flex
+		align-items: center
+		justify-content: space-between
+		+r(768)
+			flex-direction: column
+			align-items: center
+	&__box
+		display: flex
+		+r(768)
+			flex-direction: column
+		.form-group
+			margin-right: 30px
+			+r(768)
+				margin-right: 0
+	.form-group
+		margin-bottom: 0
+		position: relative
+		height: 50px
+		+r(768)
+			margin-bottom: 30px
+		.form-control
+			height: auto
+		.help-block
+			position: absolute
+			right: 0
+			top: 0
+	.field-locationselect
+		height: 50px
+		.select2-container--krajee .select2-selection--single
+			border: 1px solid $gray
+			border-radius: 0
+			padding: 14px 30px
+			height: 100%
+		.select2-selection__arrow
+			height: 52px
+			border: 0
+	select, input
+		border: 1px solid $gray
+		border-radius: 0
+		padding: 15px 30px
+	.field-searchblogstakeholder-name
+		position: relative
+		width: 200px
+		height: 50px
+		input
+			padding: 14px 30px
+		label
+			position: absolute
+			right: 20px
+			top: 0
+			bottom: 0
+			margin: auto 0
+		svg
+			width: 16px
+			height: 16px
+		form
+			width: 200px
+
+
+
+.stakeholder
+	border: 1px solid #959595
+	max-width: 360px
+	min-width: 360px
+	width: 33%
+	padding: 30px
+	margin: 0 10px
+	&__container
+		display: flex
+		flex-direction: column
+		align-items: center
+	&__image-container
+		height: 100px
+		width: 100%
+		overflow: hidden
+		margin-bottom: 34px
+	&__image
+		object-fit: cover
+		width: 100%
+		height: auto
+	&__title
+		color: $main
+		font-family: $rub
+		text-align: center
+		font-size: 22px
+		font-weight: 700
+		line-height: 25px
+		margin-bottom: 25px
+		min-height: 50px
+		flex-grow: 1
+		display: flex
+		justify-content: center
+		align-items: center
+	&__whois
+		font-family: $ror
+		font-size: 16px
+		font-weight: 400
+		line-height: 20px
+		color: $gray
+		margin-bottom: 50px
+	&__whois-box
+		width: 100%
+		display: flex
+		justify-content: space-between
+	&__box
+		width: 100%
+	&__bold
+		font-family: $rom
+		font-size: 16px
+		line-height: 20px
+		color: $main
+		min-width: 50px
+	&__thin
+		font-family: $ror
+		font-size: 16px
+		line-height: 20px
+		color: $main
+	&__buttons
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin-top: 35px
+		width: 100%
+		.button
+			margin-right: 20px
+	&__link
+		font-family: $rom
+		font-size: 16px
+		font-weight: 700
+		line-height: 36px
+		color: $main
+		+h
+			color: $maind
+	svg
+		fill: $main
+		width: 16px
+		height: 12px
+		margin-right: 10px
+
+.stakeholder-view
+	&__hero
+		min-height: 280px
+		background-color: rgba(28, 49, 70, 0.95)
+		display: flex
+		flex-direction: column
+		justify-content: center
+
+	&__container
+		max-width: 1240px
+		padding: 0 20px
+		margin: 0 auto
+		display: flex
+		justify-content: space-between
+		align-items: center
+		width: 100%
+		+r(768)
+			padding: 20px
+			-webkit-flex-direction: column-reverse
+			-ms-flex-direction: column-reverse
+			flex-direction: column-reverse
+	&__box
+		display: flex
+		flex-direction: column
+		justify-content: center
+		width: 100%
+		max-width: 70%
+		+r(768)
+			max-width: 100%
+	&__flex
+		display: flex
+		justify-content: space-between
+		width: 100%
+		.flex__fdc
+			margin-right: 30px
+		+r(768)
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			.flex__fdc
+				margin-right: 0px
+				.flex
+					justify-content: space-between
+	&__image-container
+		width: 150px
+		height: 150px
+		min-width: 150px
+		min-height: 150px
+	&__image
+		object-fit: cover
+		width: 100%
+	&__title
+		color: #fff
+		font-family: $rub
+		font-size: 28px
+		font-weight: 700
+		line-height: 25px
+		width: 100%
+		margin-bottom: 30px
+		+r(768)
+			margin-top: 30px
+			text-align: center
+			font-size: 24px
+			font-weight: 400
+		+r(480)
+			font-size: 20px
+	&__bold
+		color: #c5d4e1
+		font-family: $rum
+		font-size: 18px
+		font-weight: 700
+		line-height: 40px
+		+r(768)
+			text-align: center
+			font-size: 16px
+			font-weight: 400
+		+r(480)
+			font-size: 14px
+	&__thin
+		color: #c5d4e1
+		font-family: $rom
+		font-size: 18px
+		font-weight: 400
+		line-height: 40px
+		+r(768)
+			text-align: center
+			font-size: 16px
+		+r(480)
+			font-size: 14px
+	&__content
+		max-width: 1240px
+		padding: 0 20px
+		margin-bottom: 100px
+	&__content-title
+		color: #234466
+		font-family: $rob
+		font-size: 24px
+		font-weight: 700
+		line-height: 25px
+		padding: 50px 0
+		+r(768)
+			text-align: center
+			font-size: 18px
+		+r(480)
+			font-size: 16px
+	&__text
+		color: #000
+		font-family: $ror
+		font-size: 17px
+		line-height: 25px
+	.breadcrumbs
+		width: 100%
+		max-width: 1200px
+		margin: 0 auto
+		margin-top: 30px
+		color: #FFF
+		+r(768)
+			margin-top: 0
+		a, span
+			font-family: $rom
+			color: #fff
+			font-size: 12px
+			line-height: 18px
+			+r(768)
+				color: #FFF

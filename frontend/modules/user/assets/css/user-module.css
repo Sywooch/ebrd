@@ -1,0 +1,66 @@
+/*.prev_itm {
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid grey;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  color: grey;
+}
+
+span.us_group {
+  margin: 5px;
+}
+
+.active_role_wrap, .inactive_role_wrap {
+  margin: 20px 10px 10px 10px;
+}
+
+.edit_roles_wrap a.btn {
+  width: 240px;
+}
+
+.profile_input {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.profile_pencil, .profile_save {
+  padding-left: 10px;
+  display: inline-block;
+  color: #337ab7;
+}
+
+.profile_container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: top;
+  -webkit-align-items: top;
+      -ms-flex-align: top;
+          align-items: top;
+}
+
+.profile_sidebar {
+  width: 20%;
+}
+
+.profile_main_container {
+  width: 80%;
+}
+
+.profile_main_container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: top;
+  -webkit-align-items: top;
+      -ms-flex-align: top;
+          align-items: top;
+}
+#profile-avatar-img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}*/

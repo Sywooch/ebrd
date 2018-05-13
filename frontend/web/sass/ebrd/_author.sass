@@ -1,0 +1,56 @@
+$author-font-size: 16px
+
+
+.author
+	display: flex
+	+r(480)
+		width: 100%
+		justify-content: space-around 
+		text-align: center
+	&__avatar
+		background-size: cover
+		background-repeat: no-repeat	
+		background-position: center center
+		width: 110px
+		height: 110px
+		border-radius: 50%
+		border: 3px solid #fff
+	.category_type_container
+		font-size: $author-font-size
+
+.author_main_blog
+	display: flex
+	justify-content: center
+	align-items: center
+
+.author_info_main
+	margin-left: 20px
+	font-size: 18px
+	color: #fff
+	div 
+		margin-bottom: 5px
+		&:last-child
+			margin-bottom: 0
+
+.info_class
+	font-family: "MyriadProBold"
+	margin-right: 5px
+	font-size: 16px
+	svg
+		width: 16px
+		height: 16px
+		fill:  #fff
+		vertical-align: middle
+		position: relative
+		bottom: 2px
+		margin-right: 12px
+
+.publish_date_main
+	a
+		text-decoration: underline
+		color: #fff !important
+
+.breadcrumbs_blog
+	font-size: 13px
+	a
+		color: #fff !important

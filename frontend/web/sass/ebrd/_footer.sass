@@ -1,0 +1,190 @@
+
+.footer_ins
+	display: -ms-flexbox
+	display: flex
+	align-items: center
+	-ms-flex-pack: justify
+	justify-content: space-between
+
+.sitemap_class
+	margin-bottom: 14px
+
+.copyright
+	display: flex
+	justify-content: space-between
+	margin-top: 50px
+	font-family: $ror
+	font-size: 12px
+	color: rgba(255,255,255,0.5)
+	+r(1000)
+		margin-top: 20px
+	&__logo
+		width: 180px
+		padding-right: 30px
+		+r(768)
+			padding-right: 0
+	img
+		width: 100%
+		height: auto
+	a
+		color: rgba(255,255,255,0.5)
+		text-decoration: underline
+		&:hover
+			color: #fff
+	+r(768)
+		display: block
+		text-align: center
+	&__container
+		display: flex
+		align-items: flex-end
+		+r(768)
+			flex-direction: column
+			align-items: center
+			padding: 10px 0
+	.copyright_col
+		margin-right: 30px
+		+r(768)
+			margin-right: 0
+			padding: 10px 0
+
+
+.footer_ins_col
+	.sitemap_class a
+		padding: 5px 0
+		font-size: 15px
+		font-family: "MyriadProBold"
+		text-transform: uppercase
+		color: rgba(255,255,255,0.5)
+		text-decoration: none
+		transition: color .3s ease-out
+		&:hover
+			color: #fff
+			&:active
+				&:hover, &:focus
+					background: transparent
+	.nav a
+		color: rgba(255,255,255,0.5)
+		display: block
+		padding: 5px 0
+		text-decoration: none
+		outline: none
+		font-size: 16px
+		line-height: 16px
+		transition: color .3s ease-out
+		&:hover, &:focus
+			background: transparent
+		&:hover
+			color: #fff
+		&:active
+			&:hover, &:focus
+				background: transparent
+				color: #fff
+	.footer_sub
+		color: #fff
+		width: 300px
+		h2
+			display: none
+		.dynSub
+			display: -ms-flexbox
+			display: flex
+			-ms-flex-align: end
+			align-items: flex-end
+			padding-bottom: 20px
+			> div
+				margin: 0
+			.field-dynamicmodel-email
+				+ div
+					width: 35%
+				position: relative
+				width: 65%
+				.help-block
+					margin: 0
+					position: absolute
+					top: 0
+		input, .subscrBtn
+			border: none
+			outline: none
+			color: #545454
+			height: 36px
+			font-size: 14px
+			font-family: "MyriadProSemiBold"
+			background-color: #e6e6e6
+			padding: 5px 13px
+			border-radius: 0
+			box-shadow: none
+		input
+			font-size: 14px
+		.subscrBtn
+			width: 100%
+			background-color: $main-accent
+			color: #fff
+			padding: 5px 0
+			transition: background-color .3s ease
+			&:hover
+				background-color: $main-accent-bright
+		a
+			color: #fff
+			font-size: 13px
+			&:hover
+				color: #fff
+
+.images_footer_col_line
+	cursor: default
+	border-bottom: 1px solid rgba(255,255,255,0.5)
+	display: flex
+	padding-bottom: 30px
+	margin-bottom: 30px
+	align-items: center
+	justify-content: space-around
+	+r(768)
+		flex-direction: column
+		align-items: center
+		margin-bottom: 0
+	img
+		max-width: 100%
+		height: auto
+
+.my_crutch
+	display: flex
+	width: 100%
+	justify-content: space-between
+	+r(1000)
+		-webkit-flex-wrap: wrap
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		justify-content: flex-start
+		// flex-direction: column
+		// align-items: center
+	li
+		display: flex
+		+r(1100)
+			padding: 0 10px
+		a
+			color: #fff
+			font-family: $ror
+			font-size: 14px
+			font-weight: 400
+			line-height: 20px
+			+r(1100)
+				padding: 0 10px
+
+.my_crutch.nav
+	&:before, &:after
+		content: none
+
+
+.footer_ins
+	.footer_ins_col
+		width: 100%
+
+.footer_custom
+	background: $main
+
+.footer_custom_container
+	max-width: 1180px
+	margin: 0 auto
+	padding: 30px 20px
+
+.developers
+	&__link
+		font-size: 16px

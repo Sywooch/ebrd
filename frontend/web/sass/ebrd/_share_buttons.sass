@@ -1,0 +1,116 @@
+// Share buttons (on left side?)
+
+.share_buttons_container
+	display: -ms-flexbox
+	display: flex
+	-ms-flex-direction: column
+	flex-direction: column
+	.share_button
+		cursor: pointer
+		display: inline-block
+		height: 40px
+		width: 55px
+		margin-bottom: 0
+		opacity: 1
+		box-sizing: content-box
+		overflow: hidden
+		position: relative
+		background: #ac162c
+		text-align: left
+		top: 0
+		transform: translateX(-15px)
+		white-space: nowrap
+		transition: all 0.2s ease
+		margin-bottom: 1px
+		&:hover
+			transform: translateX(0px)
+			background: $maind
+		&:last-child
+			margin-bottom: 0
+		.social_tab
+			position: absolute
+			text-decoration: none
+			color: #fff
+			font-size: 17px
+			padding: 9px 9px 9px 24px
+			font-family: "MyriadProSemiBold"
+			letter-spacing: 0.5px
+			transition: all 0.2s ease
+			z-index: 9
+			text-align: center
+			display: -ms-flexbox
+			display: flex
+			-ms-flex-align: center
+			align-items: center
+			overflow: hidden
+			svg
+				width: 22px
+				height: 22px
+				fill: #fff
+				transition: all .3s ease
+
+.share_buttons_fixed_container
+	position: fixed
+	left: 0
+	bottom: inherit !important
+	top: 50% !important
+	display: -ms-flexbox
+	display: flex
+	-ms-flex-align: center
+	align-items: center
+	z-index: 1000
+	margin-top: -82px
+	+r(1280)
+		display: none
+
+.related_news_container_new
+	width: 1200px
+	margin: 0 auto
+
+.social_blog_container
+	display: flex
+	flex-direction: column
+	max-width: 1200px
+	padding: 0 20px
+	margin: 30px auto
+	.blog_share_title
+		color: #7c7c7c
+		font-family: $rob
+		font-size: 16px
+		font-weight: 700
+		line-height: 48px
+
+//blog/landing social buttons
+.share_buttons_blog_container
+	display: flex
+	.share_button_blog
+		margin-right: 5px
+		width: 42px
+		height: 42px
+		background-color: $main-accent
+		overflow: hidden
+		transition: all .3s ease
+		&:hover
+			background: $maind
+		&:last-child
+			margin-right: 0
+	.social_tab
+		margin: auto
+		transition: all .3s ease
+		border-radius: 4px
+		svg
+			width: 42px
+			height: 42px
+			padding: 9px
+			fill: #fff
+			transition: all .3s ease
+	.facebook
+		background: #3B5998
+	.gplus
+		background: #d34836
+	.linkedin
+		background: #0077b5
+	.twitter
+		background: #55acee
+
+

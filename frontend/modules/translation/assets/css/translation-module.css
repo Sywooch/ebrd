@@ -1,0 +1,146 @@
+/*petrovich magic*/
+.trans_block,
+.translations_head {
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+
+.trans_numb,
+.trh_numb {
+    width: 50px;
+}
+
+.trans_cat,
+.trh_cat{
+    width: 100px;
+}
+
+.trans_message,
+.trh_const{
+    width: 290px;
+}
+
+.trans_translations,
+.trh_trans {
+    width: 700px;
+}
+.trans_line {
+    display: flex;
+    border: 1px solid transparent;
+    padding: 3px;
+}
+
+.trans_line:hover {
+    border: 1px solid green;
+    border-radius: 5px;
+}
+
+.trans_lang {
+    width: 50px;
+}
+
+.trans_item {
+    width: 600px;
+}
+
+.edit_translation .save_ico {
+    display: none;
+}
+
+.save_translation .edit_ico {
+    display: none;
+}
+
+.trans_item textarea {
+    width: 580px;
+}
+
+.edit_translation,
+.save_translation {
+    padding-left: 10px;
+}
+
+.header {
+    font-size: 32px;
+    margin: 30px;
+}
+
+.translations_search {
+    padding: 20px 0;
+}
+
+.translations_head {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.edit_ico,
+.globe_ico {
+    opacity: 0.1;
+}
+
+.act_ico {
+    margin-left: 10px;
+}
+
+.trans_line:hover .edit_ico,
+.trans_line:hover .globe_ico {
+    opacity: unset;
+}
+
+.translations_add {
+    text-align: right;
+}
+
+.add_trans textarea {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.trans_save {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.add_trans {
+    padding-top: 10px;
+}
+
+.add_trans_wrap {width: 600px;margin: auto;}
+
+.mess_trans_wrap .item {
+    margin: 10px;
+}
+
+.mess_trans_wrap .val {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+button.btn.btn-default.close_pet_pop {
+    position: absolute;
+    width: 100px;
+    left: 50%;
+    margin-left: -50px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.mess_trans_wrap {
+    position: relative;
+}
+
+.trans {
+    margin: 20px;
+}
+
+.trans .trans_line {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,5141 @@
+// Variables
+
+\::-moz-selection, ::selection
+	background-color: #000
+	color: #fff
+
+ul
+	list-style: none
+	margin: 0
+
+body
+	// font-family: "MyriadProRegular"
+
+input::-webkit-input-placeholder
+	color: #808080 !important
+	opacity: 1 !important
+
+input::-moz-placeholder
+	color: #808080 !important
+	opacity: 1 !important
+
+input:-ms-input-placeholder
+	color: #808080 !important
+	opacity: 1 !important
+
+input:-moz-placeholder
+	color: #808080 !important
+	opacity: 1 !important
+
+.aim_express_wrap
+	max-width: 1200px
+	margin: 0 auto
+
+.admin_menu_fix
+	display: flex
+	padding: 0 20px
+	background: #404040
+	justify-content: space-between
+	align-items: center
+
+.site_name_admin, .admin_menu_logout button
+	color: #fff
+
+.site_name_admin
+	margin-right: 20px
+	a
+		color: #fff
+
+.partnerProgram
+	background: $main
+	padding: 10px 20px
+	color: #fff
+	border-radius: 5px
+	transition: all .3s ease
+	border: 1px solid #fff
+	&:hover
+		background: #fff
+		color: $main
+		border: 1px solid $main
+
+.my_grubber
+	margin-bottom: 20px
+
+.partner_program_controls
+	margin-bottom: 20px
+
+.grid-view
+	border-top: none !important
+	box-shadow: none !important
+	padding: 0 !important
+	th
+		color: $main
+		a
+			color: $main
+
+.admin_menu_controls
+	display: flex
+	align-items: center
+
+.myModalContainer
+	display: flex
+	justify-content: center
+	opacity: 0
+	visibility: hidden
+	transition: all .3s ease
+	position: fixed
+	background: rgba(0, 0, 0, 0.8)
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	z-index: 10000
+
+.cancel_container
+	position: relative
+	margin-top: 75px
+	overflow-y: auto
+
+.close_magick_cantainer
+	position: absolute
+	top: 15px
+	right: 15px
+	cursor: pointer
+	svg
+		fill: #333
+		width: 12px
+		height: 12px
+
+.myModal
+	z-index: 12000
+	background: #fff
+	width: 400px
+	padding: 0 20px
+	&.openConjoint
+		width: 650px
+		h2
+			text-align: center
+		form
+			display: flex
+			flex-wrap: wrap
+			> div
+				width: 100%
+				display: flex
+				justify-content: space-between
+				font-size: 15px
+				&.required
+					margin-bottom: 30px
+				&:last-child
+					justify-content: center
+					margin-bottom: 0
+					margin-top: 10px
+				label
+					width: 44%
+					color: #333
+					word-wrap: break-word
+					word-break: break-word
+				textarea
+					width: 54%
+					color: #333
+				.help-block
+					bottom: -25px
+					top: inherit
+	&.openBrief
+		width: 650px
+		h2
+			text-align: center
+		form
+			display: flex
+			flex-wrap: wrap
+			> div
+				width: 100%
+				display: flex
+				justify-content: space-between
+				font-size: 15px
+				&.required
+					margin-bottom: 30px
+				&:last-child
+					justify-content: center
+					margin-bottom: 0
+					margin-top: 10px
+				label
+					width: 44%
+					color: #333
+					word-wrap: break-word
+					word-break: break-word
+				textarea
+					width: 54%
+					color: #333
+				.help-block
+					bottom: -25px
+					top: inherit
+
+.opened_magick
+	visibility: visible
+	opacity: 1
+
+
+
+.news_view_container
+	display: flex
+
+.list-view:after
+	display: table
+	content: ''
+	clear: both
+
+
+
+.news_item_container
+	width: 25%
+	min-height: 350px
+	padding-left: 30px
+
+
+
+.post_thumbnail
+	width: 100%
+	height: 200px
+	a
+		width: 100%
+		display: inline-block
+		height: 100%
+
+.about_header
+	background: url(/images/about.jpg) no-repeat center center
+	background-size: cover
+
+//head title
+
+.logo_container
+	width: 185px
+	padding-top: 5px
+	img
+		width: 100%
+
+
+
+.custom_links
+	margin-left: 20px
+	li
+		display: inline-block
+		vertical-align: middle
+		a
+			padding: 4px 8px
+			color: #969696
+			font-size: 14px
+			transition: all .3s ease
+			position: relative
+	.order_layout
+		color: $main
+		font-size: 15px
+		background: none
+		transition: all .3s ease
+		position: relative
+		text-decoration: underline
+
+
+
+.toggle_glass_container
+	position: relative
+
+.main_page_services
+	max-width: 1200px
+	margin: 0 auto
+	padding: 20px 0
+
+.main_page_services_container_blocks
+	display: flex
+	flex-wrap: wrap
+
+.serv_1
+	background-image: url('/images/serv_1.jpg')
+
+.serv_2
+	background-image: url('/images/serv_2.jpg')
+
+.serv_3
+	background-image: url('/images/serv_3.jpg')
+
+.serv_4
+	background-image: url('/images/serv_4.jpg')
+
+.serv_5
+	background-image: url('/images/serv_5.jpg')
+
+.serv_6
+	background-image: url('/images/serv_6.jpg')
+
+.serv_7
+	background-image: url('/images/serv_7.jpg')
+
+.serv_8
+	background-image: url('/images/serv_8.jpg')
+
+.serv_btn
+	opacity: 0
+	transition: all .3s ease
+	visibility: hidden
+	a
+		border: 1px solid #fff
+		display: inline-block
+		padding: 10px 20px
+		color: #fff
+		font-family: "MyriadProSemiBold"
+		text-decoration: none
+		transition: all .3s ease
+		&:hover
+			background: #fff
+			color: #404040
+
+.serv_hr
+	max-width: 40px
+	margin: 0 auto
+
+.serv_text
+	font-family: "MyriadProBold"
+	font-size: 26px
+	cursor: default
+
+.cool_overlay_serv
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	z-index: 4
+	bottom: 0
+	background: $main
+	opacity: 0
+	visibility: hidden
+	transition: all .3s ease
+
+.services_block
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+	width: 100%
+	height: 100%
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	color: #fff
+	&:hover
+		.serv_btn,.cool_overlay_serv
+			opacity: 1
+			visibility: visible
+
+.industries_content_container
+	padding: 10px
+	text-align: center
+	display: block
+	&:hover
+		a
+			color: $main
+		.image_indu
+			background: $maind
+	a
+		text-decoration: none
+		color: #4D4D4D
+		font-family: "MyriadProBold"
+		font-size: 16px
+		transition: all .3s ease
+
+.vidguk_container_wrap
+	background: #f3f3f2
+	padding: 40px 0
+
+.vidguk_container
+	max-width: 1200px
+	margin: 0 auto
+
+.text_indu
+	max-width: 156px
+	margin: 0 auto
+	margin-top: 15px
+	display: block
+
+.slider_vidguk_widget_controls
+	display: flex
+	align-items: center
+	padding-right: 15px
+	justify-content: flex-end
+	.prew_arrow
+		border: 1px solid $main
+		padding: 10px
+		width: 45px
+		cursor: pointer
+		transition: all .3s ease
+		height: 50px
+		svg
+			width: 100%
+			height: 100%
+			transition: all .3s ease
+			fill: $main
+			display: block
+		&:hover
+			background: $main
+			svg
+				fill: #fff
+
+	.next_arrow
+		border: 1px solid $main
+		padding: 10px
+		width: 45px
+		transition: all .3s ease
+		cursor: pointer
+		height: 50px
+		svg
+			width: 100%
+			height: 100%
+			transition: all .3s ease
+			display: block
+			fill: $main
+		&:hover
+			background: $main
+			svg
+				fill: #fff
+
+.competence_container_slider_controls
+	display: flex
+	position: absolute
+	z-index: 5
+	right: 10px
+	top: 10px
+	.prew_arrow
+		border: 1px solid $main
+		padding: 10px
+		width: 45px
+		cursor: pointer
+		transition: all .3s ease
+		height: 50px
+		margin-right: 10px
+		svg
+			width: 100%
+			height: 100%
+			transition: all .3s ease
+			fill: $main
+			display: block
+		&:hover
+			background: $main
+			svg
+				fill: #fff
+
+	.next_arrow
+		border: 1px solid $main
+		padding: 10px
+		width: 45px
+		transition: all .3s ease
+		cursor: pointer
+		height: 50px
+		svg
+			width: 100%
+			height: 100%
+			transition: all .3s ease
+			display: block
+			fill: $main
+		&:hover
+			background: $main
+			svg
+				fill: #fff
+
+
+
+
+.serv_content
+	text-align: center
+	position: relative
+	z-index: 5
+	padding: 0 30px
+
+.industries_block_container
+	width: 16.666666666%
+
+.vidguk_item
+	padding: 15px
+
+.vidguk_item_text
+	font-size: 16px
+	min-height: 220px
+
+.vidguk_item_hr
+	border-color: $main
+	max-width: 130px
+	margin: 0px auto
+	margin-top: 20px
+	margin-bottom: 40px
+
+.vidguk_item_image
+	font-size: 30px
+	text-align: center
+	font-family: "MyriadProBold"
+
+.vidguk_item_container
+	padding: 25px
+	background: #fff
+	box-shadow: 0px 0px 13px 0px #b5b3b3
+
+.slider_compenents_dots
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-top: 30px
+	.slick-dots
+		display: flex
+		justify-content: center
+		align-items: center
+		li
+			margin-right: 15px
+			&:last-child
+				margin-right: 0
+		button
+			color: transparent
+			background-color: #fff
+			width: 8px
+			height: 8px
+			transition: all .3s ease
+			border-radius: 50%
+			border: 1px solid $main
+		.slick-active
+			button
+				background: $main
+
+
+
+.competence_slide
+	min-height: 321px !important
+	display: flex !important
+	justify-content: center
+	align-items: center
+	img
+		display: block
+		width: 100% !important
+
+.competence_slide_nav_title
+	font-family: "MyriadProBold"
+	font-size: 28px
+
+.competence_slide_nav_text
+	font-size: 16px
+
+.competence_slide_nav_hr
+	border-color: $main
+	max-width: 40px
+	margin-top: 20px
+	margin-bottom: 34px
+
+.competence_container_title
+	font-size: 46px
+	text-align: center
+	color: #4D4D4D
+	margin-bottom: 30px
+	font-family: "MyriadProBold"
+
+.post-title_slider
+	font-size: 46px
+	text-align: center
+	color: #4D4D4D
+	display: flex
+	justify-content: space-between
+	margin-bottom: 10px
+	font-family: "MyriadProBold"
+	margin-top: 80px
+	&>div
+		&:first-child
+			width: 20%
+		&:last-child
+			width: 20%
+
+.post_slider_info
+	width: 100%
+
+
+
+.main_page_blog_slider_container
+	padding: 40px 0
+
+.btn_view_slider_container
+	text-align: center
+	margin-top: 40px
+	margin-bottom: 45px
+
+.btn_view_slider
+	display: inline-block
+	padding: 10px 20px
+	border: 1px solid $main
+	color: $main
+	text-decoration: none
+	transition: all .3s ease
+	&:hover
+		color: #fff
+		background: $main
+		text-decoration: none
+
+.post_slider_text
+	font-family: $ror
+	font-size: 14px
+	color: #FFF
+	padding: 4px 2px
+
+.post_slider_link
+	font-family: $ror
+	font-size: 14px
+	color: #FFF
+	padding: 4px 2px
+	+tr
+	+h
+		text-decoration: none
+		color: $grayi
+
+.slider_blog_button
+	+h
+		cursor: pointer
+
+.slider_blog_overlay
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	background: rgba(0,0,0,0.6)
+	z-index: 5
+
+.slider_cat_word
+	font-family: "MyriadProSemiBold"
+
+
+
+.post_slider_category
+	color: #fff
+	position: relative
+	z-index: 10
+	a
+		color: #fff
+		text-decoration: underline
+
+.post_slider_content_container
+	background: #fff
+	padding: 20px
+	color: #404040
+	min-height: 200px
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+
+.post_slider_info
+	text-align: right
+	color: #88898b
+
+.cat_buttons_my
+	display: flex
+	margin-top: 30px
+	display: flex
+	align-items: center
+	justify-content: center
+
+.cat_buttons_my_consult
+	margin-left: 40px
+
+.cat_buttons_my_order
+	margin-top: 30px
+	padding: 10px 30px
+	color: #fff
+	border-radius: 2px
+	background: $main
+	font-size: 16px
+	transition: all .3s ease
+	&:hover
+		background: $maind
+
+.main_cat_hr
+	max-width: 70px
+	border-color: #fff
+	margin: 30px auto
+
+
+
+
+
+.main_page_blog_slider_container
+	max-width: 1200px
+	margin: 0 auto
+	.button__ma
+		margin-top: 50px
+
+.image_indu
+	width: 100px
+	padding: 20px
+	height: 100px
+	border-radius: 50%
+	background: $main
+	margin: 0 auto
+	display: flex
+	transition: all .3s ease
+	justify-content: center
+	align-items: center
+	svg
+		fill: #fff
+		width: 100%
+		height: 100%
+		position: relative
+		left: 2px
+
+.main_page_industries
+	max-width: 1200px
+	margin: 0 auto
+	padding: 20px 0px
+
+.industries_flex_container
+	display: flex
+	flex-wrap: wrap
+
+.container_title
+	font-size: 46px
+	font-family: "MyriadProBold"
+	margin-bottom: 40px
+	color: #4D4D4D
+
+.serv_hr
+	margin-top: 22px
+	margin-bottom: 30px
+
+.services_block_container
+	padding: 10px
+	width: 25%
+	height: 14vw
+
+.container_title
+	text-align: center
+
+
+
+
+
+.btn-mobile, .mobile-logo
+	display: none
+
+.auto-link
+	color: inherit
+	text-decoration: none
+	border-bottom: 1px dotted transparent
+	border-bottom-color: inherit
+	&:hover, &:focus
+		border-bottom-style: solid
+		color: inherit
+		text-decoration: none
+
+
+
+
+// content first block
+
+.blog_category_item_hr
+	max-width: 60px
+	margin: 0 auto
+	margin-top: 30px
+	opacity: 1
+	transition: all .3s ease
+
+.blog_category_flex_item_content
+	z-index: 4
+	padding: 0 15px
+
+.blog_category_item_name
+	color: #fff
+	text-decoration: none
+	cursor: default
+	font-size: 24px
+	text-align: center
+	font-family: "MyriadProBold"
+
+.blog_category_overlay_hover
+	position: absolute
+	top: 10px
+	left: 10px
+	z-index: 3
+	right: 10px
+	bottom: 10px
+	background: $main
+	visibility: hidden
+	opacity: 0
+	transition: all .3s ease
+
+.blog_category_flex_item
+	&:hover
+		.blog_category_overlay_hover
+			visibility: visible
+			opacity: 1
+		.blog_category_item_hr
+			opacity: 0
+		.link_cating
+			opacity: 1
+
+.blog_category_overlay
+	position: absolute
+	top: 10px
+	left: 10px
+	z-index: 3
+	right: 10px
+	bottom: 10px
+	background: rgba(0,0,0,0.4)
+
+.blog_category_last_flex_container
+	display: flex
+	flex-wrap: wrap
+	+r(1000)
+		justify-content: space-around
+
+.last_fraze_hr
+	max-width: 50px
+	margin: 30px auto
+	border-color: $main
+
+.number_my
+	font-size: 60px
+	font-family: "MyriadProBold"
+	color: #fff
+	line-height: 46px
+	background-color: $main
+	width: 50px
+	height: 50px
+	position: absolute
+	top: 10px
+	left: 10px
+	text-align: center
+
+.item_last_flexing
+	width: 20%
+	position: relative
+	padding: 10px
+	// text-align: center
+	min-width: 200px
+	+r(768)
+		max-width: 300px
+		margin: 0 auto
+
+.last_fraze_text
+	font-size: 16px
+	padding: 0 10px
+
+.last_fraze_image
+	width: 100%
+	height: auto
+	max-height: 180px
+	// position: absolute
+	// top: 0
+	// left: 0
+	margin: 0 auto
+	object-fit: cover
+	// z-index: -1
+
+// .blog_category_content_flex_container
+	// display: flex
+	// flex-wrap: wrap
+	// margin-top: 40px
+	// margin-bottom: 40px
+
+.blog_category_last_container_title
+	margin-bottom: 40px
+	text-align: center
+	font-size: 46px
+	font-family: "MyriadProBold"
+	color: #4D4D4D
+
+.blog_category_last_container
+	margin-bottom: 50px
+	margin-top: 40px
+
+.blog_category_flex_item_container
+	width: 25%
+	padding: 10px
+	position: relative
+
+.blog_category_item_btn
+	text-align: center
+
+.link_cating
+	display: inline-block
+	color: #fff
+	border: 1px solid #fff
+	padding: 10px 30px
+	transition: all .3s ease
+	opacity: 0
+	font-family: "MyriadProSemiBold"
+	&:hover
+		color: #404040
+		background: #fff
+		text-decoration: none
+
+.blog_category_flex_item
+	display: flex
+	background-position: center center
+	background-size: cover
+	justify-content: center
+	align-items: center
+	min-height: 14vw
+
+.blog_category_content
+	max-width: 1200px
+	margin: 0 auto
+
+a
+	&:focus
+		text-decoration: none !important
+
+.blog_category_first_container
+	.blog_category_first_left_col
+		&.services
+			background: url(/images/font1industry1.png) no-repeat top center
+			background-size: cover
+		&.industries
+			background: url(/images/font2industry2.png) no-repeat top center
+			background-size: cover
+		&.methods
+			background: url(/images/font2industry3.png) no-repeat top center
+			background-size: cover
+		&.career
+			background: url(/images/font1academy1.png) no-repeat top center
+			background-size: cover
+		&.solutions
+			background: url(/images/font5industry5.png) no-repeat top center
+			background-size: cover
+	.blog_category_first_right_col
+		// background-attachment: fixed
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center center
+		position: relative
+		display: flex
+		align-items: center
+		.breadcrumbs_blog
+			display: none
+			z-index: 4
+			a
+				color: #FFF
+				+tr
+				+h
+					color: $grayi
+					text-decoration: none
+			span
+				color: #FFF
+				&:last-child
+					color: $grayi
+		.bread_container
+			width: 1200px
+			margin: 0 auto
+
+		.cat_real_overlay
+			position: absolute
+			background: rgba(0,0,0,0.6)
+			top: 0
+			left: 0
+			z-index: -1
+			right: 0
+			bottom: 0
+			pointer-events: none
+		.blog_category_content
+			background: $main-accent
+			color: #fff
+			padding: 20px
+			min-height: 330px
+			display: flex
+			flex-direction: column
+			+r(780)
+				height: auto
+				min-height: auto
+			.order_modal, .btn_more
+				margin-top: 10px
+			p
+				font-size: 13px
+				margin-bottom: 8px
+				text-align: justify
+				b, strong
+					font-family: "MyriadProBold"
+					font-size: 15px
+				&:last-child
+					padding-bottom: 0
+			ul
+				list-style-type: disc
+				padding-left: 15px
+				p
+					margin-bottom: 5px
+		// h1
+			// margin: 0
+			// font-size: 40px
+			// font-family: "MyriadProBold"
+			// margin-bottom: 15px
+			// letter-spacing: 3px
+		// h2
+			// margin: 0
+			// font-size: 28px
+			// font-family: "MyriadProBold"
+			// margin-bottom: 15px
+			// text-transform: uppercase
+			// letter-spacing: 3px
+			// font-size: 20px
+			// margin-top: 10px
+	.ancor_scroll
+		position: absolute
+		bottom: 10px
+		left: 0
+		right: 0
+		text-align: center
+		a
+			position: relative
+			display: inline-block
+			span
+				color: $main-accent
+				font-size: 28px
+				transition: color .3s ease
+			&:hover span
+				// color: $main-accent-bright
+
+.leqve_request_right
+	width: 350px
+	background: #fff
+	margin-top: -20px
+	margin-bottom: -20px
+	padding: 20px
+	box-shadow: 0px 0px 13px 0px #404040
+	box-shadow
+	.form-group
+		&:last-child
+			margin-bottom: 0
+		button
+			width: 100%
+			height: auto !important
+			font-size: 16px !important
+			text-transform: uppercase
+			padding: 8px 0 !important
+	.control-label
+		display: none
+
+.main_page_office_container
+	max-width: 1200px
+	margin: 0 auto
+	padding-top: 20px
+	padding-bottom: 30px
+
+.main_page_office_tittle
+	text-align: center
+	font-size: 46px
+	font-family: "MyriadProBold"
+	color: #4D4D4D
+	margin-bottom: 30px
+
+.back_leave_request
+	display: flex
+	justify-content: space-between
+	align-items: center
+	max-width: 1200px
+	margin: 0 auto
+
+.main_post_leave_request
+	background: url('/images/request.jpg') no-repeat center center
+	background-size: cover
+	margin: 40px 0
+
+// Our clients
+
+.cat_consult_btn
+	padding: 12px 20px
+	color: #fff
+	font-size: 16px
+	margin-top: 30px
+	margin-left: 40px
+	border: 1px solid #fff
+	text-decoration: none !important
+	transition: all .3s ease
+	&:hover
+		color: #404040
+		background: #fff
+		text-decoration: none
+
+.head_line
+	padding-top: 50px
+	margin-bottom: 35px
+	text-align: center
+	font-size: 24px
+	font-family: "MyriadProBold"
+	color: $main-accent
+
+.industrial_wrap,.internship_wrap
+	max-width: 1200px
+	margin: 0 auto
+
+.competence_container_wrap
+	max-width: 1200px
+	margin: 0 auto
+	padding: 30px 0
+
+.our_clients_slider_gran
+	margin-top: 30px
+	div
+		display: flex !important
+		height: 130px !important
+		align-items: center
+	img
+		margin: 0 auto
+		max-width: 120px
+		height: auto
+		filter: grayscale(1)
+		opacity: 0.6
+		cursor: pointer
+		transition: all .3s ease
+		&:hover
+			filter: grayscale(0)
+			opacity: 1
+
+.our_clients_my_cus
+	background: #f9f9f9
+	padding: 40px 0
+
+.our_clients_my_cus_container
+	max-width: 1200px
+	margin: 0 auto
+
+.competence_container_slider
+	width: 50%
+	float: left
+	box-shadow: 0px 0px 13px 0px #404040
+	position: relative
+	left: 18px
+
+.competence_slide_1
+	background: #f77521
+	div
+		max-width: 300px
+.competence_slide_2
+	background: #005CD8
+	div
+		max-width: 300px
+.competence_slide_3
+	background: #fff
+	div
+		max-width: 300px
+.competence_slide_4
+	div
+		max-width: 300px
+.competence_slide_5
+	background: #f1c910
+	div
+		max-width: 300px
+
+.competence_container_slider_controls_container
+	width: 50%
+	float: right
+	right: 18px
+	margin-top: 36px
+	position: relative
+	background: #fff
+	padding: 36px
+	box-shadow: 0px 0px 13px 0px #404040
+
+.sliders_container
+	&:after
+		content: ''
+		display: table
+		clear: both
+
+.our_clients
+	display: flex
+	align-items: center
+	flex-direction: column
+	&.our_clients_new .our_clients_logo_wrap a
+		img
+			filter: grayscale(100%)
+			opacity: .4
+			transition: filter .2s ease
+		&:hover img
+			filter: none
+			opacity: 1
+	.our_clients_logo_wrap
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-wrap: wrap
+		text-align: center
+		max-width: 1200px
+		margin: 0 auto
+		a
+			display: block
+			padding: 0 18px
+			margin-bottom: 25px
+			&:hover img
+				filter: brightness(0.8)
+			img
+				max-height: 40px
+				width: auto
+				max-width: 100%
+				height: auto
+				filter: brightness(1)
+				transition: all .2s ease
+
+// scroll btn
+
+.scrolling_btns
+	position: fixed
+	top: 50%
+	transform: translate(0, -50%)
+	right: 0
+	z-index: 99
+	display: flex
+	flex-direction: column
+	justify-content: center
+	> div a
+		display: block
+		background-color: $main-accent
+		padding: 3px
+		transition: background-color .3s ease
+		&:hover, &:focus
+			text-decoration: none
+			outline: none
+		&:hover
+			background-color: $main-accent-bright
+		span
+			display: block
+			font-size: 18px
+			color: #fff
+			transition: color .3s ease
+
+// Industrial competence
+
+.post-title
+	font-size: 24px
+	font-family: "MyriadProBold"
+	color: #4D4D4D
+	padding-top: 50px
+	margin-bottom: 35px
+	text-align: center
+
+.colored_numbers
+	color: $main-accent
+
+.post_subtitle
+	font-family: "MyriadProBold"
+	font-size: 16px
+
+.industrial_wrap
+	display: flex
+	position: relative
+	.post-title
+		display: flex
+		align-items: center
+		position: absolute
+		width: 100%
+		text-align: left
+		padding: 7px 76px
+		margin-bottom: 0
+	> div
+		width: 50%
+	.industrial_first_col
+		display: flex
+		align-items: center
+		position: absolute
+		width: 100%
+		margin-top: 55px
+		> div
+			min-height: 350px
+			padding: 20px
+		.all_product_contect
+			width: 28%
+			background: $main-accent
+			color: #fff
+			font-size: 13px
+			+r(780)
+				min-height: auto
+			.all_product_title
+				font-size: 15px
+		.all_product_member
+			width: 70%
+			background: rgba(255, 255, 255, 0.91)
+			+r(770)
+				height: auto
+			a
+				margin-bottom: 10px
+				font-size: 13px
+				color: #4c4c4c
+				transition: color .3s ease
+				display: flex
+				align-items: center
+				&:last-child
+					margin-bottom: 0
+				&:hover
+					color: #9cc3df
+					text-decoration: none
+				&:focus
+					outline: none
+					text-decoration: none
+				img
+					width: 115px
+					height: auto
+					object-fit: contain
+					margin-bottom: 0
+					margin-right: 10px
+				span
+					display: block
+	.industrial_sec_col
+		text-align: right
+		margin-left: auto
+		img
+			height: 450px
+			width: auto
+
+// Aim in numbers block
+
+.aim_in_numbers_wrap
+	display: flex
+	max-width: 1200px
+	margin: 0 auto
+	flex-direction: column
+	padding-bottom: 50px
+	&.aim_in_numbers_wrap_new
+		.post-title
+			padding-top: 50px
+		.aim_num_block_wrap .aim_num_col
+			width: 20%
+	.post-title
+		font-size: 46px
+		padding-top: 0
+		p
+			color: #4D4D4D
+			margin-bottom: 0
+	.aim_num_block_wrap
+		display: flex
+		align-items: center
+		justify-content: center
+	.aim_num_col
+		width: 25%
+		height: 270px
+		box-shadow: 9px 10px 30px #efefef
+		display: flex
+		flex-direction: column
+		align-items: center
+		.aim_num_title
+			font-size: 52px
+			color: #4D4D4D
+			padding: 20px 0 10px
+			font-family: "MyriadProBold"
+			margin: 0
+		.aim_num_img
+			min-height: 66px
+			display: flex
+			padding-bottom: 32px
+			box-sizing: content-box
+			&.aim_num_about_img img
+				width: 66px
+			img
+				max-width: 100%
+				height: auto
+				display: block
+				height: 66px
+		.aim_num_content
+			color: #4D4D4D
+			font-size: 15px
+			font-family: "MyriadProSemiBold"
+			margin-bottom: 0
+			text-align: center
+
+// testimonials block
+
+.testimonials_wrap
+	background: url("/images/font1inCR.png") no-repeat
+	background-size: cover
+	display: flex
+	flex-direction: column
+	margin-top: 50px
+	margin-bottom: 80px
+	padding-bottom: 55px
+	.post-title
+		padding-top: 35px
+		padding-bottom: 20px
+		color: #fff
+		font-size: 30px
+		text-shadow: 0 0 7px #696969
+		margin: 0
+	.testimonials_content_wrap
+		display: flex
+		> div
+			width: 20%
+		.testimonials_link
+			display: flex
+			flex-direction: column
+			color: #fff
+			background: rgba(51, 51, 51, 0.72)
+			position: relative
+			&:hover
+				text-decoration: none
+				color: #fff
+				.testimonials_content_img::before
+					opacity: .7
+			&:focus
+				text-decoration: none
+				outline: none
+			span
+				display: block
+			.testimonials_content_title
+				padding-top: 17px
+				text-shadow: 0 0 4px #333
+				text-align: center
+				font-size: 16px
+				font-family: "MyriadProBold"
+			.testimonials_content_text
+				height: 200px
+				line-height: 15px
+				padding: 10px 8px
+				font-size: 11px
+			.testimonials_content_img
+				position: relative
+				&::before
+					content: ''
+					position: absolute
+					top: 0
+					display: block
+					width: 100%
+					height: 100%
+					background-color: #fff
+					opacity: 0
+					transition: opacity .3s ease
+				img
+					display: block
+					width: 100%
+					height: auto
+
+// main post container
+
+.main_post_container
+	display: flex
+	align-items: center
+	margin-bottom: 30px
+	padding-bottom: 70px
+	.main_post_container_img
+		width: 40%
+		height: 430px
+		img
+			display: block
+			position: absolute
+			width: 480px
+			height: 430px
+		&.main_post_container_img_block
+			position: relative
+			display: flex
+			align-items: center
+			justify-content: flex-end
+			background: url("/images/font22in.png") no-repeat
+			background-size: cover
+			&.main_post_img_req
+				background: url("/images/font44in.png") no-repeat
+				background-size: cover
+				height: auto
+				padding: 60px 0
+				.formWidget > div:last-child button
+					height: 30px
+			> div
+				color: #4D4D4D
+				width: 75%
+				margin-right: 5%
+				margin-left: auto
+				background: rgba(255, 255, 255, 0.77)
+				padding: 15px 25px
+				.main_post_title
+					font-size: 23px
+					font-family: "MyriadProBold"
+					margin-bottom: 5px
+				.main_post_text
+					font-size: 13px
+					position: relative
+					&::before
+						content: ''
+						display: inline-block
+						margin-right: 5px
+						transform: translate(0, -50%)
+						width: 0
+						height: 0
+						border-top: 8px solid $main-accent
+						border-right: 8px solid transparent
+	.main_post_container_text
+		position: relative
+		display: flex
+		align-items: center
+		width: 60%
+		&.first_main_block .main_post_text
+			min-height: inherit
+			margin-bottom: 10px
+		ul
+			list-style-type: disc
+			padding-left: 40px
+			margin-bottom: 10px
+		p
+			font-size: 14px
+			text-align: justify
+		&.main_post_text_left
+			z-index: 5
+			> div
+				margin-left: 0
+				margin-right: -50px
+		h1
+			margin: 0
+			font-size: 28px
+			font-family: "MyriadProBold"
+			margin-bottom: 15px
+			text-transform: uppercase
+			letter-spacing: 2px
+		h2
+			margin: 0
+			font-size: 28px
+			font-family: "MyriadProBold"
+			margin-bottom: 15px
+			text-transform: uppercase
+			letter-spacing: 2px
+			font-size: 20px
+			margin-top: 10px
+		> div
+			background: $main-accent
+			color: #fff
+			padding: 30px 40px
+			margin-left: -50px
+			display: flex
+			flex-direction: column
+			.main_post_title
+				margin: 0
+				font-size: 28px
+				font-family: "MyriadProBold"
+				margin-bottom: 15px
+				text-transform: uppercase
+				letter-spacing: 2px
+				line-height: 32px
+			.post_btn_wrap
+				margin-top: 15px
+
+// btn
+
+.order_modal, .btn_more
+	text-decoration: none
+	padding: 12px 24px
+	border-radius: 4px
+	margin-right: 25px
+	font-size: 14px
+	text-transform: uppercase
+	border: 1px solid transparent
+	cursor: pointer
+	outline: none
+	transition: all .3s ease
+
+.order_modal, .btn_more:first-child
+	background: #fff
+	color: $main-accent
+	border-color: $main-accent
+
+.order_modal:hover, .btn_more:first-child:hover
+	background: $main-accent
+	color: #fff
+	border-color: #fff
+
+.order_modal:hover:focus, .btn_more:first-child:hover:focus
+	color: #fff
+
+.order_modal:focus, .btn_more:first-child:focus
+	outline: none
+	color: $main-accent
+
+.order_modal:active:hover
+	background: $main-accent
+	color: #fff
+	border-color: #fff
+
+.btn_more
+	&:first-child:active:hover
+		background: $main-accent
+		color: #fff
+		border-color: #fff
+	display: inline-block
+	color: #fff
+	border-color: #fff
+	background: transparent
+	&:hover, &:focus
+		text-decoration: none
+	&:hover
+		color: $main-accent
+		background: #fff
+		border-color: $main-accent
+		&:focus
+			color: $main-accent
+	&:focus
+		outline: none
+		color: #fff
+
+// NEWS container
+
+
+
+
+	.list_news_wrapper
+		margin-left: 15px
+		.pagination
+			width: 100%
+			display: flex
+			justify-content: center
+			> li
+				&.active > a
+					color: #fff
+					background-color: $main-accent
+				>
+					a, span
+						border-color: $main-accent
+						color: $main-accent
+					a:hover
+						border-color: $main-accent
+						background-color: $main-accent
+						color: #fff
+	.news_item_container
+		margin-bottom: 30px
+		padding-left: 0
+		display: flex
+		width: 50%
+
+
+
+.news_item .post_thumbnail, .shortcode_news .post_thumbnail
+	margin-bottom: 15px
+
+.news_item .post_name, .shortcode_news .post_name
+	padding-bottom: 5px
+
+.news_item .post_name a, .shortcode_news .post_name a
+	display: block
+	color: $main-accent
+	margin: 0
+	font-size: 13px
+	line-height: 20px
+	font-family: "MyriadProBold"
+	transition: color .3s ease
+
+.news_item .post_name a
+	&:hover, &:focus
+		text-decoration: none
+
+.shortcode_news .post_name a
+	&:hover, &:focus
+		text-decoration: none
+
+.news_item .post_desc, .shortcode_news .post_desc
+	font-size: 13px
+	margin-bottom: 8px
+	text-align: justify
+	color: #333
+
+.news_item .create_date, .shortcode_news .create_date
+	color: #a4a4a4
+	font-size: 13px
+	padding-bottom: 5px
+	white-space: nowrap
+
+.news_item .link_container_post, .shortcode_news .link_container_post
+	margin-top: auto
+
+.news_item .link_container_post a, .shortcode_news .link_container_post a
+	display: inline-block
+	text-decoration: none
+	font-size: 14px
+	cursor: pointer
+	line-height: 20px
+	color: #fff
+	border: none
+	background: $main-accent
+	border-radius: 3px
+	padding: 4px 20px
+	transition: background-color .3s ease
+
+.news_item .link_container_post a:hover, .shortcode_news .link_container_post a:hover
+	background-color: #da253f
+
+// Last news
+
+.last_news
+	max-width: 1200px
+	margin: 0 auto
+	// margin-bottom: 45px
+	// margin-top: 80px
+	.shortcode_news_container
+		display: flex
+		justify-content: space-between
+		.shortcode_news
+			width: 33.3%
+			.shortcode_thumbnail
+				width: 100%
+				height: 165px
+				margin-bottom: 15px
+				a
+					width: 100%
+					display: inline-block
+					height: 100%
+
+// Top menu with progress-bar
+.blog_menu_widget
+	+r(1280)
+		display: none
+
+
+// Modal block
+
+.myModalContainer .myModal
+	padding: 20px
+
+.myModal
+	border: 1px solid $main-accent
+	h2
+		font-family: "MyriadProSemiBold"
+		margin-top: 20px
+		text-align: center
+	div
+		font-size: 18px
+	.subscrBtn
+		width: 100%
+		background-color: $main-accent
+		color: #fff
+		padding: 5px 0
+		border: none
+		transition: background-color .3s ease
+		&:hover
+			background-color: $main-accent-bright
+
+
+.formWidget > div
+  position: relative
+  input
+    border-radius: 0
+    +placeholder-color(#eee)
+  .help-block
+    margin: 0
+    position: absolute
+    top: 0
+    right: 5px
+  textarea
+    resize: none
+    min-height: 85px
+    border-radius: 0
+  &:last-child
+    text-align: center
+    button
+      border: none
+      outline: none
+      height: 27px
+      font-size: 12px
+      padding: 5px 20px
+      border-radius: 0
+      box-shadow: none
+      background-color: $main-accent
+      color: #fff
+      transition: background-color .3s ease
+      &:hover
+        background-color: $main-accent-bright
+      &:active
+        &:hover, &:focus
+          background-color: $main-accent-bright
+
+.answerWrap
+	min-height: 250px
+	padding-top: 150px
+	text-align: center
+	font-size: 18px
+	font-family: "MyriadProSemiBold"
+	position: relative
+	word-break: break-all
+	&::before
+		content: "\f118"
+		display: inline-block
+		font: normal normal normal 14px/1 FontAwesome
+		text-rendering: auto
+		position: absolute
+		top: 5px
+		left: 50%
+		transform: translate(-50%, 0)
+		font-size: 120px
+		color: #449d44
+
+
+
+.loyalty_diagnostics_wrap
+	border-left: 8px solid $main-accent
+	padding: 2% 3%
+	margin-top: 80px
+	.post-title
+		padding-top: 0
+		text-align: left
+		margin-bottom: 15px
+		color: inherit
+	.loyalty_diagnostics_content
+		display: flex
+		justify-content: space-between
+		> div
+			width: 45%
+			font-size: 15px
+			ul
+				list-style-position: inside
+	.post_subtitle
+		margin-bottom: 10px
+
+// Career block
+// internship
+
+.internship_wrap
+	> .post-title
+		font-size: 30px
+		font-family: "MyriadProSemiBold"
+	.internship_list
+		padding: 0 3% 3%
+		ul
+			list-style: disc inside
+			li
+				font-size: 16px
+				margin-bottom: 12px
+	.internship_content_wrap
+		display: flex
+		padding: 0 3% 3%
+		&.internship_content_text_block
+			flex-direction: column
+			.post_subtitle
+				color: #333
+				font-size: 16px
+				padding-bottom: 3%
+				line-height: 26px
+				font-family: "MyriadProBold"
+			p
+				font-size: 16px
+				line-height: 26px
+				color: #333
+				a
+					color: $main-accent
+					text-decoration: none
+					&:hover, &:focus
+						color: $main-accent
+						outline: none
+						text-decoration: underline
+		.internship_content_col-1
+			border-right: 1px solid $main-accent
+			border-color: #ebebeb
+			padding-right: 3%
+		.internship_content_col-2
+			padding-left: 3%
+		.internship_content_col-1, .internship_content_col-2
+			width: 50%
+		.internship_content_col-1 .post-title, .internship_content_col-2 .post-title
+			padding-top: 0
+			margin-bottom: 20px
+			font-size: 16px
+			text-align: left
+			font-family: "MyriadProBold"
+		.internship_content_col-1 .post_subtitle, .internship_content_col-2 .post_subtitle
+			margin-bottom: 20px
+		.internship_content_col-1 ul, .internship_content_col-2 ul
+			list-style: disc inside
+		.internship_content_col-1 ul li, .internship_content_col-2 ul li
+			font-size: 16px
+
+// training develop
+
+.training_dev_content_wrap .training_dev_content
+	display: flex
+	align-items: center
+	margin-bottom: 15px
+	img
+		display: block
+		max-width: 100%
+		height: auto
+		width: 30px
+		height: 30px
+	.training_dev_text
+		font-size: 13px
+		padding-left: 10px
+		p
+			margin: 0
+		a
+			color: #fff
+			border-bottom: 1px dotted #fff
+			text-decoration: none
+			font-size: 13px
+			&:hover
+				border-bottom-style: solid
+			&:focus
+				outline: none
+
+// aim express
+
+.aim_express_wrap
+	display: flex
+	margin-bottom: 50px
+	> div
+		width: 50%
+	.express_first_col
+		padding: 0 35px
+		background: url(/images/bg_red_indst_1.png) no-repeat right bottom
+		background-size: 170px
+		.post-title
+			text-align: left
+			padding-top: 0
+			font-family: "MyriadProSemiBold"
+			p
+				padding-top: 10px
+				line-height: 30px
+				color: #4c4c4c
+				font-size: 22px
+	.express_sec_col
+		display: flex
+		position: relative
+		align-items: center
+		> div
+			background: #e3e3e3
+			padding: 22px 18px
+			display: flex
+			flex-direction: column
+			width: 90%
+			p
+				margin-bottom: 5px
+				font-size: 13px
+			.express_subtitle
+				font-family: "MyriadProBold"
+		.post_btn_wrap
+			margin-top: 15px
+			.order_modal, .btn_more:first-child
+				background: #4c4c4c
+				color: #fff
+				border-color: #ebebeb
+			.order_modal:hover
+				background: #e3e3e3
+				color: #4c4c4c
+				border: 1px solid #4c4c4c
+			.btn_more
+				&:first-child:hover
+					background: #e3e3e3
+					color: #4c4c4c
+					border: 1px solid #4c4c4c
+				border: 1px solid #4c4c4c
+				color: #4c4c4c
+				&:hover
+					color: #e3e3e3
+					background: #4c4c4c
+
+// about container
+
+.about_view_container .about_header
+	padding: 40px 0
+	display: flex
+	.nav_menu_about
+		width: 35%
+		padding: 0 50px
+	.about_name_post
+		width: 65%
+		align-self: flex-end
+		font-size: 70px
+		line-height: 53px
+		text-shadow: 4px 1px 5px rgba(6, 3, 0, 0.47)
+		color: #fff
+		text-transform: uppercase
+		letter-spacing: 1px
+		font-family: "MyriadProSemiBold"
+
+.our_services_wrap.career_vacancies
+	margin-top: 0
+	.our_services_details
+		padding: 0 3%
+
+.career_vacancies .services_details_title a
+	color: $main-accent
+	text-decoration: none
+	&:hover
+		color: $main-accent
+
+.our_services_wrap
+	margin-top: 35px
+	.our_services_header
+		font-size: 70px
+		line-height: 0.9
+		text-transform: uppercase
+		color: #fff
+		text-shadow: 2px 2px 1px #000
+		padding: 8% 3% 0
+		font-family: "MyriadProSemiBold"
+		background: url(/images/aim_about_bg_2.jpg) no-repeat center center
+		background-size: cover
+		margin-bottom: 35px
+	.our_services_details
+		display: flex
+		flex-wrap: wrap
+		padding: 3%
+		> div
+			width: 31%
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			margin-bottom: 45px
+			padding: 0 1em
+		.services_details_title
+			font-size: 16px
+			color: $main-accent
+			margin-bottom: 15px
+			font-family: "MyriadProBold"
+
+.services_details_link
+	display: inline-block
+	text-decoration: none
+	outline: 0
+	border: 1px solid $main-accent
+	padding: 8px 15px
+	color: #fff
+	border-radius: 2px
+	background: $main-accent
+	margin-top: auto
+	transition: all .3s ease
+	&:hover
+		background: #fff
+		color: $main-accent
+		text-decoration: none !important
+	&:focus
+		text-decoration: none
+		outline: none
+
+// top management
+
+.about_main_item
+	padding: 3%
+
+.about_list_container
+	padding: 3%
+	> div > p
+		float: left
+		img
+			width: 300px
+			border-radius: 170px
+			box-shadow: 1px 1px 3px #ccc
+			margin-right: 20px
+
+.AllContentChiefName
+	font-size: 25px
+	letter-spacing: 2px
+	margin-bottom: 18px
+	font-family: "MyriadProBold"
+
+.AllContentChiefTxt
+	font-size: 16px
+	a:not(.auto-link)
+		color: $main-accent
+		&:hover, &:focus
+			color: $main-accent
+
+// mission and values
+
+.mission_values_wrap
+	padding: 2% 3%
+	.mission_block_wrap
+		display: flex
+		justify-content: space-between
+		margin-bottom: 25px
+		margin-top: 35px
+		> div
+			width: 31%
+		.mission_block_col
+			.mission_title
+				color: #fff
+				font-size: 15px
+				text-align: center
+				padding: 11px 0
+				position: relative
+				background-color: #000
+				&::before, &::after
+					content: ""
+					position: absolute
+					width: 0
+					height: 0
+				&::before
+					top: 0
+					left: 0
+					border-bottom: 20px solid $main-accent
+					border-left: 20px solid transparent
+				&::after
+					top: 0
+					left: 0
+					border-top: 20px solid #fff
+					border-right: 20px solid transparent
+			.mission_text
+				margin-top: 25px
+				font-size: 13px
+				line-height: 21px
+				text-align: left
+				color: $main-accent
+				&.mission_text_about
+					color: #333
+				a
+					color: $main-accent
+					&:hover, &:focus
+						text-decoration: underline
+						color: #9cc3df
+						outline: none
+			&.mission_block_col_red .mission_title
+				background-color: $main-accent
+				&::before
+					border-bottom-color: #000
+	.mission_main_text
+		padding: 1% 0 3% 0
+		font-size: 15px
+		color: #333
+		font-family: "MyriadProBold"
+	.post-title
+		font-size: 30px
+		padding-top: 0
+	.mission_main_list
+		padding: 0 3%
+		margin-bottom: 40px
+		> div
+			display: flex
+			align-items: center
+			margin-bottom: 25px
+			&:last-child
+				margin-bottom: 0
+			img
+				display: inline-block
+				max-width: 100%
+				width: 75px
+				height: 68px
+				object-fit: contain
+				width: 15%
+		.mission_main_list_content
+			padding-left: 15px
+			width: 85%
+			.mission_main_list_title
+				font-size: 15px
+				font-family: "MyriadProBold"
+			.mission_main_list_text
+				font-size: 14px
+				margin-bottom: 0
+
+// Sitemap
+
+.main_sitemap_container
+	padding: 2%
+	column-width: 17em
+	column-gap: 1em
+	> div
+		margin: 0.25rem
+		padding: 1rem
+		width: 100%
+		&:nth-child(1)
+			order: 1
+
+.main_sitemap_category
+	font-family: "MyriadProSemiBold"
+	font-size: 18px
+	display: block
+	color: $main-accent
+	text-decoration: none
+	margin-bottom: 10px
+	&:hover
+		text-decoration: none
+		color: $main-accent
+
+.secondary_sitemap
+	padding-left: 8px
+	display: flex
+	align-items: center
+	position: relative
+	color: $main-accent
+	text-decoration: none
+	&:hover
+		color: $main-accent
+
+// AIM project
+
+.project_academy_wrap
+	padding: 30px 2%
+	.post-title
+		margin-bottom: 25px
+	.academy_content_wrap
+		display: flex
+		flex-wrap: wrap
+		> div
+			width: 50%
+			padding-bottom: 2%
+			&.academy_content_col-3
+				width: 100%
+				padding-top: 2%
+				border-top: 1px solid $main-accent
+				.statistic_wrap
+					display: flex
+					justify-content: space-between
+					margin-bottom: 25px
+					> div
+						width: 33.3%
+						> p
+							margin-bottom: 0
+			.post_subtitle
+				font-size: 20px
+			> p
+				margin-top: 10px
+				margin-bottom: 10px
+				&:last-child
+					margin-bottom: 0
+		.academy_content_col-1
+			border-right: 1px solid $main-accent
+			padding-right: 2%
+		.academy_content_col-2
+			padding-left: 2%
+
+.project_connect_wrap
+	padding: 10px 25px
+	.post-title
+		margin-bottom: 25px
+	.project_contact_center_details
+		display: flex
+		justify-content: space-between
+		padding-bottom: 2%
+		> div
+			width: 33.3%
+			padding-left: 2%
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			&:nth-child(1)
+				padding-left: 0
+				padding-right: 2%
+				border-right: 1px solid $main-accent
+			&:nth-child(2)
+				padding-right: 2%
+				border-right: 1px solid $main-accent
+			p
+				margin-top: 10px
+				margin-bottom: 10px
+			.services_details_link
+				background: #fff
+				color: $main-accent
+				text-transform: uppercase
+				letter-spacing: 1px
+				margin-top: auto
+				align-self: center
+				&:hover
+					background: $main-accent
+					color: #fff
+		.post_subtitle
+			font-size: 13px
+
+//=============  ICO =============
+
+.ico_content_wrap
+	width: 1200px
+	margin: 0 auto
+	display: flex
+	// background: #fff
+
+.ico_first_block
+	background: url(/images/ico_header_bg.png) no-repeat
+	background-size: cover
+	margin-bottom: 120px
+	position: relative
+	z-index: 6
+	.ico_content_wrap
+		display: flex
+		align-items: flex-end
+	.ico_first_block_col
+		width: 50%
+		color: #fff
+		position: relative
+		&:nth-child(2)
+			text-align: right
+		.ico_content_title
+			font-family: "MyriadProBold"
+			font-size: 48px
+			margin: 70px 0 35px
+		.ico_content_text
+			font-size: 18px
+			line-height: 24px
+			margin-bottom: 100px
+		.ico_first_logo
+			display: inline-block
+			margin-bottom: -118px
+			object-fit: contain
+			max-width: 100%
+		.arrow_down
+			position: absolute
+			bottom: -107px
+			right: 150px
+			transition: opacity .3s ease
+			z-index: 90
+			&:hover
+				opacity: .7
+
+.ico_sec_block
+	margin-top: -120px
+	padding-top: 50px
+	padding-bottom: 50px
+	position: relative
+	z-index: 5
+	background: #fff
+	.ico_content_wrap
+		flex-direction: column
+		> div:nth-child(1)
+			padding-bottom: 50px
+	.btn-participate
+		display: inline-block
+		color: $main-accent
+		font-size: 18px
+		line-height: 24px
+		padding: 20px
+		border: 1px solid $main-accent
+		border-radius: 3px
+		outline: none
+		background-color: #fff
+		transition: all .3s ease
+		margin-right: 5px
+		&:hover
+			color: #fff
+			background: $main-accent
+	span.participate_bold
+		font-size: 17px
+		line-height: 24px
+		font-family: "MyriadProBold"
+	.ico_graphics_wrap
+		margin-top: 120px
+		margin-bottom: 75px
+		background: url(/images/mainBlockInAllthrdAllBlockBg.png) no-repeat
+		background-size: contain
+		background-position-y: 190px
+		display: flex
+		text-align: center
+		flex-wrap: wrap
+		justify-content: space-around
+		height: 400px
+		> div
+			align-self: flex-end
+			&:nth-child(2)
+				margin-bottom: 45px
+			&:nth-child(3), &:nth-child(4), &:nth-child(5)
+				margin-bottom: 85px
+			p:nth-of-type(1)
+				margin-bottom: 20px
+			img
+				margin-bottom: 15px
+	.arrow_down
+		display: block
+		position: absolute
+		left: 50%
+		margin-left: -17px
+		bottom: -17px
+		img
+			transition: opacity .3s ease
+			&:hover
+				opacity: .7
+
+.ico_third_block
+	background: url(/images/3rd_bl_bg_b.png) no-repeat
+	background-size: cover
+	position: relative
+	background-position: center
+	.ico_content_wrap
+		flex-wrap: wrap
+		position: relative
+		> div
+			width: 50%
+			height: 200px
+			padding: 25px 20px
+			&:nth-child(even)
+				display: flex
+				flex-direction: column
+				align-items: flex-end
+				p
+					text-align: right
+			img
+				margin-bottom: 15px
+			p
+				max-width: 325px
+				color: #fff
+				font-size: 16px
+				line-height: 24px
+		.ico_center_round
+			position: absolute
+			left: 50%
+			top: 50%
+			height: auto
+			padding: 0
+			width: auto
+			margin-left: -112px
+			margin-top: -112px
+			img
+				margin-bottom: 0
+			p.ico_center_round_text
+				max-width: 125px !important
+				position: absolute
+				margin-bottom: 0
+				top: 50%
+				left: 50%
+				margin-top: -62px
+				margin-left: -62px
+				text-align: center
+				.ico_center_round_bold
+					font-family: "MyriadProBold"
+	.arrow_down
+		display: block
+		position: absolute
+		left: 50%
+		margin-left: -17px
+		bottom: -17px
+		img
+			transition: opacity .3s ease
+			&:hover
+				opacity: .7
+
+.ico_four_bl
+	background: url(/images/4_bl_bg.png) no-repeat
+	background-size: cover
+	.ico_content_wrap > div
+		width: 595px
+		margin: 0 auto 45px
+	.ico_content_title
+		font-family: "MyriadProBold"
+		font-size: 24px
+		line-height: 36px
+		color: #fff
+		text-align: center
+		margin-top: 50px
+		margin-bottom: 15px
+	.ico_four_content
+		background: url(/images/4_bl_center.png) no-repeat
+		background-size: contain
+		height: 490px
+		background-position-y: bottom
+		display: flex
+		flex-direction: column
+		padding: 0 16px
+		.ico_four_content_row
+			display: flex
+			&:nth-child(1) .ico_four_content_col
+				&:nth-child(1)
+					margin-left: -10px
+				&:nth-child(2)
+					margin-left: auto
+					margin-right: 35px
+			&:nth-child(2)
+				margin-top: 100px
+				.ico_four_content_col
+					&:nth-child(1)
+						margin-left: 50px
+					&:nth-child(2)
+						margin-left: auto
+						margin-right: 115px
+						flex-direction: column
+						align-items: flex-end
+			&:nth-child(3)
+				margin-top: auto
+				margin-bottom: 60px
+				.ico_four_content_col
+					&:nth-child(1)
+						flex-direction: column
+						margin-left: 95px
+						margin-bottom: -20px
+					&:nth-child(2)
+						margin-left: 15px
+						margin-top: auto
+					&:nth-child(3)
+						justify-content: center
+						margin-bottom: 32px
+						text-align: center
+						margin-right: -50px
+						margin-left: auto
+						flex-direction: column
+						align-items: center
+		.ico_four_content_col
+			display: flex
+			cursor: pointer
+			position: relative
+			.ico_four_content_hide
+				visibility: hidden
+				opacity: 0
+				transition: all .3s ease
+				position: absolute
+				min-width: 270px
+				z-index: 5
+				right: 5px
+				ul
+					list-style: none
+					background-color: #fff
+					padding: 18px 10px
+					border-radius: 3px
+					color: #323232
+					font-size: 12px
+			&:hover .ico_four_content_hide
+				opacity: 1
+				visibility: visible
+			img
+				margin-right: 10px
+				width: 30px
+				height: 30px
+				object-fit: contain
+		.ico_four_content_title
+			text-transform: uppercase
+			font-size: 16px
+			color: #fff
+			max-width: 170px
+			margin-bottom: 0
+			.ico_four_content_text
+				display: block
+				font-size: 12px
+				text-transform: lowercase
+				line-height: 18px
+
+.ico_five_block
+	background: linear-gradient(to left, $main-accent 50%, #fff 50%) no-repeat
+	.ico_content_wrap > div
+		width: 50%
+	.ico_brief_form
+		padding: 50px 0
+		form
+			display: flex
+			flex-direction: column
+			max-width: 88%
+			margin: 0 auto
+			.hidenFields
+				display: none
+			> div
+				margin-bottom: 0
+				margin-top: 25px
+				label
+					display: none
+				.help-block
+					top: -20px
+					right: 0
+					color: #fff
+				input:focus
+					box-shadow: none
+					border-color: inherit
+			input
+				border: 1px solid #fff
+				height: 40px
+				padding: 0 10px
+				color: #fff
+				font-size: 16px
+				background-color: inherit
+				&:last-child
+					margin-bottom: 0
+				&:focus
+					&::-webkit-input-placeholder, &:-ms-input-placeholder, &::placeholder, &::-webkit-input-placeholder, &:-ms-input-placeholder
+						text-indent: -150px
+				&::-webkit-input-placeholder, &:-ms-input-placeholder, &::placeholder, &::-webkit-input-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, &:-moz-placeholder
+					font-family: "MyriadProBold"
+					color: #fff
+					transition: text-indent .3s ease
+			button
+				border: 1px solid #fff
+				height: 40px
+				padding: 0 10px
+				font-size: 16px
+				box-shadow: none !important
+				background-color: #fff
+				color: $main-accent
+				font-family: "MyriadProBold"
+				text-transform: uppercase
+				transition: all .3s ease
+				outline: none !important
+				min-width: 150px
+				&:hover
+					background-color: $main-accent
+					border-color: #fff
+					color: #fff
+		.ico_brief_form_title
+			text-align: center
+			color: #fff
+			font-size: 36px
+			margin-bottom: 25px
+			font-family: "MyriadProBold"
+	.ico_brief_bonus
+		margin: auto
+		text-align: center
+		padding: 50px 0
+		background-color: #FFF //r
+		.ico_brief_bonus_title
+			font-size: 35px
+			font-family: "MyriadProBold"
+			color: $main-accent
+			width: 90%
+			margin: 0 auto 30px
+			.brief_bonus_n
+				color: #333
+				font-size: 21px
+				display: block
+				margin-top: 15px
+		.ico_brief_bonus_btn button
+			color: #333
+			text-transform: uppercase
+			border: 1px solid #333
+			padding: 10px 0
+			font-size: 17px
+			cursor: pointer
+			transition: all .3s ease
+			width: 190px
+			text-align: center
+			display: inline-block
+			text-decoration: none
+			background: #fff
+			outline: none !important
+			&:hover
+				color: #fff
+				background: #434343
+
+.our_address_block
+	background: linear-gradient(to right, #fff 50%, $main-accent 50%) no-repeat
+	.ico_content_wrap
+		p
+			margin-bottom: 0
+		> div
+			width: 50%
+			height: 215px
+			&:nth-child(2)
+				color: #fff
+				padding: 20px 0 0 85px
+			.our_address_title
+				font-family: "MyriadProBold"
+				font-size: 24px
+				padding-bottom: 15px
+				margin-bottom: 15px
+				border-bottom: 1px solid #fff
+				display: inline-block
+			.our_address_contact
+				font-size: 16px
+				span
+					display: block
+
+//============= Conjoint =============
+
+.ico_four_bl.conjoint_four_bl .ico_four_content
+	background: url(/images/4_bl_center_con.png) no-repeat
+	background-size: contain
+	background-position-y: bottom
+	.ico_four_content_row
+		&:nth-child(1) .ico_four_content_col:nth-child(2)
+			margin-right: 10px
+			img
+				width: 65px
+				height: auto
+				margin-right: 35px
+				object-fit: contain
+		&:nth-child(2) .ico_four_content_col
+			&:nth-child(1)
+				align-items: center
+				.ico_four_content_title
+					max-width: inherit
+					width: 220px
+			&:nth-child(2) .ico_four_content_title
+				text-align: right
+		&:nth-child(3)
+			margin-bottom: 78px
+			.ico_four_content_col
+				flex-direction: row
+				.ico_four_content_title
+					order: 1
+				img
+					order: 2
+					margin-right: 0
+					margin-left: 10px
+				&:nth-child(1)
+					align-items: center
+					img
+						width: 41px
+						height: auto
+						object-fit: contain
+				&:nth-child(2)
+					margin-left: auto
+					margin-right: 8px
+					.ico_four_content_title
+						text-align: right
+
+#diagram_select
+	color: #fff
+	border: 2px solid #fff
+	background-color: $main-accent
+	border-radius: 4px
+	outline: none
+	display: inline-block
+	background-image: linear-gradient(45deg, transparent 50%, #fff 50%), linear-gradient(135deg, #fff 50%, transparent 50%), linear-gradient(to right, #fff, #fff)
+	background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em
+	background-size: 5px 5px, 5px 5px, 1px 1.5em
+	background-repeat: no-repeat
+	line-height: 1.5em
+	padding: 0.5em 3.5em 0.5em 1em
+	//reset
+	margin: 0
+	box-sizing: border-box
+	appearance: none !important
+
+.diagram
+	width: 100%
+	height: 100%
+	opacity: 0
+	z-index: 1
+	position: absolute
+	left: 0
+	top: 0
+	transition: opacity 1s
+	> ul
+		list-style: none
+		display: flex
+		padding: 0
+		padding-top: 20px
+		font-size: 14px
+		> li
+			padding-right: 3px
+			text-align: center
+	.diagram_graph
+		max-width: 350px
+		svg text
+			fill: #fff
+	.showing
+		opacity: 1
+		z-index: 2
+
+.my_custom_lang_switch
+	.lang_inac
+		a
+			padding: 0 !important
+
+.conjoint_first_bl
+	background: url(/images/conjoint_header_bg.png) no-repeat
+	background-size: cover
+	.ico_content_wrap
+		overflow: hidden
+	.conjoint_first_col
+		color: #fff
+		width: 60%
+		.conjoint_content_title
+			font-family: "MyriadProBold"
+			font-size: 48px
+			margin: 35px 0
+		.conjoint_content_text
+			font-size: 18px
+			line-height: 24px
+			max-width: 500px
+	.conjoint_first_wrap
+		display: flex
+		justify-content: flex-end
+		margin-top: 45px
+		> div
+			width: 50%
+			&:nth-child(1)
+				position: relative
+				img
+					position: absolute
+					object-fit: contain
+					object-position: top
+			.conjoint_content_title
+				font-size: 24px
+				line-height: 24px
+				margin: 0
+				margin-bottom: 20px
+				text-align: right
+			.btn_conj_order
+				display: block
+				margin-left: auto
+				margin-bottom: 20px
+				font-family: "MyriadProBold"
+				font-size: 18px
+				line-height: 24px
+				border: 3px solid #fff
+				height: 45px
+				background: none
+				width: 185px
+				margin-right: 0
+				padding: 0
+				text-transform: capitalize
+				color: #fff
+				&:hover
+					background: #fff
+					color: $main-accent
+			.conj_tab_btn
+				display: flex
+				flex-direction: column
+				height: 100%
+				justify-content: space-around
+				cursor: pointer
+				position: absolute
+				right: 0
+				top: 50%
+				transform: translate(0, -50%)
+			ul
+				list-style: none
+				text-align: right
+				li
+					font-size: 16px
+					line-height: 24px
+					margin-bottom: 10px
+					padding-right: 20px
+					position: relative
+					.conjoint_content_b
+						font-family: "MyriadProBold"
+	#slide-1
+		position: relative
+	.slide
+		width: 100%
+		height: 100%
+		opacity: 0
+		z-index: 1
+		position: absolute
+		left: 0
+		top: 0
+		transition: opacity 1s
+	.showing
+		opacity: 1
+		z-index: 2
+	.conjoint_sec_col
+		display: flex
+		flex-wrap: wrap
+		justify-content: flex-end
+		align-items: flex-start
+		width: 40%
+		.for_tabs_conj_wrap > div
+			display: none
+			position: relative
+			width: 400px
+			height: 420px
+			overflow: hidden
+			&:nth-child(1)
+				display: block
+		.conjoint_content_title
+			margin-top: 40px
+			font-family: "MyriadProBold"
+			font-size: 30px
+			line-height: 36px
+			margin-bottom: 0
+			color: #fff
+			width: 100%
+			text-align: right
+		img
+			display: block
+			width: 400px
+			height: 340px
+			object-fit: contain
+
+.conjoint_sec_bl
+	position: relative
+	background: #fff url(/images/conjoint_sec_bg.png) no-repeat
+	background-size: contain
+	background-position-y: bottom
+	.ico_content_wrap
+		flex-wrap: wrap
+		p
+			text-align: inherit
+			margin-bottom: 0
+		img
+			margin: 0
+	.conjoint_first_col
+		background: url(/images/sec_line_f.png) no-repeat
+		background-position: center bottom
+		display: flex
+		text-align: center
+		height: 370px
+		position: relative
+		width: 980px
+		margin: 40px auto 0
+		> div
+			position: absolute
+			height: inherit
+			display: flex
+			flex-wrap: wrap
+			p
+				width: 100%
+				height: -webkit-min-content
+				height: -moz-min-content
+				height: min-content
+			img
+				margin-top: auto
+			&:nth-child(1)
+				left: 155px
+				margin-left: -100px
+				width: 200px
+				img
+					margin-left: 83px
+					margin-bottom: 50px
+			&:nth-child(2)
+				left: 328px
+				width: 235px
+				margin-left: -117px
+				p
+					margin-top: 60px
+				img
+					margin-left: 91px
+					margin-bottom: 88px
+			&:nth-child(3)
+				left: 492px
+				width: 190px
+				margin-left: -95px
+				img
+					margin-left: 75px
+					margin-bottom: 107px
+			&:nth-child(4)
+				left: 662px
+				width: 185px
+				margin-left: -92px
+				p
+					margin-top: 60px
+				img
+					margin-left: 68px
+					margin-bottom: 88px
+			&:nth-child(5)
+				left: 825px
+				width: 270px
+				margin-left: -135px
+				img
+					margin-left: 114px
+					margin-bottom: 45px
+			p
+				color: #323232
+				font-size: 16px
+				line-height: 24px
+	.conjoint_sec_col
+		background: url(/images/sec_line_s.png) no-repeat
+		background-position: center top
+		display: flex
+		text-align: center
+		height: 370px
+		position: relative
+		width: 980px
+		margin: 0 auto 50px
+		> div
+			position: absolute
+			height: inherit
+			display: flex
+			flex-wrap: wrap
+			> div
+				width: 100%
+				height: -webkit-min-content
+				height: -moz-min-content
+				height: min-content
+				margin-top: auto
+				order: 2
+				position: relative
+			img
+				order: 1
+			&:nth-child(1)
+				left: 152px
+				margin-left: -100px
+				width: 180px
+				img
+					margin-left: 83px
+					margin-top: 50px
+			&:nth-child(2)
+				left: 320px
+				width: 150px
+				margin-left: -75px
+				> div
+					margin-bottom: 47px
+				img
+					margin-left: 58px
+					margin-top: 90px
+			&:nth-child(3)
+				left: 540px
+				width: 176px
+				margin-left: -126px
+				margin-top: 20px
+				> div
+					margin-bottom: 0px
+				img
+					margin-left: 52px
+					margin-top: 88px
+			&:nth-child(4)
+				left: 655px
+				width: 115px
+				margin-left: -45px
+				> div
+					margin-top: auto
+					margin-bottom: 70px
+				img
+					margin-left: 25px
+					margin-top: 92px
+			&:nth-child(5)
+				left: 822px
+				width: 170px
+				margin-left: -85px
+				img
+					margin-left: 65px
+					margin-top: 55px
+			> div a
+				color: #fff
+				font-size: 16px
+				line-height: 24px
+				display: block
+				&:hover
+					color: #fff
+	.conjoint_comp_logo
+		position: absolute
+		top: 50%
+		left: 50%
+		margin-left: -73px
+		margin-top: -22px
+		width: auto !important
+		z-index: 555
+	.arrow_down
+		display: block
+		position: absolute
+		left: 50%
+		margin-left: -17px
+		bottom: -17px
+		img
+			transition: opacity .3s ease
+			&:hover
+				opacity: .7
+
+.conjoint_hide_bl
+	visibility: hidden
+	opacity: 0
+	transition: all .3s ease
+	position: absolute
+	z-index: 5
+	bottom: 0
+	ul
+		list-style: none
+		background-color: #fff
+		padding: 18px 10px
+		border-radius: 3px
+		color: #323232
+		font-size: 12px
+		min-width: 125px
+
+.conjoint_sec_bl .conjoint_sec_col > div > div:hover .conjoint_hide_bl
+	visibility: visible
+	opacity: 1
+
+//=============  Transfer pricing tcu =============
+
+.mainBlockInAllVideo
+	position: relative
+
+.mainBlockInAll
+	background: url(/images/mainBlockInAll.png) no-repeat
+	background-size: cover
+	margin-bottom: 120px
+
+.mainBlockInAllContentBlock
+	width: 1200px
+	margin: 0 auto
+	display: flex
+	> div
+		width: 50%
+		position: relative
+		&:nth-child(1)
+			align-self: center
+		&:nth-child(2)
+			text-align: center
+			margin-bottom: -78px
+	.site-branding-header img
+		margin: 0
+
+.site-branding-header
+	margin-top: 40px
+	float: left
+	width: 100%
+
+.site-branding-logo
+	float: left
+	width: 165px
+	margin-top: 2px
+	img
+		height: auto
+		max-width: 100%
+
+.site-branding-phone
+	float: right
+	color: #fff
+	font-size: 15px
+	.site-branding-phone-one
+		float: left
+		margin-top: 6px
+		margin-right: 15px
+		margin-left: 10px
+		height: 50px
+		z-index: 10000
+		position: relative
+		a
+			line-height: 50px
+			color: #fff
+			font-size: 15px
+			&:hover, &:focus
+				text-decoration: none
+				color: #fff
+				outline: none
+			img
+				width: 16px
+				height: auto
+				max-width: 100%
+				margin-right: 5px
+		#sendmailtoConsult
+			border: 1px solid #fff
+			padding: 12px 21px
+			text-transform: uppercase
+			cursor: pointer
+			transition: all .3s ease
+			&:hover
+				color: #ab1024
+				background: #fff
+		select#lang_choice_1
+			background: none
+			color: #fff
+			border: none
+			box-shadow: none
+			font-size: 15px
+			margin-top: 9px
+			margin-left: 0
+			border-radius: 2px
+			padding: 0.4em
+			option
+				background: #6a101d
+
+
+.process
+	color: #fff
+	position: absolute
+	right: 5px
+	&:after
+		content: ' %'
+
+.transfer_nine_custom
+	display: none
+
+.transfer_nine_custom_visible
+	display: block
+
+.slider_submit_tp
+	display: none
+
+.slider_submit_tp_visible
+	display: block
+
+.phone_class_tp
+	border: 1px solid #404040
+	padding: 4px 0px 4px 10px
+
+.slick-disabled-real
+	display: none
+
+.slider_submit_tp
+	outline: none
+	font-size: 16px
+	cursor: pointer
+	background: $main
+	color: #fff
+	border-radius: 0
+	padding: 6px 20px
+	transition: all .3s ease
+	&:hover
+		background: $maind
+
+.variant
+	display: none
+	font-size: 18px
+
+.money_class
+	border: 1px solid #404040
+	padding: 4px 0px 4px 10px
+
+.visible_variant
+	display: block
+
+.ico_five_block
+	form
+		input::-webkit-input-placeholder
+			color: #fff !important
+			opacity: 1 !important
+
+		input::-moz-placeholder
+			color: #fff !important
+			opacity: 1 !important
+
+		input:-ms-input-placeholder
+			color: #fff !important
+			opacity: 1 !important
+
+		input:-moz-placeholder
+			color: #fff !important
+			opacity: 1 !important
+
+.mainBlockInAllContentBlockContent
+	margin: 70px 0
+	color: #fff
+	.tcu_content_title
+		font-family: "MyriadProBold"
+		font-size: 48px
+		margin-bottom: 0
+		margin-top: 0
+		span
+			display: block
+			color: #df504f
+
+.mainBlockInAllContentBlockPeople
+	float: right
+	margin-top: 0
+	z-index: 1
+	position: relative
+	> img
+		width: 450px
+		height: auto
+		max-width: 100%
+		position: relative
+		bottom: -87px
+	.arrow_down
+		position: absolute
+		bottom: -57px
+		transition: opacity .3s ease
+		z-index: 2
+		right: 270px
+		&:hover
+			opacity: .7
+
+// video#bgvideo
+// 	position: absolute
+// 	right: 0
+// 	bottom: 0
+// 	top: 0
+// 	width: 100%
+// 	min-width: 100%
+// 	max-height: 465px
+// 	height: auto
+// 	z-index: -9999
+// 	background: #880b0f
+// 	object-fit: cover
+
+.mainBlockInAllSec
+	margin-top: -120px
+	background: #fff
+	.mainBlockInAllContentBlock
+		padding-top: 50px
+	.mainBlockInAllSecContentOneTitle
+		font-size: 39px
+		font-family: "MyriadProBold"
+		color: #3a3a3a
+	.mainBlockInAllSecContentOneCs
+		font-size: 21px
+		color: #3a3a3a
+		strong
+			font-weight: normal
+			font-family: "MyriadProBold"
+	.mainBlockInAllSecContentTwo
+		width: 100%
+		.mainBlockInAllSecContentOneRed
+
+	.mainBlockInAllSecContentOneRed
+		margin-top: 30px
+		color: $main-accent
+		font-size: 18px
+		&__button
+			border: 1px solid $main-accent
+			padding: 8px 10px
+			border-radius: 1px
+			background: $main-accent
+			color: #fff
+			transition: all .3s ease
+			margin: 10px 5px
+			&:hover
+				background: #fff
+				color: $main-accent
+				text-decoration: none
+			&:focus
+				outline: none
+				text-decoration: none
+		.fancybox
+			border: 1px solid $main-accent
+			padding: 8px 10px
+			border-radius: 1px
+			background: $main-accent
+			color: #fff
+			display: inline-block
+			transition: all .3s ease
+			margin: 0 5px
+			&:hover
+				background: #fff
+				color: $main-accent
+				text-decoration: none
+			&:focus
+				outline: none
+				text-decoration: none
+	a#ContentOneRedNext
+		margin-left: 20px
+		float: right
+		margin-top: -5px
+		margin-right: 160px
+		position: relative
+		z-index: 1112
+		transition: opacity .3s ease
+		&:hover
+			opacity: 0.5
+		img
+			height: auto
+			max-width: 100%
+
+.mainBlockInAllthrd
+	float: left
+	width: 100%
+	background: #fff
+	.mainBlockInAllthrdAll
+		margin: 0 auto
+		width: 1200px
+		margin-top: 135px
+	.mainBlockInAllthrdAllBg
+		float: left
+		width: 100%
+		background: url(/images/mainBlockInAllthrdAllBlockBg.png)
+		background-repeat: no-repeat
+		background-position-y: bottom
+		margin-bottom: 135px
+	.mainBlockInAllthrdAllBlock
+		float: left
+		width: 20%
+		text-align: center
+		font-size: 16px
+		line-height: 20px
+	#mainBlockInAllthrdAllBlocklw
+		margin-top: 128px
+	.mainBlockInAllthrdAllBlockTxt
+		padding: 0 7%
+	.mainBlockInAllthrdAllBlock img
+		margin-top: 45px
+		height: auto
+		max-width: 100%
+
+.mainBlockInAllFrh
+	float: left
+	width: 100%
+	height: 769px
+	background: url(/images/mainBlockInAllfrtBg.png) no-repeat
+	background-size: cover
+	padding-top: 50px
+
+.mainBlockInAllthrdAllIn
+	margin: 0 auto
+	width: 1200px
+
+.mainBlockInAllthrdAllTitle
+	float: left
+	width: 100%
+	color: $main-accent
+	font-family: "MyriadProBold"
+	text-align: center
+	margin-top: 8px
+	font-size: 44px
+
+.mainBlockInAllthrdAllContentAll
+	float: left
+	width: 100%
+	background: url(/images/mainBlockInAllthrdAllContentAll.png)
+	background-repeat: no-repeat
+	background-position: center
+
+.mainBlockInAllthrdAllContentAllBlock1
+	float: left
+	width: 100%
+	margin-top: 33px
+
+.mainBlockInAllthrdAllContentAllBlock2
+	float: left
+	width: 100%
+	margin-top: -2px
+
+.mainBlockInAllthrdAllThrdFrTxt
+	float: left
+	line-height: 228px
+	font-family: "MyriadProBold"
+	margin-left: 106px
+	color: #fff
+	margin-right: 12px
+	font-size: 18px
+
+.mainBlockInAllthrdAllThrd
+	float: left
+	background: url(/images/mainBlockInAllthrdAllThrd.png)
+	width: 259px
+	height: 259px
+	text-align: center
+	font-family: "MyriadProBold"
+	color: #fff
+	font-size: 115px
+	line-height: 251px
+	margin-left: 8px
+	background-repeat: no-repeat
+	background-size: cover
+
+.mainBlockInAllthrdAllThrdFrTxtSec
+	float: left
+	margin-left: -114px
+	font-family: "MyriadProBold"
+	color: #fff
+	margin-top: 208px
+	width: 271px
+	line-height: 25px
+	font-size: 18px
+
+.mainBlockInAllthrdAllThrdFrTxttrd
+	float: right
+	width: 348px
+	margin-top: 228px
+	margin-right: 45px
+	color: #fff
+	font-size: 17px
+
+.mainBlockInAllthrdAllTitleIni
+	font-family: "MyriadProBold"
+	margin-bottom: 8px
+
+.mainBlockInAllthrdAllTxtIni
+	line-height: 21px
+
+.mainBlockInAllthrdAllContentAllBlock3
+	float: left
+	width: 100%
+
+.mainBlockInAllthrdAllThrdFrTxtFrst
+	float: right
+	margin-right: 88px
+	width: 475px
+	font-size: 17px
+	color: #fff
+	margin-top: 34px
+
+.mainBlockInAllthrdAllTitleIni
+	font-family: "MyriadProBold"
+	margin-bottom: 8px
+
+.mainBlockInAllthrdAllTxtIni
+	line-height: 21px
+
+.mainBlockInAllthrdAllContentAllBlock1In
+	float: right
+	font-size: 17px
+
+#ContentAllBlock1In12
+	width: 261px
+	margin-right: 50px
+
+#ContentAllBlock1InTitle
+	font-family: "MyriadProBold"
+	margin-bottom: 4px
+
+div#ContentAllBlock1In1
+	width: 283px
+	margin-right: 44px
+	margin-top: 42px
+
+#ContentOneRedNext2
+	width: 39px
+	height: 39px
+	float: left
+	margin-left: 288px
+	margin-top: 5px
+	position: relative
+	z-index: 10
+	transition: opacity .3s ease
+	&:hover
+		opacity: 0.5
+	img
+		height: auto
+		max-width: 100%
+		vertical-align: middle
+
+.mainBlockInAllSix
+	float: Left
+	width: 100%
+	position: relative
+	background-size: cover !important
+	background: url(/images/mainBlockInAllsixBg.png)
+	background-repeat: no-repeat
+
+.mainBlockInAllSixdAllTitle
+	float: left
+	width: 100%
+	text-align: center
+	font-size: 45px
+	font-family: "MyriadProBold"
+	margin-top: 66px
+	color: #fff
+	margin-bottom: 50px
+
+.PriceTePrAllBrif
+	font-size: 15px
+	border: 1px solid #fff
+	background: #fff
+	color: $main-accent !important
+	padding: 11px 15px
+	text-decoration: none !important
+	text-transform: uppercase
+	vertical-align: middle
+	border-radius: 2px
+	transition: all .3s ease
+	display: inline-block
+	&:hover
+		border: 1px solid #fff
+		background: none
+		color: #fff !important
+		text-decoration: none
+
+.mainBlockInAllSixdAllInWg
+	float: left
+	width: 100%
+
+.mainBlockInAllSixdAllIn
+	width: 630px
+	margin: 0 auto
+
+.mainBlockInAllSixdAllInFloat
+	float: left
+	width: 100%
+	background: url(/images/mainBlockInAllsixBgIn.png)
+	background-repeat: no-repeat
+	background-size: contain
+	background-position-y: 56px
+
+.mainBlockInAllSixdAllInBlock1
+	float: left
+	width: 100%
+	margin-bottom: 35px
+
+#widget
+	display: block
+	float: left
+	&:hover
+		.tooltip, .tooltip2, .tooltip3, .tooltip4, .tooltip5
+			margin-top: 0
+			max-width: 305px
+			background: #fff
+			font-size: 14px
+			border-radius: 2px
+			opacity: 1
+			box-shadow: 3px 3px 1px #6d0311
+			color: #333
+			visibility: visible
+			transition-delay: 0s
+
+.mainBlockInAllSixdAllInBlock1Fr
+	float: left
+	width: 360px
+
+.mainBlockInAllSixdAllInBlock1Sc
+	width: 270px
+
+.mainBlockInAllSixdAllInBlock1FrIcon
+	float: Left
+	width: 31px
+	margin-left: 10px
+	margin-top: 9px
+	margin-right: 21px
+	img
+		height: auto
+		max-width: 100%
+
+.mainBlockInAllSixdAllInBlock1FrTitle
+	float: left
+	margin-top: 11px
+	text-transform: uppercase
+	color: #fff
+	font-size: 15px
+	line-height: 21px
+	width: 155px
+
+.mainBlockInAllSixdAllInBlock1FrNextLine
+	float: left
+	width: 103px
+	margin-top: 23px
+	margin-left: 10px
+	img
+		height: auto
+		max-width: 100%
+
+.mainBlockInAllSixdAllInBlock1FrContent
+	float: Left
+	font-size: 13px
+	margin-top: 5px
+	margin-left: 63px
+	line-height: 16px
+	color: #fff
+	width: 184px
+
+.tooltip, .tooltip2, .tooltip3, .tooltip4, .tooltip5
+	display: block
+	position: absolute
+	background: #ededed
+	color: #555
+	font-size: 14px
+	padding: 12px 14px
+	line-height: 18px
+	max-width: 305px
+	opacity: 0
+	visibility: hidden
+	transition: all .3s ease
+	z-index: 10
+
+div#tooltipMainTitle
+	font-family: "MyriadProBold"
+	text-transform: uppercase
+	margin-bottom: 8px
+
+#tooltipMainHref
+	border: 1px solid $main-accent
+	padding: 4px 8px
+	border-radius: 1px
+	background: $main-accent
+	color: #fff
+	margin-top: 12px
+	outline: none !important
+	&:hover
+		border: 1px solid $main-accent
+		background: #fff
+		color: $main-accent
+
+.mainBlockInAllSixdAllInBlock1Sc
+	width: 270px
+
+.mainBlockInAllSixdAllInBlock1FrIconSc
+	float: Left
+	width: 41px
+	margin-top: 9px
+	margin-right: 13px
+	img
+		height: auto
+		max-width: 100%
+
+.mainBlockInAllSixdAllInBlock1FrContentSec
+	float: Left
+	font-size: 13px
+	margin-top: 5px
+	margin-left: 55px
+	line-height: 16px
+	color: #fff
+	width: 205px
+
+.mainBlockInAllSixdAllInBlock2
+	float: left
+	width: 100%
+	margin-bottom: 35px
+	display: flex
+	align-items: center
+	justify-content: space-around
+
+.mainBlockInAllSixdAllInBlock2Fr
+	display: flex !important
+	align-items: center
+	font-size: 17px
+	color: #fff
+	text-transform: uppercase
+	line-height: 21px
+	img
+		display: inline-block
+		object-fit: contain
+		margin-right: 8px
+	span
+		display: inline-block
+
+.mainBlockInAllSixdAllInBlock2Sc
+	float: left
+	width: 147px
+	margin-right: 70px
+	color: #fff
+	text-transform: uppercase
+	font-size: 15px
+	line-height: 21px
+
+img.mainBlockInAllSixdAllInBlock2ScImg
+	width: 118px
+	margin-bottom: 8px
+	height: auto
+	max-width: 100%
+
+.mainBlockInAllSixdAllInBlock3
+	float: left
+	width: 100%
+
+.mainBlockInAllSixdAllInBlock3Fr
+	float: left
+	margin-top: 51px
+	margin-left: 126px
+	padding-top: 21px
+	color: #fff
+	text-transform: uppercase
+	line-height: 21px
+	font-size: 15px
+	width: 240px
+	height: 100px
+	padding-right: 74px
+	background: url(/images/mainBlockInAllsixIcon5.png)
+	background-size: contain
+	background-position: right
+	background-repeat: no-repeat
+
+.mainBlockInAllSixdAllInBlock3Sc
+	float: left
+	width: 186px
+	margin-top: 69px
+	padding-left: 43px
+	text-transform: uppercase
+	color: #fff
+	font-size: 16px
+	line-height: 22px
+
+.mainBlockInAllSixdAllInBlock3FrContentSec
+	float: left
+	margin-left: 53px
+	font-size: 12px
+	margin-top: 4px
+	color: #fff
+
+.mainBlockInAllSixdAllInBlock4
+	float: left
+	width: 100%
+	margin-top: 58px
+	height: 67px
+	img
+		float: right
+		margin-right: 25px
+		height: auto
+		max-width: 100%
+
+.mainBlockInAllSvnInAll
+	width: 900px
+	margin: 0 auto
+	display: flex
+	flex-direction: column
+	margin-bottom: 60px
+	> div:nth-child(2)
+		display: flex
+		flex-wrap: wrap
+
+.mainBlockInAllSvnInAllFirstInLine
+	width: 100%
+	justify-content: flex-end
+	img
+		float: right
+		margin-right: 160px
+		margin-top: 8px
+		height: auto
+		max-width: 100%
+
+.mainBlockInAllSvnInAllFirstIn
+	display: flex
+	flex-direction: column
+	width: 63%
+	margin-top: 60px
+
+.mainBlockInAllSvnInAllFirstInBlock
+	width: 100%
+	margin-bottom: 43px
+	display: flex
+	align-items: center
+
+.IconFormainBlockInAllSvnInAllFirstInBlock
+	margin-right: 13px
+	height: auto
+	max-width: 100%
+
+.TitleFormainBlockInAllSvnInAllFirstInBlock
+	font-size: 31px
+	font-family: "MyriadProBold"
+	width: 100%
+	line-height: 30px
+
+.TxtFormainBlockInAllSvnInAllFirstInBlock
+	width: 100%
+	font-size: 14px
+
+.mainBlockInAllSvnInAllScndIn
+	display: flex
+	justify-content: center
+	width: 37%
+	background: url(/images/bonus-tcu.png) no-repeat
+	background-position: 0 0
+	background-size: cover
+	margin-top: 25px
+	height: 334px
+	cursor: pointer
+	opacity: 1
+	transition: opacity .3s ease
+	&:hover
+		background-position: -361px -0px
+		opacity: .6
+
+.mainBlockInAllSvnInAllScndInContent
+	text-transform: none
+	margin-top: 95px
+	font-size: 24px
+	width: 230px
+	letter-spacing: -2px
+	color: #fff
+
+.ScndInContentBig
+	font-size: 68px
+	line-height: 48px
+	margin-left: -4px
+
+.mainBlockInAllEght
+	background: url(/images/mainBlockInAllEghtBg.png)
+	background-repeat: no-repeat
+	height: 800px
+	background-size: cover
+	background-position: center
+
+.mainBlockInAllEghtAll
+	margin: 0 auto
+	width: 1200px
+	display: flex
+	flex-direction: column
+
+.mainBlockInAllEghtAllTitle
+	font-size: 44px
+	font-family: "MyriadProBold"
+	text-align: center
+	padding: 20px 0
+	text-shadow: 1px -1px 1px #fff
+
+.mainBlockInAllEghtAllblocks
+	margin-top: 30px
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+	text-align: center
+
+.mainBlockInAllEghtAllblockInTitle
+	color: #fff
+	text-transform: uppercase
+	font-size: 15px
+	margin-top: 25px
+	margin-bottom: 25px
+
+.mainBlockInAllEghtAllblockInlogo
+	> a:first-child
+		margin-bottom: 20px
+	a
+		display: block
+		opacity: 0.7
+		&:hover
+			opacity: .5
+
+.mainBlockInAllEghtAllblockIn
+	width: 31%
+	height: 250px
+	background: rgba(172, 22, 44, 0.88)
+	margin-bottom: 40px
+
+.mainBlockInAllNin
+	background: linear-gradient(to right, #fff 50%, $main-accent 50%)
+	background-repeat: no-repeat
+	background-size: contain
+	background-position: center
+
+.mainBlockInAllNinAll
+	width: 1200px
+	margin: 0 auto
+	display: flex
+	flex-direction: column
+	> div
+		margin-bottom: 60px
+		&:nth-child(1)
+			display: flex
+			flex-wrap: wrap
+			> div
+				width: 50%
+
+.mainBlockInAllNinAllBlock1
+	padding: 0 1em
+
+.mainBlockInAllNinAllBlock1Title
+	margin-top: 50px
+	font-size: 43px
+	font-family: "MyriadProBold"
+	color: $main-accent
+
+.mainBlockInAllNinAllBlock1TitleIn
+	color: #818181
+	font-size: 21px
+
+.mainBlockInAllNinAllBlock1TitleIn2
+	margin-top: 75px
+	color: #373737
+	font-size: 21px
+	strong
+		font-family: "MyriadProBold"
+
+.mainBlockInAllNinAllBlock1TitleInBut
+	margin-top: 33px
+
+#mainBlockInAllNinAllBlock1TitleIn2But
+	color: #434343
+	text-transform: uppercase
+	border: 1px solid #434343
+	border-radius: 1px
+	padding: 10px 29px
+	font-size: 17px
+	cursor: pointer
+	transition: all .3s ease
+	width: 190px
+	text-align: center
+	&:hover
+		color: #fff
+		background: #434343
+
+.mainBlockInAllNinAllBlock2Form
+	width: 80%
+	margin: 100px auto 0
+
+.mainBlockInAllTen
+	max-width: 1240px
+	margin: 40px auto
+
+.mainBlockInAllElvn
+	display: flex
+	// flex-direction: column
+	justify-content: center
+	align-items: center
+	background: url(/images/mainBlockInAllsixBg.png)
+	padding: 40px 20px
+	+r(768)
+		flex-direction: column
+	+r(480)
+		padding: 30px 20px
+
+
+.mainBlockInAllElvnTitle
+	p
+		font-size: 32px
+		font-family: "MyriadProBold"
+		color: #fff
+		+r(1000)
+			font-size: 28px
+		+r(768)
+			font-size: 22px
+			text-align: center
+		+r(480)
+			font-size: 16px
+
+.mainBlockInAllElvnBox
+	display: flex
+	flex-direction: column
+	justify-content: space-around
+	padding: 20px
+
+.mainBlockInAllElvnHr
+	height: 4px
+	color: #FFF
+	width: 10%
+	background: #FFF
+	+r(768)
+		width: 80%
+		margin: 10px auto
+
+
+.mainBlockInAllElvnSubTitle
+	color: #FFF
+	font-family: $f1
+	font-size: 22px
+	+r(768)
+		font-size: 16px
+		text-align: center
+	+r(480)
+		font-size: 14px
+
+
+.mainBlockInAllElvnVideoContainer
+	width: 800px
+	+r(800)
+		width: 100%
+
+.mainBlockInAllElvnVideo
+	position: relative
+	padding-bottom: 56.25%
+	padding-top: 30px
+	height: 0
+	overflow: hidden
+	iframe
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+
+
+.wpcf7-form-control-wrap
+	position: relative
+
+input
+	&.yourname, &.yourcompany, &.youremail
+		border: solid 1px #e6e6e6
+		margin-top: 0.4em
+		background: $main-accent
+		color: #fff
+		padding: 5px 12px
+		width: 100%
+		font-size: 18px
+		margin-bottom: 36px
+		display: block
+	&.yourname:focus::-webkit-input-placeholder, &.yourcompany:focus::-webkit-input-placeholder, &.youremail:focus::-webkit-input-placeholder, &.yourname:focus:-ms-input-placeholder, &.yourcompany:focus:-ms-input-placeholder, &.youremail:focus:-ms-input-placeholder, &.yourname:focus::placeholder, &.yourcompany:focus::placeholder, &.youremail:focus::placeholder, &.yourname:focus::-webkit-input-placeholder, &.yourcompany:focus::-webkit-input-placeholder, &.youremail:focus::-webkit-input-placeholder, &.yourname:focus:-ms-input-placeholder, &.yourcompany:focus:-ms-input-placeholder, &.youremail:focus:-ms-input-placeholder
+		text-indent: -150px
+	&.yourname::-webkit-input-placeholder, &.yourcompany::-webkit-input-placeholder, &.youremail::-webkit-input-placeholder, &.yourname:-ms-input-placeholder, &.yourcompany:-ms-input-placeholder, &.youremail:-ms-input-placeholder, &.yourname::placeholder, &.yourcompany::placeholder, &.youremail::placeholder, &.yourname::-webkit-input-placeholder, &.yourcompany::-webkit-input-placeholder, &.youremail::-webkit-input-placeholder, &.yourname::-moz-placeholder, &.yourcompany::-moz-placeholder, &.youremail::-moz-placeholder, &.yourname:-ms-input-placeholder, &.yourcompany:-ms-input-placeholder, &.youremail:-ms-input-placeholder, &.yourname:-moz-placeholder, &.yourcompany:-moz-placeholder, &.youremail:-moz-placeholder
+		color: inherit
+		opacity: 0.54
+		transition: text-indent .3s ease
+
+span.wpcf7-not-valid-tip
+	color: #f00
+	font-size: 1em
+	font-weight: normal
+	display: none
+
+div
+	&.wpcf7 .screen-reader-response
+		position: absolute
+		overflow: hidden
+		clip: rect(1px, 1px, 1px, 1px)
+		height: 1px
+		width: 1px
+		margin: 0
+		padding: 0
+		border: 0
+	&.wpcf7-validation-errors
+		border: 1px solid #fff
+		border-radius: 1px
+		padding: 10px !important
+		font-size: 15px
+		background: #ca1027
+		color: #fff
+		margin: 0 !important
+	&.wpcf7-response-output
+		margin: 2em 0.5em 1em
+		padding: 0.2em 1em
+		clear: both
+
+.wpcf7-display-none
+	display: none
+
+input.yoursend
+	border: none
+	cursor: pointer
+	font-size: 16px
+	letter-spacing: 0.05em
+	line-height: 1
+	text-transform: uppercase
+	transition: .3s ease-in-out
+	border-radius: 0
+	background: #fff
+	color: $main-accent
+	margin-top: 8px
+	padding: 13px 29px
+	margin-left: auto
+	&:hover
+		background: $main-accent
+		color: #fff
+
+.mainBlockInAllNinAllBlock3
+	text-align: center
+	margin-top: 80px
+	margin-bottom: 28px
+	img
+		height: auto
+		max-width: 100%
+
+
+
+// responsive, mobile
+@media only screen and (max-width: 1600px)
+	.services_block_container
+		height: 18vw
+	.main_page_slider .next_arrow
+		right: 40px !important
+	.main_page_slider .prew_arrow
+		left: 40px !important
+
+@media only screen and (max-width: 1366px)
+
+	.lang_switch_container .dropdown-menu
+		right: 0
+		left: inherit
+	.main_menu_s_container .menu_controls_container .top_menu .parent_block:last-child .menu_block_child
+		right: 0 !important
+
+@media only screen and (max-width: 1199px)
+	.mobile_with_container
+		display: flex
+	.order_pre_container
+		button
+			color: $main
+			background: none
+			text-decoration: underline
+			font-size: 13px
+			transition: all .3s ease
+		&:hover
+			color: $maind
+			svg
+				fill: $maind
+	.phone_pre_container
+		margin: 0
+	.main_menu_s_container .menu_controls_container .top_menu>li
+		width: 100%
+	.main_menu_s_container
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+	.lang_switch_container
+		margin: 0
+	.my_custom_lang_switch
+		display: none
+	.mobile_with_container
+		.my_custom_lang_switch
+			display: block !important
+	.login_btn_top_mobile
+		display: block !important
+	.login_btn_top
+		display: none !important
+		margin-right: 0
+	.socials_pre_main_menu
+		margin-left: 0
+	.socials_pre_main_menu
+		.login_btn_top
+			padding: 10px 20px
+	.custom_links
+		display: none
+	.logo_container
+		display: none
+	.toggle_glass_container
+		display: none
+	.controls_pre_main_menu_flexing_mobile
+		display: flex
+	// .page_container
+	// 	padding-top: 77px
+	.mobile-logo
+		width: 120px
+		padding: 5px 0 0 0
+		display: block
+	.main_menu_s_container .logo_container
+		display: none
+	.btn-mobile
+		display: inline-block
+		margin-left: auto
+		img
+			width: 35px
+			height: 35px
+	.main_menu_s
+		position: fixed
+		left: 0
+		right: 0
+		display: flex
+		justify-content: center
+		align-items: center
+		&.main_menu_s_fixed
+			top: 0
+	.main_menu_s_container
+		width: 100%
+		background: #fff
+		flex-direction: column
+		margin: 0
+		transform: translate3d(100%, 0, 0)
+		transition: transform 250ms ease-in-out
+		border-top: 1px solid #dfdfdf
+		border-bottom: 1px solid #dfdfdf
+		box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.2)
+		min-height: 100vh
+		&.main_menu_s_active
+			transform: translate3d(0, 0, 0)
+		.logo_container
+			margin-bottom: 10px
+		.menu_controls_container
+			flex-direction: column
+			flex-wrap: wrap
+			.lang_switch_container
+				order: 1
+				margin-left: 0
+				padding: 10px 0
+				button
+					text-transform: uppercase
+				.dropdown-menu a
+					font-size: 14px
+			.main_menu_container_list
+				margin-left: inherit
+				margin-bottom: 15px
+				width: 100%
+				order: 2
+				.top_menu
+					flex-direction: column
+					text-align: center
+					> li
+						transition: inherit
+						&:first-child a
+							border-top: 1px solid #dfdfdf
+						&:hover
+							background: none
+							> a
+								box-shadow: 0 0 15px 3px #ebebeb inset
+								transition: box-shadow .3s ease
+						> a
+							border-bottom: 1px solid #dfdfdf
+							height: 40px
+							line-height: 40px
+							padding: 0
+							&::after
+								display: none
+				.menu_block_child, .menu_block
+					display: none
+	.toggle_glass_container
+		padding: 0 15px
+		width: 100%
+		order: 3
+		.btn_glass
+			display: none
+		#form_search
+			position: relative
+			opacity: 1
+			visibility: visible
+			top: inherit
+			right: inherit
+			box-shadow: none
+			border: none
+			padding: 0
+			> span
+				display: none
+			form > div
+				width: 100%
+				input
+					width: 100%
+
+@media only screen and (max-width: 1170px)
+	.pre_main_menu_container
+		width: 100%
+	.blog_category_first_container .blog_category_first_right_col .blog_category_content
+		width: auto
+	.footer_custom_container, .page_container
+		width: 100%
+
+//tcu
+@media only screen and (max-width: 1225px)
+	.conjoint_first_bl
+		padding-top: 45px
+		.ico_content_wrap
+			padding: 0 1em
+		.conjoint_sec_col
+			padding-left: 1em
+			img
+				max-width: 100%
+	.ico_content_wrap, .mainBlockInAllEghtAll, .mainBlockInAllNinAll
+		width: 100%
+	.mainBlockInAllVideo
+		// padding-top: 45px //SHIT
+	.mainBlockInAllContentBlock
+		width: 100%
+		padding: 0 1em
+	.mainBlockInAllSecContentOne
+		padding: 0 1em
+	.mainBlockInAllthrdAllIn, .mainBlockInAllthrd .mainBlockInAllthrdAll
+		width: 100%
+
+@media only screen and (max-width: 992px)
+	.conjoint_sec_bl
+		.ico_content_wrap
+			.conjoint_first_col
+				width: 100%
+				background: none
+				padding: 0 1em
+				height: auto
+				margin-bottom: 40px
+				> div
+					left: inherit
+					margin-left: 0
+					width: auto
+					justify-content: center
+					position: relative
+					p
+						margin-top: 0
+					img
+						margin: 0
+			.conjoint_sec_col
+				width: 100%
+				background: none
+				padding: 0 1em
+				height: auto
+				margin-top: 40px
+				> div
+					left: inherit
+					margin-left: 0
+					width: auto
+					justify-content: center
+					position: relative
+					> div
+						margin-top: 0
+						margin-bottom: 0
+					img
+						margin: 0
+		.conjoint_comp_logo
+			position: relative
+			margin: 0 auto
+			top: inherit
+			left: inherit
+	.conjoint_first_bl
+		.ico_content_wrap
+			flex-wrap: wrap
+		.conjoint_first_wrap
+			flex-wrap: wrap
+			> div
+				&:nth-child(1)
+					text-align: center
+					img
+						position: relative
+						height: 360px
+				&:nth-child(2)
+					display: flex
+					flex-direction: column
+					align-items: center
+					.btn_conj_order
+						margin-left: inherit
+		.conjoint_first_col
+			width: 100%
+			.conjoint_content_title
+				text-align: center
+			.conjoint_content_text
+				max-width: inherit
+				text-align: center
+		.conjoint_sec_col
+			width: 100%
+			justify-content: center
+			padding: 30px 0
+			.conjoint_content_title
+				text-align: center
+				margin-bottom: 40px
+	.mainBlockInAllContentBlock > div:nth-child(2)
+		margin-bottom: -110px
+	.mainBlockInAll
+		margin-bottom: 0
+		video
+			display: none
+	.site-branding-header
+		margin-top: 0
+		.site-branding-logo
+			padding-top: 10px
+			float: none
+			margin: 0 auto
+		.site-branding-phone
+			display: none
+	.mainBlockInAllContentBlockContent
+		float: none
+		width: 100%
+		text-align: center
+		margin: 0
+	.mainBlockInAllContentBlockPeople
+		float: none
+		text-align: center
+		margin-bottom: -60px
+		img
+			max-width: 400px
+			width: 100%
+	.mainBlockInAllSec
+		margin: 0
+		padding: 0
+		float: none
+		padding-bottom: 10px
+	.mainBlockInAllContentBlock
+		max-width: 100%
+		padding-bottom: 50px
+		> div
+			width: 100%
+	.mainBlockInAllSecContentOne
+		padding: 0 1em
+		> div
+			line-height: inherit
+	.mainBlockInAllSec a#ContentOneRedNext
+		display: none
+	.mainBlockInAllthrd
+		float: none
+		.mainBlockInAllthrdAll
+			margin-top: 0
+			max-width: 100%
+		.mainBlockInAllthrdAllBg
+			float: none
+			background: none
+			display: flex
+			flex-wrap: wrap
+			flex-direction: row
+			padding: 0 1em
+			align-items: stretch
+			margin-bottom: 0
+			> div
+				&:nth-child(2) img
+					object-position: 0 -58px
+				&:nth-child(3) img
+					object-position: 0 -149px
+				&:nth-child(4) img
+					object-position: 0 -57px
+		.mainBlockInAllthrdAllBlock
+			float: none
+			margin: 0 !important
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+			flex-direction: column
+			align-items: center
+			img
+				width: 100px
+				height: 100px
+				object-fit: cover
+				object-position: 0 -236px
+				margin-top: auto
+		#mainBlockInAllthrdAllBlocklw
+			margin-top: 25px
+	.mainBlockInAllFrh
+		height: auto
+		float: none
+	.mainBlockInAllthrdAllIn
+		width: 100%
+		#ButtomFlashInIn
+			display: none
+		.mainBlockInAllthrdAllTitle
+			float: none
+			font-size: 28px
+		.mainBlockInAllthrdAllContentAll
+			float: none
+			background: none
+			padding: 0 1em
+		.mainBlockInAllthrdAllContentAllBlock1
+			float: none
+		#ContentAllBlock1In12
+			float: none
+			margin: 0
+			width: 100%
+			margin-top: 25px
+		#ContentAllBlock1In1
+			float: none
+			width: 100%
+			margin: 0
+			margin-top: 25px
+		.mainBlockInAllthrdAllContentAllBlock2
+			float: none
+			.mainBlockInAllthrdAllThrdFrTxt
+				float: none
+				text-transform: uppercase
+				text-align: center
+				line-height: inherit
+				margin: 0
+				margin-top: 10px
+			.mainBlockInAllthrdAllThrd
+				float: none
+				margin: 10px auto 20px
+			.mainBlockInAllthrdAllThrdFrTxtSec
+				float: none
+				width: 100%
+				margin: 0
+				text-align: center
+				text-transform: uppercase
+				margin-bottom: 25px
+			.mainBlockInAllthrdAllThrdFrTxttrd
+				float: none
+				width: 100%
+				margin: 0
+				margin-bottom: 25px
+		.mainBlockInAllthrdAllContentAllBlock3
+			float: none
+			.mainBlockInAllthrdAllThrdFrTxtFrst
+				float: none
+				width: 100%
+				margin: 0
+				padding-bottom: 25px
+	.mainBlockInAllSix
+		float: none
+		height: auto
+		padding-bottom: 25px
+		.mainBlockInAllSixdAllTitle
+			float: none
+			margin-top: 0
+			padding-top: 25px
+			margin-bottom: 25px
+		.mainBlockInAllSixdAllInWg
+			float: none
+		.mainBlockInAllSixdAllIn
+			width: 100%
+		.mainBlockInAllSixdAllInFloat
+			float: none
+			background: none
+		.mainBlockInAllSixdAllInBlock1, .mainBlockInAllSixdAllInBlock2, .mainBlockInAllSixdAllInBlock3
+			float: none
+			display: flex
+			padding: 0 6%
+			justify-content: space-around
+			align-items: center
+		#widget, .mainBlockInAllSixdAllInBlock1Fr, .mainBlockInAllSixdAllInBlock1Sc, .mainBlockInAllSixdAllInBlock3
+			float: none
+		.mainBlockInAllSixdAllInBlock1Fr, .mainBlockInAllSixdAllInBlock1Sc, .mainBlockInAllSixdAllInBlock2Fr, .mainBlockInAllSixdAllInBlock2Sc, .mainBlockInAllSixdAllInBlock3Fr
+			width: 45%
+		.mainBlockInAllSixdAllInBlock1FrIcon, .mainBlockInAllSixdAllInBlock1FrIconSc
+			float: Left
+			width: 10%
+			margin-left: 0
+			margin-top: 0
+			margin-right: 5%
+		.mainBlockInAllSixdAllInBlock1FrTitle
+			float: none
+			margin: 0
+			width: 100%
+			margin-bottom: 10px
+		.mainBlockInAllSixdAllInBlock1FrNextLine
+			display: none
+		.mainBlockInAllSixdAllInBlock1FrContent, .mainBlockInAllSixdAllInBlock1FrContentSec
+			float: none
+			margin: 0
+			width: 100%
+		.mainBlockInAllSixdAllInBlock2, .mainBlockInAllSixdAllInBlock3
+			margin-top: 25px
+		.mainBlockInAllSixdAllInBlock2Fr
+			margin: 0
+		.mainBlockInAllSixdAllInBlock2Sc
+			margin: 0
+			width: 50%
+			padding: 0
+	.mainBlockInAllSixdAllInBlock4
+		display: none
+	.mainBlockInAllSixdAllInBlock3Fr
+		margin: 0
+		width: 50%
+		padding: 0
+		height: 70px
+		background: none
+	.mainBlockInAllSixdAllInBlock3Sc
+		float: none
+		width: auto
+		margin: 0
+	.mainBlockInAllSixdAllInBlock3FrContentSec
+		float: none
+		margin: 0
+		padding-left: 10px
+	.mainBlockInAllSvn
+		float: none
+		height: auto
+	.mainBlockInAllSvnInAll
+		width: 100%
+		display: flex
+		padding: 0 1em
+		flex-wrap: wrap
+	.mainBlockInAllSvnInAllScndIn
+		width: 334px
+		margin: 0 auto
+	.mainBlockInAllSvnInAllScndInContent
+		margin-top: 70px
+		font-size: 20px
+		margin-left: 35px
+	.ScndInContentBig
+		font-size: 50px
+	.mainBlockInAllSvnInAllFirstInLine
+		display: none
+	.mainBlockInAllSvnInAllFirstIn
+		margin-top: 25px
+		width: 100%
+	.mainBlockInAllEght
+		height: auto
+	.mainBlockInAllEghtAll
+		width: 100%
+	.mainBlockInAllEghtAllblockIn
+		width: 46%
+	.mainBlockInAllNin
+		height: auto
+	.mainBlockInAllNinAllBlock3, .mainBlockInAllContentBlockPeople .arrow_down
+		display: none
+
+//end tcu
+@media only screen and (max-width: 992px)
+	.blog_category_first_container .blog_category_first_right_col .blog_category_content
+		margin-left: auto
+	.ico_first_block
+		padding-top: 45px
+		.ico_content_wrap
+			padding: 0 1em
+	.ico_sec_block
+		.ico_content_wrap
+			padding-left: 1em
+			padding-right: 1em
+		.ico_graphics_wrap > div
+			width: 120px
+	.ico_third_block .ico_content_wrap > div p
+		max-width: 245px
+
+@media only screen and (max-width: 768px)
+	.back_leave_request
+		display: block
+		padding: 20px !important
+	.leqve_request_left
+		width: 100% !important
+	.leqve_request_right
+		width: 100%
+		margin-top: 20px
+		margin-bottom: 0
+	.images_footer_col_line
+		flex-wrap: wrap
+		justify-content: center
+		img
+			padding: 10px
+			box-sizing: content-box
+	.our_services_wrap .our_services_details > div
+		width: 50%
+	.project_connect_wrap .project_contact_center_details
+		flex-wrap: wrap
+		justify-content: center
+		> div
+			width: 50%
+			margin-bottom: 20px
+			padding: 0
+			border-right: none
+			&:nth-child(1)
+				border-right: none
+				padding: 0
+			&:nth-child(2)
+				border-right: none
+				padding-right: 0
+	.conjoint_sec_bl
+		background-size: cover
+		.arrow_down
+			display: none
+		.ico_content_wrap
+			.conjoint_first_col, .conjoint_sec_col
+				flex-wrap: wrap
+				justify-content: center
+			.conjoint_first_col > div, .conjoint_sec_col > div
+				margin-bottom: 15px
+	#conjoint_four_block.conjoint_four_bl .ico_four_content
+		background: none
+		.ico_four_content_col
+			margin: 0
+			align-items: center
+			margin-bottom: 15px
+			.ico_four_content_title
+				text-align: left
+			.ico_four_content_row
+				&:nth-child(2) .ico_four_content_col
+					flex-direction: row
+				&:nth-child(3)
+					margin-bottom: 0
+					.ico_four_content_col
+						margin: 0
+						justify-content: center
+	.mainBlockInAllthrd .mainBlockInAllthrdAllBlock
+		padding-bottom: 23px
+		width: 50%
+	.about_list_container > div > p
+		float: none
+		text-align: center
+		img
+			margin: 0
+			max-width: 100%
+	.AllContentChiefName
+		text-align: center
+	.ico_four_bl
+		.ico_content_wrap > div
+			width: 100%
+		.ico_four_content
+			background: none
+			height: auto
+			flex-wrap: wrap
+			flex-direction: row
+			.ico_four_content_title
+				max-width: 100%
+			.ico_four_content_row
+				width: 100%
+				&:nth-child(1) .ico_four_content_col
+					&:nth-child(1), &:nth-child(2)
+						margin: 0
+				&:nth-child(3)
+					margin: 0
+					flex-wrap: wrap
+					.ico_four_content_col
+						&:nth-child(1)
+							margin: 0
+							flex-direction: row
+						&:nth-child(2)
+							margin: 0
+						&:nth-child(3)
+							align-items: center
+							margin: 0
+							flex-direction: row
+							margin-top: 10px
+				&:nth-child(2)
+					align-items: center
+					margin: 25px 0
+					.ico_four_content_col
+						&:nth-child(1)
+							margin: 0
+							align-items: center
+						&:nth-child(2)
+							margin: 0
+							align-items: center
+							flex-direction: row
+			.ico_four_content_col
+				width: 50%
+				.ico_four_content_hide
+					min-width: inherit
+	.ico_first_block
+		.ico_content_wrap
+			flex-wrap: wrap
+		.ico_first_block_col
+			width: 100%
+			text-align: center !important
+			.arrow_down
+				display: none
+				right: 50%
+				margin-right: -17px
+			.ico_content_title
+				margin: 35px 0
+			.ico_content_text
+				margin-bottom: 35px
+	.ico_sec_block
+		.arrow_down
+			display: none
+		.ico_content_wrap
+			padding: 85px 1em 0
+			> div:first-child
+				text-align: center
+				padding-bottom: 0
+		.participate_bold
+			display: block
+		.ico_graphics_wrap
+			background: none
+			height: auto
+			flex-wrap: wrap
+			justify-content: center
+			> div
+				align-self: flex-start
+				margin-bottom: 20px !important
+				width: auto
+				&:nth-child(2) img, &:nth-child(4) img, &:nth-child(6) img
+					object-position: 0 -35px
+				img
+					width: 60px
+					height: 60px
+					object-fit: cover
+					object-position: 0 -142px
+				p
+					margin-bottom: 10px
+					&:last-child
+						margin-bottom: 0
+	.ico_third_block
+		.arrow_down
+			display: none
+		.ico_content_wrap
+			justify-content: space-between
+			padding: 25px 1em
+			> div
+				height: inherit
+				padding: 0
+				width: 48%
+				margin-bottom: 20px
+				p
+					max-width: 100%
+					margin-bottom: 0
+			.ico_center_round
+				position: relative
+				left: inherit
+				top: inherit
+				margin: 0
+				width: 100%
+				img
+					display: block
+					margin: 0 auto
+	.main_menu_s_container .menu_controls_container .lang_switch_container
+		display: none
+	.main_post_container
+		padding-bottom: 0
+		flex-wrap: wrap
+		.main_post_container_img
+			display: none
+			&.main_post_container_img_block
+				background: none
+				width: 100%
+				height: auto
+				> div
+					margin: 0 auto
+					width: 90%
+		.main_post_container_text
+			width: 100%
+			&.main_post_text_left > div
+				margin-right: 0
+			> div
+				margin-left: 0
+				padding: 40px 50px
+	.aim_num_block_wrap
+		flex-wrap: wrap
+		.aim_num_col
+			width: 50%
+	.aim_in_numbers_wrap.aim_in_numbers_wrap_new .aim_num_block_wrap .aim_num_col
+		width: 50%
+	.blog_category_first_container
+		flex-wrap: wrap
+		.ancor_scroll
+			display: none
+		> div
+			width: 100%
+		.blog_category_first_right_col .blog_category_content
+			margin-left: 0
+	.industrial_wrap
+		.post-title
+			justify-content: center
+		.industrial_sec_col
+			display: none
+		.industrial_first_col
+			position: relative
+			flex-wrap: wrap
+			.all_product_contect, .all_product_member
+				width: 100%
+			> div
+				height: auto
+	.main-page-item
+		&.shortcode-contacts
+			flex-wrap: wrap
+		.officeclass-default-class
+			width: 100%
+			display: flex
+			justify-content: space-around
+			flex-wrap: wrap
+			+ p
+				margin-bottom: 0
+		.map-class-default
+			height: 230px !important
+			width: 100% !important
+	.officeclass-default-class > div
+		flex-wrap: wrap
+		> div
+			&:nth-child(1)
+				width: 100%
+				margin-bottom: 10px
+			&:nth-child(2)
+				width: 100%
+	.about_view_container .about_header
+		flex-wrap: wrap
+		justify-content: center
+		.about_name_post
+			order: 2
+			text-align: center
+			padding: 10px 0
+			width: 100%
+		.nav_menu_about
+			width: 100%
+			order: 3
+			margin-bottom: 25px
+			padding: 0
+	.testimonials_wrap
+		margin: 20px 0
+		.testimonials_content_wrap
+			flex-wrap: wrap
+			justify-content: space-around
+			> div
+				width: 45%
+				margin-bottom: 10px
+	.footer_custom_container
+		.footer_ins
+			flex-wrap: wrap
+			justify-content: center
+			.footer_ins_col
+				.foot_sign
+					text-align: center
+				.nav
+					display: flex
+					align-items: center
+					justify-content: center
+					flex-wrap: wrap
+					margin-bottom: 15px
+		.images_footer_col
+			display: flex
+		.footer_sub
+			min-width: 300px
+			padding: 15px 0
+	.admin_menu_fix
+		flex-wrap: wrap
+	.about_main_item > p
+		float: none
+		text-align: center
+		img
+			width: 250px
+			margin-right: 0
+	.news_view .news_view_container
+		flex-wrap: wrap
+		.filter_container
+			width: 100%
+			margin-bottom: 20px
+		.posts_container
+			width: 100%
+			.list_news_wrapper
+				margin-left: 0
+	.last_news .shortcode_news_container
+		flex-wrap: wrap
+		.shortcode_news
+			width: 49%
+			margin-bottom: 25px
+	.share_buttons_fixed_container
+		display: none !important
+	.aim_express_wrap
+		flex-wrap: wrap
+		> div
+			width: 100%
+		.express_first_col
+			background: none
+			padding: 0
+			.post-title
+				text-align: center
+				p
+					display: inline-block
+					padding-top: 0
+					margin-bottom: 0
+		.express_sec_col > div
+			width: 100%
+	.mainBlockInAll
+		.mainBlockInAllContentBlock
+			flex-wrap: wrap
+			padding-bottom: 0
+		.mainBlockInAllContentBlockContent
+			width: 75%
+			margin: 50px auto 0
+	.mainBlockInAllContentBlock > div:nth-child(2)
+		margin-bottom: -140px
+	.mainBlockInAllContentBlockPeople > img
+		bottom: 0
+	.mainBlockInAllSec
+		padding-top: 100px
+	.mainBlockInAllEghtAllblockIn
+		width: 48%
+		padding: 10px
+		img
+			max-width: 100%
+	.mainBlockInAllNin
+		background: linear-gradient(to bottom, #fff 50%, $main-accent 50%)
+	.mainBlockInAllNinAll > div:nth-child(1) > div
+		width: 95%
+		margin: 0 auto
+	.mainBlockInAllNinAllBlock2Form
+		width: 100%
+	.mainBlockInAllSix
+		.mainBlockInAllSixdAllInBlock1FrIcon, .mainBlockInAllSixdAllInBlock1FrIconSc
+			float: none
+			width: 45px
+			height: 45px
+		.mainBlockInAllSixdAllInBlock1FrIcon img, .mainBlockInAllSixdAllInBlock1FrIconSc img
+			height: 100%
+			max-width: 100%
+			object-fit: contain
+			width: 100%
+	.mainBlockInAllSixdAllTitle
+		font-size: 30px
+	.ico_five_block
+		background: #fff
+		.ico_content_wrap
+			flex-wrap: wrap
+			padding: 0
+			> div
+				width: 100%
+		.ico_brief_form
+			background-color: $main-accent
+
+@media only screen and (max-width: 480px)
+	.project_connect_wrap .project_contact_center_details > div
+		width: 100%
+	.testimonials_wrap .testimonials_content_wrap > div
+		width: 100%
+		padding: 0 1em
+	.conjoint_first_bl
+		.conjoint_first_col > .conjoint_content_title
+			font-size: 32px
+		.conjoint_first_wrap
+			flex-wrap: wrap
+			> div
+				width: 100%
+				&:nth-child(1)
+					margin-bottom: 30px
+	.industrial_wrap .industrial_first_col .all_product_contect
+		display: none
+	.mainBlockInAllthrd .mainBlockInAllthrdAllBlock
+		width: 100%
+	.ico_four_bl .ico_four_content
+		.ico_four_content_row
+			flex-wrap: wrap
+		.ico_four_content_col
+			width: 100%
+	.ico_third_block .ico_content_wrap > div
+		width: 100%
+	.aim_in_numbers_wrap
+		padding-bottom: 0
+		.post-title
+			margin-bottom: 10px
+		.aim_num_col
+			width: 75%
+			height: auto
+			.aim_num_img
+				padding-bottom: 10px
+		.aim_num_content
+			padding-bottom: 15px
+		.aim_num_title
+			line-height: 1
+	.images_footer_col_line:nth-child(2)
+		margin-left: 0
+	.pre_main_menu_container
+		flex-wrap: wrap
+		justify-content: center
+	.main_post_container
+		.main_post_container_text > div
+			padding: 20px
+		.btn_more
+			margin-right: 5px
+	.industrial_wrap
+		flex-direction: column
+		.post-title
+			position: relative
+			margin-bottom: 15px
+			padding: 0
+		.industrial_first_col
+			margin-top: 0
+	.myModalContainer .myModal
+		width: 300px
+	.main_post_container .main_post_container_img.main_post_container_img_block
+		> div
+			padding: 15px
+		&.main_post_img_req
+			padding: 10px 0
+	.mission_values_wrap .mission_block_wrap
+		flex-wrap: wrap
+		justify-content: space-around
+		> div
+			width: 95%
+			margin-bottom: 15px
+	.our_services_wrap .our_services_details > div
+		width: 100%
+		margin-bottom: 15px
+	.about_main_item
+		> p
+			text-align: center
+			float: none
+			img
+				margin-right: 0
+		.AllContentChiefName
+			text-align: center
+	.about_view_container .about_header .about_name_post
+		font-size: 45px
+	.our_services_wrap .our_services_header
+		font-size: 50px
+	.custom_links
+		align-items: center
+	.news_view .news_item_container
+		width: 100%
+	.internship_wrap .internship_content_wrap
+		flex-wrap: wrap
+		.internship_content_col-1, .internship_content_col-2
+			width: 100%
+			padding: 0 15px
+		.internship_content_col-1
+			border-right: none
+			margin-bottom: 20px
+	.last_news .shortcode_news_container .shortcode_news
+		width: 100%
+	.news_item
+		padding: 0
+	.main-404-content .not_found_search .form_search_wrap
+		width: 100%
+	.scrolling_btns
+		display: none
+	.sitemap_class
+		text-align: center
+	.blog_text_inside
+		img
+			float: none !important
+			max-width: 100%
+			display: block
+			margin: 0 auto
+		iframe
+			margin: 0 auto
+			float: none !important
+			max-width: 100%
+	.mainBlockInAll .mainBlockInAllContentBlockContent
+		width: 100%
+	.mainBlockInAllContentBlockContent .tcu_content_title
+		font-size: 38px
+	.mainBlockInAllSec .mainBlockInAllSecContentOneTitle, .mainBlockInAllEghtAllTitle
+		font-size: 28px
+	.mainBlockInAllSix
+		.mainBlockInAllSixdAllTitle
+			font-size: 28px
+			display: flex
+			flex-direction: column
+			align-items: center
+		.mainBlockInAllSixdAllInBlock1
+			flex-wrap: wrap
+			padding: 0 1em
+		.mainBlockInAllSixdAllInBlock1Fr
+			width: 100%
+			margin-bottom: 15px
+		.mainBlockInAllSixdAllInBlock1Sc
+			width: 100%
+		.mainBlockInAllSixdAllInBlock2
+			margin-top: 0
+			flex-wrap: wrap
+			padding: 0 1em
+		.mainBlockInAllSixdAllInBlock2Fr, .mainBlockInAllSixdAllInBlock2Sc
+			width: 100%
+			margin: 0 auto
+			margin-bottom: 15px
+		.mainBlockInAllSixdAllInBlock3
+			margin-top: 0
+			padding: 0 1em
+			flex-wrap: wrap
+			text-align: center
+		.mainBlockInAllSixdAllInBlock3Fr
+			width: 100%
+	.mainBlockInAllNinAll > div
+		margin: 25px 0
+	.mainBlockInAllNinAllBlock1
+		padding: 0
+	.mainBlockInAllNinAllBlock1Title
+		margin-top: 0
+		font-size: 28px
+	.mainBlockInAllNinAllBlock1TitleIn2, .mainBlockInAllNinAllBlock1TitleInBut
+		margin-top: 20px
+	.mainBlockInAllNinAllBlock2
+		margin: 40px auto 0 !important
+	.mainBlockInAllNinAllBlock2Form
+		margin: 0
+	input
+		&.yourname, &.yourcompany, &.youremail
+			margin-bottom: 25px
+		&.yoursend
+			margin-top: 0
+	.mainBlockInAllEghtAllblockIn
+		width: 95%
+	.TitleFormainBlockInAllSvnInAllFirstInBlock
+		font-size: 22px
+	.mainBlockInAllSvnInAllScndIn
+		width: 200px
+		height: 200px
+		&:hover
+			background-position: -216px -0px
+	.mainBlockInAllSvnInAllScndInContent
+		margin-top: 40px
+		font-size: 18px
+		letter-spacing: -1px
+		margin-left: 25px
+	.ScndInContentBig
+		font-size: 30px
+		line-height: 1
+	.mainBlockInAllContentBlock > div:nth-child(2)
+		margin-bottom: -100px
+	.mainBlockInAllContentBlockPeople > img
+		width: 285px
+	.mainBlockInAllSec
+		padding-top: 65px
+
+.href_action_blog
+	cursor: pointer
+	background-image: linear-gradient(180deg, #933f52 0%, #a86470 100%)
+	width: 100%
+	text-align: center
+	padding: 45px 60px
+	display: block
+	transition: all .3s ease
+	+r(480)
+		padding: 10px !important
+	+h
+		box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75)
+		transition: all .3s ease
+	p
+		text-shadow: rgb(147, 63, 82) 3px 0px 0px, rgb(147, 63, 82) 2.83487px 0.981584px 0px, rgb(147, 63, 82) 2.35766px 1.85511px 0px, rgb(147, 63, 82) 1.62091px 2.52441px 0px, rgb(147, 63, 82) 0.705713px 2.91581px 0px, rgb(147, 63, 82) -0.287171px 2.98622px 0px, rgb(147, 63, 82) -1.24844px 2.72789px 0px, rgb(147, 63, 82) -2.07227px 2.16926px 0px, rgb(147, 63, 82) -2.66798px 1.37182px 0px, rgb(147, 63, 82) -2.96998px 0.42336px 0px, rgb(147, 63, 82) -2.94502px -0.571704px 0px, rgb(147, 63, 82) -2.59586px -1.50383px 0px, rgb(147, 63, 82) -1.96093px -2.27041px 0px, rgb(147, 63, 82) -1.11013px -2.78704px 0px, rgb(147, 63, 82) -0.137119px -2.99686px 0px, rgb(147, 63, 82) 0.850987px -2.87677px 0px, rgb(147, 63, 82) 1.74541px -2.43999px 0px, rgb(147, 63, 82) 2.44769px -1.73459px 0px, rgb(147, 63, 82) 2.88051px -0.838247px 0px
+
+
+.time_to_read
+	background: $main-accent
+	border-radius: 3px
+	padding: 3px 5px
+	color: #fff
+

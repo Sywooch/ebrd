@@ -1,0 +1,148 @@
+.pre_main_menu
+	background: #fff
+
+.pre_main_menu_container
+	max-width: 1200px
+	margin: 0 auto
+	display: flex
+	align-items: center
+	justify-content: space-between
+
+.controls_pre_main_menu
+	display: flex
+	width: 100%
+	justify-content: space-between
+	align-items: center
+
+.controls_pre_main_menu_flexing
+	display: flex
+	align-items: center
+	.button
+		min-width: auto
+
+.social_icon_pre
+	float: left
+	border-right: 1px solid #dad8d8
+	&:last-child
+		border-right: none
+	svg
+		width: 16px
+		height: 16px
+		fill: #969696
+		transition: all .3s ease
+	a
+		line-height: 0
+		display: block
+		padding: 6px 6px
+		transition: all .3s ease
+		&.mail_color
+			padding-top: 7px
+			padding-bottom: 5px
+		&:hover svg
+			fill: #fff
+
+.socials_pre_main_menu
+	cursor: default
+	margin-left: 20px
+	.login_btn_top
+		margin-right: 15px
+		background: $main
+		padding: 15px 30px
+		font-size: 14px
+		color: #fff
+		display: inline-block
+		transition: all .3s ease
+		text-decoration: none
+		position: relative
+		&:before
+			content: "\e008"
+			position: relative
+			color: #fff
+			top: 1px
+			display: inline-block
+			margin-right: 8px
+			font-family: 'Glyphicons Halflings'
+			cursor: pointer
+			color: inherit
+		&:hover
+			background: $maind
+
+	.login_btn_top_mobile
+		background: $main
+		padding: 5px 10px
+		display: none
+		font-size: 14px
+		color: #fff
+		transition: all .3s ease
+		text-decoration: none
+		position: relative
+		&:before
+			content: "\e008"
+			position: relative
+			color: #fff
+			top: 1px
+			display: inline-block
+			margin-right: 8px
+			font-family: 'Glyphicons Halflings'
+			cursor: pointer
+			color: inherit
+		&:hover
+			background: $maind
+
+.order_pre_container
+	display: flex
+	align-items: center
+	svg
+		width: 20px
+		height: 20px
+		margin-right: 5px
+		fill: $main
+		transition: all .3s ease
+	&:hover
+		.order_layout
+			color: $maind
+		svg
+			fill: $maind
+
+.phone_pre_container
+	margin-bottom: 10px
+	display: flex
+	align-items: center
+	svg
+		width: 20px
+		height: 20px
+		margin-right: 5px
+		fill: $main
+		transition: all .3s ease
+	a
+		color: $main
+		font-size: 15px
+		text-decoration: underline
+		transition: all .3s ease
+	&:hover
+		a
+			color: $maind
+		svg
+			fill: $maind
+
+.face_color:hover
+	background: #37589b
+
+.linkin_color:hover
+	background: #0077b5
+
+.you_color:hover
+	background: #a72b1d
+
+.mail_color:hover
+	background: #9fae37
+
+
+
+.my_custom_lang_switch button
+	padding: 0
+	text-transform: uppercase
+
+.my_custom_lang_switch
+	a
+		text-transform: uppercase

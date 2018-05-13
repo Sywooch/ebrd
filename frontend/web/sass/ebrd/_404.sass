@@ -1,0 +1,102 @@
+// Error 404
+
+.eight_march
+	height: 45px
+	width: auto
+	margin-top: 6px
+	svg
+		height: 100%
+		width: 55px
+
+.main-404-content
+	position: relative
+	background: #151515
+	width: 100%
+	height: 100%
+	z-index: 5
+	background-image: url(/images/error/photomaninbg.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: top center
+	&.main-500-content
+		background-image: url(/images/error/photomanfall.jpg)
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: bottom center
+		.page_not_found_wrap > p
+			font-size: 25px
+	.container_wrap
+		max-width: 1200px
+		margin: 0 auto
+	.page_not_found_wrap
+		position: relative
+		z-index: 10
+		color: #fefefe
+		padding: 0 15px
+		h1
+			padding-bottom: 50px
+			padding-top: 50px
+			margin: 0
+		p
+			margin-bottom: 25px
+			span
+				display: block
+	.not_found_search
+		margin-bottom: 25px
+		p
+			color: $main-accent
+			font-size: 17px
+			margin-bottom: 20px
+			font-family: "MyriadProSemiBold"
+		.form_search_wrap
+			display: -ms-flexbox
+			display: flex
+			width: 360px
+			.field-searchform-q
+				margin: 0
+				width: 88%
+				position: relative
+				label
+					display: none
+				.help-block
+					margin: 0
+					position: absolute
+					top: -20px
+					right: 5px
+					color: $main-accent
+			input, button
+				background: #fff
+				padding: 7px 15px
+				color: #b0b0b0
+				font-size: 15px
+				border: 0
+				width: 100%
+				border-right: none
+				outline: none
+			input[type=submit], button[type=submit]
+				width: 12%
+				border-left: none
+				font-size: 0
+				transition: background-color 0.3s ease
+				padding: 7px 0
+			input[type=submit]:hover, button[type=submit]:hover
+				background-color: $main-accent
+			input[type=submit]:hover svg, button[type=submit]:hover svg
+				fill: #fff
+	.not_found_error
+		margin-bottom: 130px
+		p
+			text-transform: uppercase
+			font-size: 70px
+			line-height: 1
+			span
+				font-size: 35px
+				text-transform: none
+	.shadow-overlay
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		opacity: .9
+		background: linear-gradient(to right, black 0%, black 20%, transparent 100%)

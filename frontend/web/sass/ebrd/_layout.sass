@@ -1,0 +1,148 @@
+.flex
+	display: flex
+	&__fdc
+		display: flex
+		flex-direction: column
+	&__fdr
+		display: flex
+		flex-direction: row
+	&__aic
+		display: flex
+		align-items: center
+	&__asc
+		display: flex
+		align-self: center
+	&__jcc
+		display: flex
+		justify-content: center
+	&__jcsb
+		display: flex
+		justify-content: space-between
+	&__jcsa
+		display: flex
+		justify-content: space-around
+	&__jcfe
+		display: flex
+		justify-content: flex-end
+	&__jcfs
+		display: flex
+		justify-content: flex-start
+	&__nw
+		display: flex
+		flex-wrap: nowrap
+	&__ma
+		display: flex
+		margin: auto
+
+.button
+	display: block
+	min-width: 120px
+	max-width: 300px
+	padding: 0 10px
+	height: 40px
+	background-color: $main
+	color: #fff
+	border: 1px solid #fff
+	box-shadow: 0 0 0 4px $main
+	font-family: $ror
+	font-size: 16px
+	text-align: center
+	line-height: 40px
+	text-decoration: none
+	+tr
+	+h
+		background-color: $maind
+		box-shadow: 0 0 0 4px $maind
+		color: #fff
+		text-decoration: none
+	&:focus
+		color: #FFF !important
+	&__ma
+		@extend .button
+		margin: 0 auto
+	&__white
+		@extend .button
+		background-color: #fff
+		color: $main
+		box-shadow: 0 0 0 4px #fff
+		border: 1px solid $main
+
+		+h
+			background-color: $main
+			box-shadow: 0 0 0 4px $main
+			border: 1px solid #fff
+			color: #FFF
+		&:focus
+			color: $main
+
+
+
+
+.title
+	margin: 0
+	font-size: 60px
+	font-family: $f1
+	margin-bottom: 65px
+	letter-spacing: 3px
+	color: #404040
+	&__white
+		@extend .title
+		color: #fff
+	&__colored
+		@extend .title
+		color: $main
+	&__center
+		@extend .title
+		text-align: center
+
+.title-simple
+	margin: 0
+	font-size: 40px
+	font-family: "MyriadProBold"
+	margin-bottom: 15px
+	letter-spacing: 3px
+	color: #404040
+
+.title-white
+	margin: 0
+	font-size: 40px
+	font-family: "MyriadProBold"
+	margin-bottom: 15px
+	letter-spacing: 3px
+	color: $main
+
+.title-colored
+	margin: 0
+	font-size: 40px
+	font-family: "MyriadProBold"
+	margin-bottom: 15px
+	letter-spacing: 3px
+	color: $main
+
+.main-title
+	font-family: $rur
+	color: $main
+	margin: 65px auto
+	text-align: center
+	width: 100%
+	font-size: 60px
+
+.text
+	font-family: $f1
+	font-size: 16px
+	width: 100%
+	&__center
+		text-align: center
+
+.fullwidth
+	width: 100%
+
+
+.link
+	color: $main
+	text-decoration: none
+	font-family: $rum
+	+tr
+	+h
+		color: $maind
+		text-decoration: none

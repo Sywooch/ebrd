@@ -1,0 +1,131 @@
+$f1: "RubikRegular"
+$f2: "RubikMedium"
+$f3: "RubikBold"
+// $f4: "RubikLight"
+$f11: "RobotoLight"
+$f12: "RobotoRegular"
+$f13: "RobotoMedium"
+$f14: "RobotoBold"
+
+$rur: "RubikRegular"
+$rum: "RubikMedium"
+$rub: "RubikBold"
+$rul: "RubikLight"
+
+$rol: "RobotoLight"
+$ror: "RobotoRegular"
+$rom: "RobotoMedium"
+$rob: "RobotoBold"
+
+$main-accent: #234466
+$main-accent-bright: #1f3c5a
+$ty-page_main-color: #921d2e
+
+$main: #234466
+$maina: rgba(35,68,102,.3)
+$mainbr: #1f3c5a
+$maind: #172d43
+$bg: #f7f7f7
+
+$text: #333
+$gray: #999999
+$textgray: #7a7a7a
+$grayi: #aab8c7
+
+$navbartext: #d8d8d8
+
+=r($width)
+	@media only screen and (max-width: $width+ "px")
+		@content
+
+=h
+	&:hover
+		@content
+
+=vcenter
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%,-50%)
+
+=placeholder-color($color)
+	&::placeholder
+		color: $color
+
+=placeholder
+	&::placeholder
+		@content
+
+=coverdiv
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+
+=cover
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: 50% 50%
+
+=hover
+	.no-touch &:hover
+		@content
+
+=z
+	&:__
+		@content
+
+=tr
+	transition: all 300ms
+
+=trs($ms)
+	transition: all $ms+ms
+
+=placeholder-color($color)
+	&::placeholder
+		color: $color
+
+=retina
+	@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)
+		@content
+
+=coverdiv
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+
+=cover
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: 50% 50%
+
+=keyframes($name)
+	@-webkit-keyframes #{$name}
+		@content
+	@-moz-keyframes #{$name}
+		@content
+	@-ms-keyframes #{$name}
+		@content
+	@keyframes #{$name}
+		@content
+
+=box
+	+box-sizing(border-box)
+
+=scale($var)
+	transform: scale($var)
+
+@mixin generateRatios($width, $height, $prefix: "ratio-")
+	$class-name: $prefix + $width + "x" + $height;
+
+	.#{$class-name}
+		padding-bottom: ratio($width, $height)
+
+	// Output example: .ratio-16x9 {}
+
+
+@include generateRatios(16,9) // 16x9
+@include generateRatios(4,3)  // 4x3

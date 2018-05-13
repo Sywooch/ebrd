@@ -1,0 +1,57 @@
+.pagination
+	width: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	padding: 20px
+	margin: 0
+	li
+		a
+			width: 36px !important
+			height: 36px !important
+			overflow: hidden !important
+			background-color: transparent !important
+			border: 2px solid transparent !important
+			border-radius: 100% !important
+			color: $grayi !important
+			padding: 0
+			text-align: center
+			line-height: 34px
+			margin: 0 5px
+			font-family: $rom
+			font-size: 24px
+			font-weight: 500
+			+trs(150)
+			+h
+				// background-color: $main !important
+				color: $main !important
+		span
+			@extend a
+			margin: 0
+
+	.prev, .next
+		span, a
+			color: $main
+			border: 0 !important
+			background-color: transparent !important
+			font-size: 26px
+			+trs(150)
+			+h
+				background-color: transparent !important
+				color: $maind !important
+	.active
+		span, a
+			color: $main !important
+			border: 2px solid $main !important
+			pointer-events: none
+
+	.disabled
+		span
+			border: 0 !important
+			background-color: transparent !important
+			font-size: 26px
+			color: #999 !important
+			+h
+				color: #999 !important
+
+

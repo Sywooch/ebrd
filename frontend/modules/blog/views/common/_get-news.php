@@ -1,0 +1,1 @@
+<?= \frontend\modules\blog\components\widgets\get_news\GetNews::widget(); ?>

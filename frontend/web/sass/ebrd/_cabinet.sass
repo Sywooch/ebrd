@@ -1,0 +1,102 @@
+.cabinet-title
+	color: #5b5b5b
+	font-family: $rob
+	font-size: 24px
+	font-weight: 700
+	line-height: 28px
+	margin-bottom: 60px
+
+.container.main_content
+	padding: 30px 60px
+	margin: 0
+	margin-top: 80px
+	margin-left: 320px
+	width: calc(100% - 320px)
+	+r(1200)
+		padding: 20px 30px
+	+r(1000)
+		padding: 10px
+		// margin-left: 280px
+		// width: calc(100% - 280px)
+	+r(768)
+
+.main_body_content
+	position: relative
+	h1
+		padding-top: 10px
+		padding-bottom: 15px
+		margin: 0
+		font-size: 26px
+	form
+		display: flex
+		flex-wrap: wrap
+		justify-content: flex-start
+		margin-bottom: 15px
+		> div label
+			text-transform: lowercase
+			&:first-letter
+				text-transform: capitalize
+	.blog-post-search form > div:last-child, .blog-category-search form > div:last-child, .user_search_wrap form > div:last-child
+		width: 100%
+		margin-top: 5px
+	.blog_post_col-1, .blog_post_col-2
+		width: 25%
+		margin-bottom: 0
+	.blog_post_col-1
+		margin-right: 25px
+
+.cabinet-search
+	width: 100%
+	max-width: 300px
+	+r(480)
+		margin-bottom: 40px
+	svg
+		height: 12px
+		width: 12px
+		fill: $main
+	&__
+	&__
+	&__
+	&__container
+		position: relative
+		width: 100%
+	&__submit
+		background-color: transparent
+		position: absolute
+		top: 0
+		right: 10px
+		height: 34px
+		display: flex
+		justify-content: center
+		align-items: center
+	&__reset
+		position: absolute
+		height: 34px
+		right: -16px
+		top: 0
+		display: flex
+		justify-content: center
+		align-items: center
+		display: none
+		svg
+			fill: #c8394e
+	&__input
+		border: 1px solid $main
+		border-radius: 0
+		position: relative
+		height: 34px
+		width: 100%
+		padding-left: 12px
+		&:focus
+			border: 1px solid $maind
+			.cabinet-search__reset
+				display: block
+	.form-group, form
+		margin-bottom: 0
+
+.cabinet-search-container
+	display: flex
+	justify-content: space-between
+	+r(480)
+		flex-direction: column
+		align-items: center

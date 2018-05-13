@@ -1,0 +1,132 @@
+.cabinet-profile
+	font-family: $ror
+	font-size: 16px
+	&__block
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&__container
+		display: flex
+		margin-bottom: 80px
+		+r(1000)
+			flex-direction: column
+			align-items: center
+	&__box
+		display: flex
+		flex-direction: column
+		width: 100%
+	&__avatar
+		margin-right: 60px
+		max-width: 200px
+		width: 200px
+		min-width: 200px
+		min-height: 200px
+		height: 200px
+		overflow: hidden
+		border-radius: 100%
+		+r(1000)
+			margin-bottom: 30px
+		img
+			width: 100%
+			object-fit: cover
+	&__name-container
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin-bottom: 40px
+	&__name
+		font-family: $rob
+		font-size: 22px
+	&__name-separator
+		padding: 0 30px
+	&__info-container
+		display: flex
+		flex-direction: column
+	&__info-item
+		display: flex
+		align-items: center
+		width: 50%
+		margin: 5px 0
+		svg
+			height: 16px
+			width: 16px
+			margin-right: 40px
+	&__title
+		font-family: $rob
+		font-size: 18px
+
+.cabinet-profile-settings
+	position: relative
+	&__container
+		display: flex
+		width: 100%
+		margin-bottom: 0
+		+r(1000)
+			flex-direction: column
+			align-items: center
+	&__box
+		display: flex
+		flex-direction: column
+		justify-content: space-around
+		width: 100%
+		+r(1000)
+			flex-wrap: wrap
+
+	&__info-item
+		display: flex
+		align-items: center
+		margin-bottom: 20px
+		width: 100%
+		+r(1000)
+			flex-wrap: wrap
+			justify-content: space-between
+		.form-group
+			width: 50%
+			margin-right: 40px
+			+r(1000)
+				// width: 100%
+				width: 48%
+				margin-right: 0
+			&:last-child
+				margin-right: 0
+	&__change-pass
+		position: absolute
+		top: -90px
+		right: 0
+	&__expertise
+		width: 100%
+		margin-bottom: 40px
+		textarea
+			resize: vertical
+			border-radius: 0
+			border: 1px solid $gray
+			&:focus
+				border: 1px solid $main
+
+	.flex
+		width: 100%
+	input
+		border: 1px solid $gray
+		border-radius: 0
+
+		&:focus
+			border: 1px solid $maind
+	.button
+		width: auto
+		min-width: 140px
+		padding: 0 10px
+	.fade.in
+		display: flex !important
+	.modal-dialog
+		margin: auto
+		+r(768)
+			width: 90%
+	.modal-body
+		padding: 15px 20%
+		+r(768)
+			padding: 10px
+		.button
+			margin-top: 40px
+	.btn-file
+		padding: 0
+		border: none

@@ -1,0 +1,195 @@
+.login_btn
+	@extend .button
+
+.login_wrap
+	min-height: 584px
+	display: -ms-flexbox
+	display: flex
+	-ms-flex-pack: center
+	justify-content: center
+	-ms-flex-align: center
+	align-items: center
+
+.login_title
+	text-align: center
+
+#login-form > div, #form-signup > div, #request-password-reset-form > div, #reset-password-form > div
+	position: relative
+	margin-bottom: 0
+
+#login-form > div .entry_input, #form-signup > div .entry_input, #request-password-reset-form > div .entry_input, #reset-password-form > div .entry_input
+	margin-bottom: 30px
+
+#login-form > div .help-block, #form-signup > div .help-block, #request-password-reset-form > div .help-block, #reset-password-form > div .help-block
+	position: absolute
+	bottom: 27px
+	background-color: #FFF
+	right: 15px
+	text-align: right
+	margin: 0
+	color: $main-accent
+
+#login-form .reset_text, #form-signup .reset_text, #request-password-reset-form .reset_text, #reset-password-form .reset_text
+	margin-bottom: 10px
+
+.login_btn_container, .signup_btn_container
+	text-align: center
+	margin-top: 5px
+
+#login-form .checkbox
+	margin: 0
+	label
+		color: #000
+		padding-left: 26px
+		#loginform-rememberme
+			width: 22px
+			height: 22px
+			cursor: pointer
+			font-size: 16px
+			visibility: hidden
+			margin: 0
+			left: 0
+			font-family: $rur
+			+tr
+			&:checked::after
+				content: ""
+				margin: auto
+				width: 22px
+				height: 22px
+				background-color: $main
+				border: 4px solid #fff
+				box-shadow: 0 0 0 1px $main
+				+tr
+			&::after
+				content: " "
+				display: flex
+				background-color: #fff
+				margin-left: 0
+				color: $main
+				width: 22px
+				height: 22px
+				visibility: visible
+				border: 1px solid $main
+				border-radius: 50%
+				+tr
+
+.entry_input
+	outline: none
+	padding: 10px 15px
+	box-sizing: border-box
+	width: 100%
+	margin-bottom: 15px
+	border-radius: 0
+	background: #fbfbfb
+	color: #32373c
+	border: 1px solid #ddd
+	font-size: 16px
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07)
+
+#login-form .login_btn, #form-signup .signup_btn, #request-password-reset-form .reset_btn, #reset-password-form .reset_btn
+	border: none
+	outline: none
+	font-size: 16px
+	padding: 5px 20px
+	border-radius: 0
+	box-shadow: none
+	background-color: $main-accent
+	color: #fff
+	transition: background-color .3s ease
+	line-height: inherit
+	text-shadow: none
+
+#login-form .login_btn:hover, #form-signup .signup_btn:hover, #request-password-reset-form .reset_btn:hover, #reset-password-form .reset_btn:hover
+	background-color: $main-accent-bright
+
+.login_title_container
+	margin-bottom: 20px
+
+.login
+	display: flex
+	padding: 120px 0
+	overflow: hidden
+	+r(1200)
+		margin-top: 84px
+	+r(768)
+		padding: 80px 0
+	+r(480)
+		padding: 0
+	&__container
+		margin: auto
+		padding: 60px 60px
+		display: block
+		width: 100%
+		min-width: 320px
+		max-width: 535px
+		// max-height: 580px
+		box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.34)
+		position: relative
+		background-color: #FFF
+		&:after
+			content: ""
+			+vcenter
+			background: url("/images/login/bg.png") left bottom no-repeat, url("/images/login/bg2.png") right 20% no-repeat
+			width: 155%
+			height: 155%
+			z-index: -1
+		+r(768)
+			padding: 80px 40px
+		+r(480)
+			padding: 60px 20px
+	&__title
+		font-family: $rub
+		font-size: 24px
+		margin-bottom: 40px
+		color: $main
+	&__input
+		width: 100%
+		margin-bottom: 36px
+		height: 40px
+		border-bottom: 1px solid $textgray
+		padding: 0 40px
+		font-family: $rul
+		color: $textgray
+		font-size: 16px
+	&__reset
+		margin-top: 30px
+		color: $textgray
+		+r(480)
+			display: flex
+			justify-content: space-between
+		.link
+			margin-left: 20px
+			+r(480)
+				margin-left: 0
+	&__box
+		svg
+			position: absolute
+			height: 16px
+			width: 16px
+			left: 0
+			top: 12px
+			fill: $textgray
+	.social_links_auth
+		display: flex
+		align-items: center
+		margin-top: 30px
+		+r(480)
+			justify-content: space-between
+		.auth-clients
+			margin: 25px 0 0
+			display: -ms-flexbox
+			display: flex
+			-ms-flex-pack: center
+			justify-content: center
+		.auth-icon
+			opacity: .9
+			transition: opacity .3s ease
+			&:hover
+				opacity: 1
+	.form-group
+		margin-bottom: 0
+	.auth_icons_container
+		a
+			margin-right: 20px
+			&:last-child
+				margin-right: 0

@@ -1,0 +1,174 @@
+.ratio-16x9 {
+  padding-bottom: ratio(16, 9); }
+
+.ratio-4x3 {
+  padding-bottom: ratio(4, 3); }
+
+.thanks_container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  min-height: calc(100vh - 565px);
+  margin-bottom: 80px;
+  margin-top: 40px; }
+  @media only screen and (max-width: 1000px) {
+    .thanks_container {
+      flex-wrap: wrap; } }
+
+.thanks_btn_hubspot {
+  color: #fff !important; }
+
+.thanks_video {
+  width: 50%;
+  min-width: 50%;
+  min-height: 324px;
+  margin-right: 10px; }
+  @media only screen and (max-width: 1000px) {
+    .thanks_video {
+      margin: auto;
+      max-width: 600px;
+      height: 340px;
+      width: 100%;
+      margin-bottom: 40px; } }
+
+.thanks_btn_hubspot, .adhoc_thanks {
+  border: none;
+  outline: none !important;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  padding: 0 20px;
+  border-radius: 0;
+  box-shadow: none;
+  color: #fff;
+  transition: background-color .3s ease;
+  background-color: #ac162c;
+  display: inline-block;
+  text-decoration: none; }
+  .thanks_btn_hubspot:hover, .adhoc_thanks:hover {
+    background-color: #de223e;
+    color: #fff;
+    text-decoration: none; }
+  .thanks_btn_hubspot:focus, .adhoc_thanks:focus {
+    color: #fff;
+    text-decoration: none; }
+
+.thanks_btn_hubspot {
+  margin-right: 20px;
+  margin-bottom: 20px; }
+
+.users_report_important .grid-view {
+  border-top: 3px solid #ac162c; }
+
+.users_report_important .link_report {
+  color: #ac162c;
+  text-decoration: none; }
+  .users_report_important .link_report:hover {
+    text-decoration: underline; }
+
+.users_report_important th {
+  font-weight: 500; }
+  .users_report_important th:first-child {
+    width: 60%; }
+  .users_report_important th a {
+    color: #ac162c; }
+
+.breadcrumb a {
+  color: #ac162c; }
+  .breadcrumb a:hover {
+    color: #de223e; }
+
+.authorise_title {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 5px; }
+
+.extra_thanks {
+  font-size: 18px; }
+
+.styling_forming {
+  padding: 25px 20px;
+  background: #fff;
+  box-shadow: 0 3px 7px 4px rgba(0, 0, 0, 0.13); }
+
+.certificate_container img {
+  width: 100%; }
+
+.admin_bar_logo img {
+  vertical-align: middle; }
+
+.thumbnail_alt_conatiner {
+  width: calc(50% + 25px); }
+  .thumbnail_alt_conatiner input {
+    width: 100%; }
+
+.thumbnail_alt_conatiner_translate {
+  width: calc(90% + 25px); }
+  .thumbnail_alt_conatiner_translate input {
+    width: 100%; }
+
+.related_news_container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex; }
+  .related_news_container .post_name a {
+    white-space: normal; }
+  .related_news_container .news_item {
+    max-width: 33.33333%; }
+  .related_news_container .link_container_post a:hover {
+    color: #fff; }
+
+.custom_report_css {
+  margin-bottom: 15px !important; }
+
+.admin_bar_quick_links_second a:before {
+  display: none !important; }
+
+.admin_bar_quick_links_second a:after {
+  display: none !important; }
+
+.slider_preloader {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background: #fff;
+  display: none; }
+
+.slider_main_container {
+  position: relative;
+  height: calc(100vh - 45px); }
+  .slider_main_container .radiolist_custom {
+    display: flex; }
+  .slider_main_container [type="radio"]:checked,
+  .slider_main_container [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px; }
+  .slider_main_container [type="radio"]:checked + label,
+  .slider_main_container [type="radio"]:not(:checked) + label {
+    position: relative;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    line-height: 20px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #666; }
+  .slider_main_container [type="radio"]:checked + label:before,
+  .slider_main_container [type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    transition: all .3s linear; }
+  .slider_main_container [type="radio"]:not(:checked) + label:before {
+    border-color: #ddd; }
+  .slider_main_container [type="radio"]:checked + label:before {
+    border-color: red; }

@@ -1,0 +1,606 @@
+.pre_main_menu
+	background: #fff
+	+r(1200)
+		box-shadow: 0 2px 20px #111
+
+.pre_main_menu_container
+	max-width: 1200px
+	margin: 0 auto
+	display: flex
+	align-items: center
+	justify-content: space-between
+
+.controls_pre_main_menu
+	width: 100%
+	height: 96px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	position: relative
+	+r(1200)
+		height: auto
+		padding: 10px
+	+r(768)
+		padding: 8px 0
+
+.controls_pre_main_menu_flexing
+	display: flex
+	align-items: center
+
+.controls_pre_main_menu
+	display: flex
+	align-items: center
+	.logo-ebrd
+		span
+			+tr
+			color: $main
+		+h
+			span
+				+tr
+				color: $maind
+
+
+.social_icon_pre
+	float: left
+	border-right: 1px solid #dad8d8
+	&:last-child
+		border-right: none
+	svg
+		width: 16px
+		height: 16px
+		fill: #969696
+		transition: all .3s ease
+	a
+		line-height: 0
+		display: block
+		padding: 6px 6px
+		transition: all .3s ease
+		&.mail_color
+			padding-top: 7px
+			padding-bottom: 5px
+		&:hover svg
+			fill: #fff
+
+.socials_pre_main_menu
+	cursor: default
+	margin-left: 40px
+	display: flex
+	justify-content: center
+	+r(1200)
+
+	.login_btn_top
+		font-size: 16px
+		color: #fff
+		display: inline-block
+		transition: all .3s ease
+		text-decoration: none
+		position: relative
+		height: 40px
+		width: 120px
+		background-color: $main
+		border: 1px solid #fff
+		box-shadow: 0 0 0 3px $main
+		text-align: center
+		line-height: 40px
+		font-family: $f12
+		+h
+			background-color: $maind
+			box-shadow: 0 0 0 3px $maind
+	.login_btn_top_mobile
+		background: $main
+		padding: 5px 10px
+		display: none
+		font-size: 14px
+		color: #fff
+		transition: all .3s ease
+		text-decoration: none
+		position: relative
+		&:before
+			content: "\e008"
+			position: relative
+			color: #fff
+			top: 1px
+			display: inline-block
+			margin-right: 8px
+			font-family: 'Glyphicons Halflings'
+			cursor: pointer
+			color: inherit
+		&:hover
+			background: $maind
+	svg
+		height: 18px
+		width: 18px
+		fill: #fff
+
+.order_pre_container
+	display: flex
+	align-items: center
+	svg
+		width: 20px
+		height: 20px
+		margin-right: 5px
+		fill: $main
+		transition: all .3s ease
+	&:hover
+		.order_layout
+			color: $maind
+		svg
+			fill: $maind
+
+.phone_pre_container
+	margin-bottom: 10px
+	display: flex
+	align-items: center
+	svg
+		width: 20px
+		height: 20px
+		margin-right: 5px
+		fill: $main
+		transition: all .3s ease
+	a
+		color: $main
+		font-size: 15px
+		text-decoration: underline
+		transition: all .3s ease
+	&:hover
+		a
+			color: $maind
+		svg
+			fill: $maind
+
+.face_color:hover
+	background: #37589b
+
+.linkin_color:hover
+	background: #0077b5
+
+.you_color:hover
+	background: #a72b1d
+
+.mail_color:hover
+	background: #9fae37
+
+
+
+.my_custom_lang_switch button
+	padding: 0
+	text-transform: uppercase
+
+.my_custom_lang_switch
+	a
+		text-transform: uppercase
+
+.main_menu_s
+	background: $main
+	position: relative
+	z-index: 999999
+	// display: none
+	+ p
+		margin: 0
+
+.custom_menu_col
+	a
+		&:after
+			display: none !important
+
+.controls_pre_main_menu_flexing_mobile
+	display: none
+
+.mobile_with_container
+	//display: none
+	background: #fff
+	position: fixed
+	top: 47px
+	left: 0
+	right: 0
+
+.parent_block
+	&>a
+		transition: all .3s ease
+	&:hover
+		&>a
+			color: #fff !important
+
+.mobile_with_container
+	display: none
+	box-shadow: 0px 0px 9px -1px #404040
+	justify-content: space-between
+	padding: 5px
+
+.main_menu_s_container
+	max-width: 1200px
+	margin: 0 auto
+	display: flex
+	align-items: center
+	position: relative
+	.form-group
+		margin: 0
+	.help-block
+		display: none
+	.menu_controls_container
+		display: flex
+		align-items: center
+		width: 100%
+		margin-left: auto
+		.lang_switch_container
+			display: none
+		.main_menu_container_list
+			width: 100%
+		.top_menu
+			display: flex
+			justify-content: space-between
+			padding: 0 20px
+			display: flex
+			align-items: center
+			height: 64px
+			> li
+				transition: background-color .3s ease
+				text-align: center
+				width: auto
+				flex-grow: 1
+				// width: 20%
+				&:hover
+					cursor: pointer
+					a
+						&::after
+							transform: rotate(0deg)
+							border-top-color: #fff
+					.main_menu_fade_in
+						opacity: 1
+						visibility: visible
+						transition: opacity .3s ease, visibility .3s ease
+				&:first-child
+					a
+						border-left: 0
+				&:last-child
+					a
+						border-right: 0
+				> a
+					display: block
+					font-size: 18px
+					font-family: $f12
+					color: $navbartext
+					text-transform: capitalize
+					background-color: transparent
+					position: relative
+					text-decoration: none
+					border-right: 1px solid $navbartext
+					border-left: 1px solid $navbartext
+					line-height: 20px
+					padding: 2px 0
+					width: 100%
+					&::after
+						content: ''
+						display: inline-block
+						margin-left: 5px
+						transform: translate(0, -50%)
+						width: 0
+						height: 0
+						transform-origin: top center
+						border-top: 4px solid #000000
+						border-right: 4px solid transparent
+						border-left: 4px solid transparent
+						border-top-color: $navbartext
+						border-bottom-color: #fff
+						position: absolute
+						top: 50%
+						transition: all .3s ease
+						transform: rotate(-180deg)
+					&:hover
+						text-decoration: none
+						color: #fff
+
+			.active
+				a
+					color: #fff
+					pointer-events: none
+			.menu_block, .menu_block_child
+				display: flex
+				justify-content: space-between
+				flex-direction: row
+				position: absolute
+				left: 0
+				right: 0
+				background-color: $maind
+				margin: 0
+				opacity: 0
+				visibility: hidden
+			.menu_block .menu_group, .menu_block_child .menu_group
+				padding: 28px
+				margin: 0
+			.menu_block .menu_group .group_name, .menu_block_child .menu_group .group_name
+				color: $main-accent
+				padding: 0
+				margin: 0
+				background: transparent
+				border: none
+				font-size: 13px
+				font-family: $f12
+				margin-bottom: 5px
+				cursor: pointer
+			.menu_block .menu_group .group_name a, .menu_block_child .menu_group .group_name a
+				color: $grayi
+				font-family: $f12
+				font-size: 16px
+			.menu_block .menu_group .group_name a::before, .menu_block_child .menu_group .group_name a::before
+				display: none
+			.menu_block .menu_group .group_name:hover, .menu_block_child .menu_group .group_name:hover
+				color: $grayi
+			.menu_block .menu_group a, .menu_block_child .menu_group a
+				font-size: 12px
+				min-height: 23px
+				text-align: left
+				text-decoration: none
+				width: auto
+				display: block
+				border: none
+				padding: 3px 12px
+				line-height: inherit
+				color: $grayi
+				position: relative
+				transition: color .3s ease
+			.menu_block .menu_group a::before, .menu_block_child .menu_group a::before
+				content: ''
+				position: relative
+				padding-right: 4px
+				left: 0
+				display: inline-block
+				width: 0
+				height: 0
+				border-left: 4px solid $grayi
+				border-top: 4px solid transparent
+				border-bottom: 4px solid transparent
+			.menu_block .menu_group a:hover, .menu_block_child .menu_group a:hover
+				color: #fff
+				text-decoration: none
+			.menu_block .menu_group a:hover::before
+				border-left-color: #fff
+			.menu_block_child
+				.menu_group a:hover::before
+					border-left-color: #fff
+				left: inherit
+				right: inherit
+				min-width: 180px
+				transition: all .3s ease
+				li
+					width: 100%
+					.menu_group
+						padding: 0
+				.child_menu_group_special
+					margin: 0
+					padding: 30px 28px
+					a
+						padding: 8px 15px
+						font-size: 16px
+						line-height: 23px
+						color: $grayi
+						+h
+							color: #FFF
+						&::before
+							display: none
+
+
+.lang_switch_container
+	margin-left: 40px
+	.my_custom_lang_switch
+		position: relative
+		button
+			background: transparent
+			border: none
+			outline: none
+			color: $gray
+			font-family: $f14
+			width: inherit !important
+			transition: color .3s ease
+			font-size: 20px
+			&:hover
+				text-decoration: none
+				color: #000
+			&:active
+				box-shadow: none
+				&:hover
+					background-color: transparent
+				&:focus
+					color: inherit
+					background: inherit
+					outline: none
+	&:hover
+		button
+			text-decoration: none
+			color: #000
+			&::after
+				background-color: #333
+		.dropdown-menu
+			opacity: 1
+			visibility: visible
+	.dropdown-menu
+		margin: 0
+		padding: 5px
+		box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1)
+		border-radius: 0
+		border-style: solid
+		border-width: 1px
+		background-color: #fff
+		opacity: 0
+		visibility: hidden
+		transition: all .3s ease
+		display: block
+		float: none
+		min-width: -webkit-max-content
+		min-width: -moz-max-content
+		min-width: max-content
+		width: 100%
+		left: inherit
+		li:first-child a
+			border: none
+		a
+			color: #969696
+			display: block
+			font-family: "MyriadProBold"
+			width: 100%
+			border-top: 1px dashed #ebebeb
+			transition: color .3s ease
+			text-align: center
+			font-size: 14px
+			padding: 5px 0
+			line-height: inherit
+			min-height: inherit
+			&:hover
+				color: #000
+				background: transparent
+
+.super_hamburger_1
+	width: 27px
+	height: 2px
+	background: $main
+	display: block
+	opacity: 1
+	visibility: visible
+	transition: all .3s ease
+.super_hamburger_2
+	width: 27px
+	height: 2px
+	background: $main
+	display: block
+	position: relative
+	transition: all .3s ease
+	transform-origin: center left
+	bottom: 11px
+.super_hamburger_3
+	width: 27px
+	height: 2px
+	background: $main
+	display: block
+	position: relative
+	transition: all .3s ease
+	top: 6px
+	transform-origin: center left
+
+
+.btn-mobile_container
+	z-index: 100
+	position: relative
+	height: 22px
+	display: none
+	+r(1200)
+		display: block
+
+
+.btn_main_menu_s_active
+	.super_hamburger_1
+		opacity: 0
+		visibility: hidden
+	.super_hamburger_2
+		transform: rotate(45deg)
+	.super_hamburger_3
+		transform: rotate(-45deg)
+
+
+.vert_menu
+	.menu_block .menu_col
+		width: 100%
+		.menu_group
+			position: relative
+			margin: 0
+			.group_name
+				display: block
+				color: #919191
+				text-align: left
+				font-size: 11px
+				height: 27px
+				background: #fff
+				text-transform: uppercase
+				width: 100%
+				cursor: pointer
+				border-bottom: 1px solid #e6e6e6
+				transition: color .3s ease
+				&.active
+					background: $main-accent
+					color: #fff
+					font-family: "MyriadProSemiBold"
+					&:hover
+						border-right: none
+						color: #fff
+					a
+						font-family: "MyriadProBold"
+						color: #fff
+						&:hover
+							color: #fff
+					span
+						color: #fff
+						&:hover
+							color: #fff
+					~ .child_menu_group
+						height: 100%
+						visibility: visible
+						.active a
+							background: #bb4e5e
+							color: #fff
+							font-family: "MyriadProRegular"
+				&:hover
+					border-right: 2px solid $main-accent
+					color: #9cc3df
+				a, span
+					display: block
+					outline: none
+					color: #919191
+					text-align: left
+					font-size: 11px
+					padding: 6px 10px
+					text-decoration: none
+					text-transform: uppercase
+					width: 100%
+					cursor: pointer
+					transition: all .3s ease
+				a:hover, span:hover
+					color: #9cc3df
+					text-decoration: none
+			.child_menu_group
+				background: #e6e4e4
+				display: flex
+				flex-direction: column
+				height: 0
+				visibility: hidden
+				a
+					display: block
+					text-align: left
+					font-size: 11px
+					padding: 6px 10px
+					text-decoration: none
+					text-transform: none
+					width: 100%
+					color: #333
+					cursor: pointer
+		.child_menu_group_special li
+			&.active
+				a
+					background: $main-accent
+					color: #fff
+					font-family: "MyriadProSemiBold"
+					&:hover
+						color: #fff
+						text-decoration: none
+				&:hover
+					border-right: none
+			&:hover
+				border-right: 2px solid $main-accent
+			a
+				display: block
+				outline: none
+				color: #919191
+				text-align: left
+				font-size: 11px
+				padding: 6px 10px
+				text-decoration: none
+				text-transform: uppercase
+				width: 100%
+				cursor: pointer
+				background-color: #fff
+				border-bottom: 1px solid #e6e6e6
+				transition: all .3s ease
+				&:last-child
+					border-bottom: none
+				&:hover
+					color: #9cc3df
+					text-decoration: none
+

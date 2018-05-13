@@ -1,0 +1,91 @@
+.experts
+	padding: 50px 20px 120px 20px
+	max-width: 1200px
+	margin: 0 auto
+	background: #FFF
+	&__title
+		color: #234466
+		font-family: $rob
+		font-size: 25px
+		font-weight: 700
+		line-height: 45px
+		margin-bottom: 50px
+	&__container
+		display: flex
+		flex-wrap: wrap
+
+
+.expert
+	display: flex
+	width: 33.333333%
+	padding: 0 10px
+	margin-bottom: 80px
+	&__avatar-container
+		width: 140px
+		height: 140px
+		min-width: 140px
+		min-height: 140px
+		border-radius: 100%
+		overflow: hidden
+		position: relative
+	&__overlay-link
+		+coverdiv
+		color: #fff
+		font-family: $rob
+		font-size: 16px
+		font-weight: 700
+		line-height: 140px
+		text-align: center
+		border-radius: 100%
+		background-color: rgba(0,0,0,0.6)
+		opacity: 0
+		+tr
+		+h
+			opacity: 1
+			color: #FFF
+			cursor: pointer
+			text-decoration: none
+		&:before
+			content: ""
+			background-image: url('/images/experts/pen.png')
+			width: 16px
+			height: 16px
+			position: absolute
+			left: 0
+			right: 0
+			top: 40px
+			margin: 0 auto
+	&__avatar
+		width: 140px
+		height: 140px
+		min-width: 140px
+		min-height: 140px
+		object-fit: cover
+	&__container
+		width: 100%
+		padding-left: 30px
+		display: flex
+		flex-direction: column
+		justify-content: space-around
+	&__title
+		color: #000
+		font-family: $rob
+		font-size: 17px
+		font-weight: 700
+		line-height: 22px
+	&__subtitle
+		color: #000
+		font-family: $ror
+		font-size: 15px
+		font-weight: 400
+		line-height: 18px
+	&__country
+		display: flex
+	&__country-flag
+	&__country-text
+		padding-left: 20px
+		color: #7a7a7a
+		font-family: $ror
+		font-size: 15px
+		font-weight: 600
+		line-height: 18px

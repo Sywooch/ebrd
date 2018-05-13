@@ -1,0 +1,122 @@
+.chat
+	position: fixed
+	right: 0
+	top: 80px
+	width: 0
+	height: calc(100vh - 80px)
+	display: flex
+	flex-direction: column
+	justify-content: flex-end
+	+tr
+	&__showed
+		width: 330px
+		background-color: #e8e8e8
+		box-shadow: inset -0.5px 0.9px 7px rgba(0, 0, 0, 0.05)
+		+tr
+	&__close
+		cursor: pointer
+	&__box
+		display: flex
+		justify-content: space-between
+		padding: 30px
+	&__name
+
+	&__date
+		color: #a6a6a6
+		font-family: $ror
+		font-size: 15px
+		font-weight: 400
+		line-height: 60px
+		text-align: center
+	&__container
+		overflow-x: hidden
+		overflow-y: scroll
+		flex-grow: 1
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+
+.chat-message
+	display: flex
+	padding: 24px
+	min-height: 90px
+	&__avatar
+		width: 40px
+		height: 40px
+		min-width: 40px
+		min-height: 40px
+		border-radius: 100%
+		background-color: $main
+	&__box
+		display: flex
+		flex-direction: column
+		width: 100%
+		padding: 0 20px
+		// overflow: hidden //for onhide beautify
+	&__username
+		color: #202020
+		font-family: $rom
+		font-size: 14px
+		font-weight: 500
+		line-height: 10px
+		margin-bottom: 15px
+	&__usermessage
+		color: #616161
+		font-family: $ror
+		font-size: 13px
+		font-weight: 400
+		line-height: 18px
+	&__time
+		color: #7c7c7c
+		font-family: $rom
+		font-size: 12px
+		font-weight: 500
+		line-height: 10px
+	&__my
+		flex-direction: row-reverse
+		text-align: right
+		background-color: #e0e0e0
+
+
+.chat-send
+	display: flex
+	align-items: center
+	height: 60px
+	min-height: 60px
+	&__attach
+		height: 60px
+		width: 60px
+	&__message
+		width: 100%
+		border: 0
+		background-color: transparent
+		line-height: 60
+		font-family: $rur
+		font-size: 16px
+		padding: 0 10px
+	&__send
+		height: 60px
+		width: 60px
+
+.chat-opener
+	display: flex
+	align-items: center
+	cursor: pointer
+	color: #fff
+	font-family: $rob
+	font-size: 16px
+	font-weight: 700
+	line-height: 16px
+	text-transform: uppercase
+	margin-right: 30px
+	&__count
+		background-color: #c8394e
+		border-radius: 5px
+		color: #fff
+		font-family: $rob
+		font-size: 12px
+		line-height: 16px
+		padding: 1px 4px
+		margin-left: 16px
+	svg
+		margin-right: 10px

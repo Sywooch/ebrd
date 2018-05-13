@@ -1,0 +1,65 @@
+.admin-navbar-logout
+	display: flex
+	align-items: center
+	justify-content: space-between
+	padding: 30px 40px
+	.logo-ebrd
+
+	.logout
+		color: #fff
+		font-family: $rob
+		font-size: 16px
+		background-color: transparent
+		+tr
+		+h
+			color: $grayi
+
+
+.admin_bar_flexing
+	display: flex
+	justify-content: space-between
+	align-items: center
+	height: 80px
+	padding: 0 40px 0 26px
+
+.admin_menu_wrap.navbar
+	min-height: auto
+	margin-bottom: 0
+
+.admin_bar_language, .lang_switch_container
+	display: flex
+	li
+		padding: 0 8px
+		border-right: 2px solid #fff
+		font-family: $rob
+		font-size: 20px
+		line-height: 18px
+		text-transform: uppercase
+		color: #FFF
+		&:last-child
+			border-right: 0
+	.lang_inac
+		a
+			color: $grayi
+			+tr
+			+h
+				text-decoration: none
+				color: #FFF
+
+.pre_main_menu
+	.lang_switch_container
+		li
+			border-right: 2px solid $grayi
+			font-family: $rob
+			font-size: 20px
+			line-height: 18px
+			text-transform: uppercase
+			list-style: none
+			color: $main
+			&:last-child
+				border-right: 0
+		.lang_inac
+			a
+				color: $grayi
+				+h
+					color: $main

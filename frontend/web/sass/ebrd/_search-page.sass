@@ -1,0 +1,149 @@
+// Search block
+
+.search-page-title
+	padding: 0 25px
+	h1
+		font-size: 24px
+		margin-top: 30px
+		font-family: "MyriadProSemiBold"
+
+.not_found_search_page
+	padding: 5px 25px 25px
+	margin-bottom: 25px
+	margin-top: 25px
+	border-bottom: 1px solid #ebebeb
+	.form_search_wrap
+		display: -ms-flexbox
+		display: flex
+		.form-group
+			margin-bottom: 0
+			position: relative
+			label
+				display: none
+			.help-block
+				position: absolute
+				top: -23px
+				right: 0
+				margin: 0
+			input
+				width: 100%
+				border: none
+				box-sizing: border-box
+				border-top: 1px solid $main-accent
+				border-left: 1px solid $main-accent
+				border-bottom: 1px solid $main-accent
+				padding: 8px 10px
+				outline: none
+		> div
+			width: 95%
+		button
+			width: 5%
+			outline: none
+			box-shadow: none
+			text-shadow: none
+			padding: 10px 14px
+			background: #fff
+			border: 1px solid $main-accent
+			transition: all .2s ease
+			&:hover
+				background: $main-accent
+
+.list-wrapper
+	padding: 0 25px 25px
+	.summary
+		padding-bottom: 20px
+		font-family: "MyriadProSemiBold"
+		letter-spacing: 1px
+		color: #919191
+
+.blog-item
+	h3
+		margin-top: 0
+		color: #222
+		font-size: 20px
+		text-transform: uppercase
+		letter-spacing: 2px
+		margin-bottom: 10px
+		text-align: left
+		a
+			color: inherit
+			font-family: "MyriadProSemiBold"
+			transition: color .3s ease
+			&:hover
+				text-decoration: none
+				color: rgba(34, 34, 34, 0.7)
+	.search_content
+		color: #b0b0b0
+		font-size: 15px
+		strong
+			font-family: "MyriadProSemiBold"
+		hr
+			display: none
+	.order_modal, .btn_more:first-child
+		color: inherit
+		border-color: inherit
+		background: inherit
+	.search_time_update
+		padding-top: 25px
+		margin-top: 25px
+		border-top: 1px solid #ebebeb
+		display: block
+		color: #b0b0b0
+		text-transform: uppercase
+		font-family: "MyriadProSemiBold"
+		letter-spacing: 1px
+		margin-bottom: 5px
+	.search_lang
+		color: #b0b0b0
+		font-family: "MyriadProSemiBold"
+		margin-bottom: 5px
+		a
+			padding-left: 5px
+			display: inline-block
+	.breadcrumb
+		display: -ms-flexbox
+		display: flex
+		overflow: hidden
+		margin: auto
+		background-color: #f5f5f5
+		padding: 0
+		border-radius: 0
+		margin-top: 15px
+		li
+			display: -ms-flexbox
+			display: flex
+			&::before
+				display: none
+			&:first-child a
+				padding-left: 20px
+			a
+				position: relative
+				display: block
+				padding: 10px 0 10px 28px
+				font-size: 13px
+				font-family: "MyriadProSemiBold"
+				text-align: center
+				color: #aaa
+				cursor: pointer
+				letter-spacing: .5px
+				&:hover
+					background-color: #eee
+					&::after
+						border-left-color: #eee
+				&::before, &::after
+					content: ''
+					position: absolute
+					top: 0
+					left: 100%
+					z-index: 1
+					display: block
+					width: 0
+					height: 0
+					border-top: 19px solid transparent
+					border-bottom: 19px solid transparent
+					border-left: 16px solid transparent
+				&::before
+					margin-left: 1px
+					border-left-color: #d5d5d5
+				&::after
+					border-left-color: #f5f5f5

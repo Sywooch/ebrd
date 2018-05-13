@@ -1,0 +1,46 @@
+.source_trans_block,
+.target_trans_block {
+    margin: 20px 0px;
+    background: gainsboro;
+    padding: 5px;
+    border-radius: 5px;
+}
+.source_trans_cont,
+.target_trans_cont{
+    border-radius: 2px;
+    padding: 2px;    
+}
+
+.target_trans_cont {
+    background-color: seashell;
+}
+
+.trans_status {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: aliceblue;
+}
+
+.trans_status.error {
+  background-color: MistyRose;
+}
+
+.trans_status.success {
+  background-color: Honeydew;
+}
+
+.trans_status.awaiting {
+  background-color: Ivory;
+}
+
+i.error {
+    color: red;
+}
+
+i.success {
+    color: green;
+}
+
+.cat_status {
+  padding: 10px;
+}

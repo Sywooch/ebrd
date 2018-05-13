@@ -1,0 +1,88 @@
+// contact page
+
+.officeclass-default-class
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	&>div
+		width: 50%
+		&:nth-child(odd)
+			padding-right: 15px
+		&:nth-child(even)
+			padding-left: 15px
+
+
+.office_hr
+	width: 100px
+	margin: 30px auto
+	border-color: #ac162c
+
+.office_infos
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	&>div 
+		width: 33.333333%
+
+.office_country
+	display: flex
+
+.office_phone
+	display: flex
+	justify-content: center
+
+.office_country_svg
+	width: 22px
+	min-width: 22px
+	margin-right: 2px
+	height: 22px
+	min-height: 22px
+	position: relative
+	bottom: 2px
+	svg
+		width: 100%
+		height: 100%
+		fill: #ac162c
+
+.office_phone_svg
+	width: 20px
+	min-width: 20px
+	margin-right: 5px
+	height: 20px
+	min-height: 20px
+	svg
+		width: 100%
+		height: 100%
+		fill: #ac162c
+
+.blog-contacts-item
+	font-size: 15px
+	color: #404040
+	> div
+		margin-bottom: 10px
+	.office_name
+		text-align: center
+		font-family: "MyriadProSemiBold"
+		font-size: 26px
+	.office_address
+		-ms-flex-order: 2
+		order: 2
+	.office_email
+		text-align: right
+	.office_email, .office_phone
+		-ms-flex-order: 4
+		order: 4
+	.office_email a, .office_phone a
+		font-size: 16px
+		color: #404040
+
+.office_country
+	font-size: 16px
+
+.office_phone
+	text-align: center
+
+.blog-contact-office-view
+	padding: 30px 0
+
+	
